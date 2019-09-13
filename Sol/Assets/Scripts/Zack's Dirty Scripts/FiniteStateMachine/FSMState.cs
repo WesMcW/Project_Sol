@@ -2,15 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FSMState : MonoBehaviour
+public class FSMState
 {
 	private List<FSMAction> actions;
 	FiniteStateMachine owner;
 	Dictionary<string, FSMState> transitionMap;
-
-	/// <summary>
-	/// </summary>
-	public FSMState(string name, FiniteStateMachine owner)
+    private readonly string name;
+    public string Name
+    {
+        get
+        {
+            return name;
+        }
+    }
+    /// <summary>
+    /// </summary>
+    public FSMState(string name, FiniteStateMachine owner)
 	{
 		this.name = name;
 		this.owner = owner;

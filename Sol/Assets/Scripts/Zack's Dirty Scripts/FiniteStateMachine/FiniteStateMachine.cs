@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FiniteStateMachine : MonoBehaviour
+public class FiniteStateMachine
 {
 
-	private new readonly string name;
+	private readonly string name;
 	private FSMState currentState;
 	private readonly Dictionary<string, FSMState> stateMap;
-	
 
-	public string Name
+    public string Name
 	{
 		get
 		{
@@ -35,8 +34,8 @@ public class FiniteStateMachine : MonoBehaviour
 	/// the Object that has an FSM.
 	///</summary>
 	///
-	/***
-	public void Start(string stateName)
+	
+	public void StartMachine(string stateName)
 	{
 		if(!stateMap.ContainsKey(stateName))
 		{
@@ -45,7 +44,7 @@ public class FiniteStateMachine : MonoBehaviour
 		}
 		ChangeToState(stateMap[stateName]);
 	}
-	***/
+	
 	///<summary>
 	/// This changes the state of the Object. This also calls the exit
 	/// state before doing the next state.

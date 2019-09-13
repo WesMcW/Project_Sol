@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FSMAction : MonoBehaviour
+public class FSMAction
 {
 	private readonly FSMState owner;
 
