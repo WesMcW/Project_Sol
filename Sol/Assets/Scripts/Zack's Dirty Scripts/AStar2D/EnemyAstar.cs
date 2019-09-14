@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyAstar : MonoBehaviour
 {
 	public Transform target;
+    public bool followTargetGo = false;
 	[SerializeField]
 	float speed = 5;
 	Vector3[] path;
@@ -21,11 +22,12 @@ public class EnemyAstar : MonoBehaviour
 	{
 		lastPosition = transform.position;
 		rb = GetComponent<Rigidbody2D>();
-		anim = GetComponent<Animator>();
+		//anim = GetComponent<Animator>();
 	}
 	private void Update()
 	{
-		PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
+        if(followTargetGo)
+		    PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
 	}
 	public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
 	{
@@ -81,10 +83,10 @@ public class EnemyAstar : MonoBehaviour
 					//print(direction);
 					float angle = Mathf.Atan2(localVelocity.y, localVelocity.x) * Mathf.Rad2Deg;
 					Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-					sight.transform.rotation = Quaternion.Slerp(sight.transform.rotation, rotation, reactionTime);
+					//sight.transform.rotation = Quaternion.Slerp(sight.transform.rotation, rotation, reactionTime);
 					//sight.transform.LookAt(Vector3.up+ sight.transform.rotation * direction);
-					anim.SetFloat("hVelocity", localVelocity.x);
-					anim.SetFloat("vVelocity", localVelocity.y);
+					//anim.SetFloat("hVelocity", localVelocity.x);
+					//anim.SetFloat("vVelocity", localVelocity.y);
 					lastPosition = transform.position;
 				}
 				yield return null;
@@ -117,8 +119,8 @@ public class EnemyAstar : MonoBehaviour
 					float angle = Mathf.Atan2(localVelocity.y, localVelocity.x) * Mathf.Rad2Deg;
 					Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.up);
 					sight.transform.rotation = Quaternion.Slerp(transform.rotation, rotation, reactionTime);
-					anim.SetFloat("hVelocity", direction.x);
-					anim.SetFloat("vVelocity", direction.y);
+					//anim.SetFloat("hVelocity", direction.x);
+					//anim.SetFloat("vVelocity", direction.y);
 					lastPosition = transform.position;
 				}
 				yield return null;
@@ -158,6 +160,7 @@ public class EnemyAstar : MonoBehaviour
 			}
 		}
 	}
+    /***
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.CompareTag("Player"))
@@ -172,5 +175,6 @@ public class EnemyAstar : MonoBehaviour
 			//encounter = false;
 		}
 	}
+    ***/
 	
 }
