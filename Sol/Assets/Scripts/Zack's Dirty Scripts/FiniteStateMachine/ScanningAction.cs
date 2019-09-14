@@ -36,7 +36,7 @@ public class ScanningAction : FSMAction
             return;
         }
 
-        Debug.Log(textToShow);
+        //Debug.Log(textToShow);
     }
 
     public override void OnExit()
@@ -50,6 +50,6 @@ public class ScanningAction : FSMAction
         {
             GetOwner().SendEvent(finishEvent);
         }
-        TimeInDir = cachedDuration;
+        TimeInDir = maxTimeInDir;
     }
 }

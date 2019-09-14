@@ -11,7 +11,7 @@ public class IdleAction : FSMAction
     public IdleAction(FSMState owner) : base(owner)
     {
     }
-    public void Init(string textToShow, float duration, string finishEvent)
+    public void Init(string textToShow, float duration, string finishEvent = null)
     {
         this.textToShow = textToShow;
         this.duration = duration;
