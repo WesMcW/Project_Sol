@@ -8,8 +8,8 @@ public class WanderAction : FSMAction
     private float TimeInDir;
     private Transform target;
     private string finishEvent;
-    float polledTime;
-    EnemyAstar theMachine;
+    private float polledTime;
+    private EnemyAstar theMachine;
 
     public WanderAction(FSMState owner) : base(owner)
     {
@@ -22,26 +22,40 @@ public class WanderAction : FSMAction
         this.maxTimeInDir = duration;
         this.finishEvent = finishEvent;
         this.polledTime = 0;
-        this.theMachine = t;
+        theMachine = t;
     }
     public override void OnEnter()
     {
-        theMachine.followTargetGo = true;
-        if (TimeInDir <= 0)
+        if (theMachine != null)
         {
-            Finish();
-            return;
+            //Debug.Log(theMachine.testNum.ToString());
+            theMachine.stopWandering = false;
+            theMachine.followTargetGo = true;
+            theMachine.target = target;
+        }
+        Debug.Log("ToPatrol");
+
+        if (theMachine != null)
+        {
+            if (TimeInDir <= 0 || Vector2.Distance(target.position, theMachine.transform.position) < 1)
+            {
+                Finish();
+                return;
+            }
         }
     }
     public override void OnUpdate()
     {
         polledTime += Time.deltaTime;
         TimeInDir -= Time.deltaTime;
-
-        if (TimeInDir <= 0)
+        Debug.Log("OnPatrol");
+        if (theMachine != null)
         {
-            Finish();
-            return;
+            if (TimeInDir <= 0 || Vector2.Distance(target.position, theMachine.transform.position) < 1)
+            {
+                Finish();
+                return;
+            }
         }
     }
    
@@ -51,8 +65,11 @@ public class WanderAction : FSMAction
         {
             GetOwner().SendEvent(finishEvent);
         }
-
-        theMachine.followTargetGo = false;
+        if (theMachine != null)
+        {
+            theMachine.target = null;
+            theMachine.followTargetGo = false;
+        }
         this.polledTime = 0;
         TimeInDir = Random.Range(0, maxTimeInDir);
         

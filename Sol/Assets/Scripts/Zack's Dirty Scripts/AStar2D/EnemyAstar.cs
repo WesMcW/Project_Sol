@@ -6,6 +6,8 @@ public class EnemyAstar : MonoBehaviour
 {
 	public Transform target;
     public bool followTargetGo = false;
+    public bool stopWandering = true;
+    public int testNum = 32;
 	[SerializeField]
 	float speed = 5;
 	Vector3[] path;
@@ -28,6 +30,11 @@ public class EnemyAstar : MonoBehaviour
 	{
         if(followTargetGo)
 		    PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
+        else if(!followTargetGo && !stopWandering)
+        {
+            stopWandering = true;
+            StopCoroutine("FollowPath");
+        }
 	}
 	public void OnPathFound(Vector3[] newPath, bool pathSuccessful)
 	{

@@ -20,6 +20,7 @@ public class IdleAction : FSMAction
     }
     public override void OnEnter()
     {
+        Debug.Log("ToIdle");
         if (duration <= 0)
         {
             Finish();
