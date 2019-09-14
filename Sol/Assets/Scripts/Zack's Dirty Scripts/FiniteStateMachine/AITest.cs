@@ -10,6 +10,7 @@ public class AITest : MonoBehaviour
     private FSMState ScanState;
     private WanderAction PatrolAction;
     private IdleAction IdleAction;
+    private ScanningAction ScanAction;
     [SerializeField]
     Transform target;
     EnemyAstar thelocation;
@@ -21,6 +22,7 @@ public class AITest : MonoBehaviour
         PatrolState = fsm.AddState("WanderState");
         PatrolAction = new WanderAction(PatrolState);
         IdleAction = new IdleAction(IdleState);
+        ScanAction = new ScanningAction(ScanState);
         //This adds the actions to the state and add state to it's transition map
         PatrolState.AddAction(PatrolAction);
         IdleState.AddAction(IdleAction);
@@ -28,8 +30,9 @@ public class AITest : MonoBehaviour
         PatrolState.AddTransition("ToIdle", IdleState);
         IdleState.AddTransition("ToPatrol", PatrolState);
         ScanState.AddTransition("ToScanning", ScanState);
-        PatrolAction.Init(target, 3.0f, gameObject.GetComponent<EnemyAstar>(), "ToIdle");
+        PatrolAction.Init(target, 3.0f, gameObject.GetComponent<EnemyAstar>());
         IdleAction.Init("AI on Idle", 3.0f, "ToPatrol");
+        ScanAction.Init(3.0f);
         fsm.StartMachine("IdleState");
     }
     
