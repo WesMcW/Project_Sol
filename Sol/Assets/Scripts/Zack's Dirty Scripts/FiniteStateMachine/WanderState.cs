@@ -35,14 +35,11 @@ public class WanderAction : FSMAction
         }
         Debug.Log("ToPatrol");
 
-        if (theMachine != null)
-        {
-            if (TimeInDir <= 0 || Vector2.Distance(target.position, theMachine.transform.position) < 1)
+            if (TimeInDir <= 0)
             {
                 Finish();
                 return;
             }
-        }
     }
     public override void OnUpdate()
     {
