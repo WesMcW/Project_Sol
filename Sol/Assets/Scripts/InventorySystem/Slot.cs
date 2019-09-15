@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class Slot : MonoBehaviour
 {
     public bool empty;
@@ -14,6 +14,8 @@ public class Slot : MonoBehaviour
     private int amount;
     private Image img;
     public Inventory inventoryManager;
+
+    private TextMeshProUGUI amountText;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,10 @@ public class Slot : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
+
+        amountText = GetComponentInChildren<TextMeshProUGUI>();
+        amountText.text = amount.ToString();
+
     }
 
     public void AddItem(ItemInfo theItem, int theAmount)
@@ -34,6 +40,7 @@ public class Slot : MonoBehaviour
         amount = theAmount;
         img.sprite = item.sprite;
         empty = false;
+        amountText.text = amount.ToString();
     }
 
     public int GetAmount()
@@ -44,6 +51,7 @@ public class Slot : MonoBehaviour
     public void IncreaseAmount(int amt)
     {
         amount += amt;
+        amountText.text = amount.ToString();
     }
 
     public void RemoveItem()
@@ -53,6 +61,7 @@ public class Slot : MonoBehaviour
         img.sprite = defaultImage;
         itemID = 0;
         empty = true;
+        amountText.text = amount.ToString();
     }
 
     public ItemInfo GetItemInfo()
@@ -84,7 +93,9 @@ public class Slot : MonoBehaviour
                 inventoryManager.CI.AddItem(item, leftOver);
                 amount = inventoryManager.amountLimit;
             }
-            
+
+            //Update Amount Text
+            amountText.text = amount.ToString();
 
             //Swapping items in inventory
         } else if(inventoryManager.CI.GetCurrentItem() != null && item != null && inventoryManager.CI.GetCurrentItem().name != item.name)
