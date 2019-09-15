@@ -30,6 +30,8 @@ public class Inventory : MonoBehaviour
 
     }
 
+
+    //Adds item to inventory list.
     public void AddItemToInventory(ItemInfo theItem, int amount)
     {
        
@@ -50,10 +52,14 @@ public class Inventory : MonoBehaviour
         }
         //Adds individual items for the amount there are.
        
-       
-
         for (int i = 0; i < slots.Length; i++)
         {
+            
+            if(slots[i].GetItemInfo() == theItem && slots[i].GetAmount() + amount < amountLimit + 1)
+            {
+                slots[i].IncreaseAmount(amount);
+                break;
+            }
            
             if (slots[i].empty)
             {
