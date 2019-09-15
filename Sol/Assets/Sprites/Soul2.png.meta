@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: 34f205466bf4049e8bdcaf54de34cb46
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6624950387046077211
+    second: Soul2_0
+  - first:
+      213: 6854148900915822828
+    second: Soul2_1
+  - first:
+      213: -5753290318694232827
+    second: Soul2_2
+  - first:
+      213: 771336664601195801
+    second: Soul2_3
+  - first:
+      213: -4235427131225660804
+    second: Soul2_4
+  - first:
+      213: -7436704618137762572
+    second: Soul2_5
+  - first:
+      213: -529856008120141801
+    second: Soul2_6
+  - first:
+      213: -4438323821958080881
+    second: Soul2_7
+  - first:
+      213: 3593512381698867744
+    second: Soul2_8
+  - first:
+      213: 6045180056156188242
+    second: Soul2_9
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Soul2_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 624
+        width: 277
+        height: 379
+      alignment: 9
+      pivot: {x: 0.3853685, y: 0.23934849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb946a8f9f397482bb16fab30e805053
+      internalID: -6624950387046077211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul2_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 622
+        width: 279
+        height: 385
+      alignment: 9
+      pivot: {x: 0.38619, y: 0.24341042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd852cf1f5aa4f0eb92e18d325e78ed
+      internalID: 6854148900915822828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul2_2
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 619
+        width: 287
+        height: 407
+      alignment: 9
+      pivot: {x: 0.3893624, y: 0.24861164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53269841f07c54e49896067fa54bcd77
+      internalID: -5753290318694232827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul2_3
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 619
+        width: 318
+        height: 376
+      alignment: 9
+      pivot: {x: 0.36686274, y: 0.256035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99559da410354ea5b80807b746248dc
+      internalID: 771336664601195801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul2_4
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 615
+        width: 316
+        height: 384
+      alignment: 9
+      pivot: {x: 0.3660201, y: 0.2519299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c1fa92d7062428c85c46f9ad2159a2
+      internalID: -4235427131225660804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul2_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 315
+        height: 406
+      alignment: 9
+      pivot: {x: 0.36559612, y: 0.23061292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e324c592dd4436f92bb860421482f2
+      internalID: -7436704618137762572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul2_6
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 0
+        width: 289
+        height: 372
+      alignment: 9
+      pivot: {x: 0.40233615, y: 0.26289615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6525a9304e8374f2a8028d0797ff2bc5
+      internalID: -529856008120141801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul2_7
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 1
+        width: 305
+        height: 364
+      alignment: 9
+      pivot: {x: 0.4305944, y: 0.2576851}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787d80ce0d4154004b58f00b735c9742
+      internalID: -4438323821958080881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul2_8
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1
+        width: 309
+        height: 388
+      alignment: 9
+      pivot: {x: 0.442911, y: 0.24539463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd30ae413cb064730bd4cd54b5ac4715
+      internalID: 3593512381698867744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soul2_9
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1
+        width: 302
+        height: 377
+      alignment: 9
+      pivot: {x: 0.4182226, y: 0.24732405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf02e1f1fbe8e42f39d29aa93481007d
+      internalID: 6045180056156188242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 933af065ee9a0423ea82173bd0067ee7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
