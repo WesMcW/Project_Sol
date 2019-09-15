@@ -21,21 +21,23 @@ public class ItemIDManager : MonoBehaviour
 
     #endregion
 
-    [Header("Weapons")]
+    [Header("Weapons: 1")]
     [SerializeField]
     GameObject[] weapons;
 
-    [Header("Armor")]
+    [Header("Armor: 2")]
     [SerializeField]
     GameObject[] armor;
 
-    [Header("Ingredients")]
+    [Header("Ingredients: 3")]
     [SerializeField]
     GameObject[] ingredients;
 
-    [Header("Food")]
+    [Header("Food: 4")]
     [SerializeField]
     GameObject[] food;
+
+    //to add another category add another category as apove and add to jagged array in order
 
     //Jagged Hash Array
     GameObject[][] array;
@@ -53,7 +55,7 @@ public class ItemIDManager : MonoBehaviour
     public GameObject GetItem(int id) {
         int type = GetTypeInt(id);
         //if there are errors, switch the order of array parameters
-        return array[GetID(type, id)][type];
+        return array[GetID(type, id)][type-1];
     }
 
     int GetTypeInt(int id) {
