@@ -11,9 +11,6 @@ TextureImporter:
   - first:
       213: -5353707622301421585
     second: EnimiesFrogIdle_2
-  - first:
-      213: -5857397524867638049
-    second: EnimiesFrogIdle_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -160,7 +157,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 449808488310140df80c7ff09902d0ef
+      spriteID: 4df761f7e56d042f08f9cae80f97562c
       internalID: 6380252647954602636
       vertices: []
       indices: 
@@ -170,10 +167,10 @@ TextureImporter:
       name: EnimiesFrogIdle_1
       rect:
         serializedVersion: 2
-        x: 564
-        y: 26
-        width: 354
-        height: 377
+        x: 585
+        y: 14
+        width: 355
+        height: 378
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,7 +178,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef1c95c94619d410d9487fb1273746df
+      spriteID: ba093042191aa41fdb50934b8814bd14
       internalID: 148544022184305564
       vertices: []
       indices: 
@@ -191,9 +188,9 @@ TextureImporter:
       name: EnimiesFrogIdle_2
       rect:
         serializedVersion: 2
-        x: 1128
-        y: 37
-        width: 366
+        x: 1184
+        y: 23
+        width: 355
         height: 378
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,29 +199,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd0d04b36e3ad445798430f13d95de5c
+      spriteID: fade7869ed5034140af5c46fea8e55c1
       internalID: -5353707622301421585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnimiesFrogIdle_3
-      rect:
-        serializedVersion: 2
-        x: 1623
-        y: 62
-        width: 354
-        height: 378
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3885c7eabbf5449a91fcac062b0cbe7
-      internalID: -5857397524867638049
       vertices: []
       indices: 
       edges: []
@@ -232,7 +208,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a2c79453ebb2e454782f200c35b49b7f
+    spriteID: d03f9e7d9fbdb4c81b190840d0842300
     internalID: 0
     vertices: []
     indices: 
