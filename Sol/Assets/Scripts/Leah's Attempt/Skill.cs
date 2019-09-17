@@ -23,13 +23,15 @@ public class PassiveSkill : Skill
         setStat = s;
     }
 
-    public void buySkill()
+    public int buySkill(int balance)
     {
-        if (!enabled)   // also needs to check if skillPoints >= points
+        if (!enabled)
         {
+            balance -= cost;
             setStat();
             enabled = true;
         }
+        return balance;
     }
 }
 
@@ -44,14 +46,16 @@ public class ActiveSkill : Skill
         //ability = a;
     }
 
-    public void buySkill()  // also needs to check if skillPoints >= points
+    public int buySkill(int balance)  // also needs to check if skillPoints >= points
     {
         if (!enabled)
         {
+            balance -= cost;
             enabled = true;
             // if none of same type are active, activate this, going to do that in other code
             // maybe when this is bought, change the button method to activateSkill() ?
         }
+        return balance;
     }
 
     public void activateSkill() // needs to also disable all other like skills

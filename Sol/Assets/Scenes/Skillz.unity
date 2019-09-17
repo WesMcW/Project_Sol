@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 779adde12130e9a429fe11b3eb08e997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillActive: 0
 --- !u!114 &72586726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +279,7 @@ GameObject:
   - component: {fileID: 198220536}
   - component: {fileID: 198220535}
   - component: {fileID: 198220538}
+  - component: {fileID: 198220539}
   m_Layer: 0
   m_Name: thing
   m_TagString: Untagged
@@ -375,6 +377,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7822c47d42d49fe49ab6e2086dbd4194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastBtnClicked: {fileID: 0}
+--- !u!114 &198220539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198220534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20732ef4cea25ea4b9d358bcb2f246f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xp: 0
+  level: 1
+  xpToLevel: 2
+  skillPoints: 0
 --- !u!1 &276956953
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,6 +791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 779adde12130e9a429fe11b3eb08e997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillActive: 0
 --- !u!114 &1011893906
 MonoBehaviour:
   m_ObjectHideFlags: 0

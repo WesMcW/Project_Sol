@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class SkillsList : MonoBehaviour
 {
@@ -30,6 +31,9 @@ public class SkillsList : MonoBehaviour
 
     [Header("Passive Skills")]
     PassiveSkill smSize1, smSize2;
+    GameObject lastBtnClicked;      // disables buttons after purchase
+
+    int spRef;  // in StatsManager
 
     // Start is called before the first frame update
     void Start()
@@ -69,21 +73,41 @@ public class SkillsList : MonoBehaviour
         newDodges.Add(dodge3);
     }
 
+    void Update()
+    {
+        spRef = GetComponent<StatsManager>().skillPoints;
+        lastBtnClicked = EventSystem.current.currentSelectedGameObject;
+    }
+
     #region Buttons
 
-            // Passive Buttons
+    #region Passive Buttons
 
     public void passive1Btn()
     {
-        smSize1.buySkill();
+        if (smSize1.cost <= spRef)
+        {
+            GetComponent<StatsManager>().skillPoints -= smSize1.cost;
+            GetComponent<StatsManager>().skillPoints = smSize1.buySkill(spRef);
+            lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
+        }
+        else Debug.Log("Need more skill points");
     }
 
     public void passive2Btn()
     {
-        smSize2.buySkill();
+        if (smSize2.cost <= spRef)
+        {
+            GetComponent<StatsManager>().skillPoints -= smSize2.cost;
+            GetComponent<StatsManager>().skillPoints = smSize2.buySkill(spRef);
+            lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
+        }
+        else Debug.Log("Need more skill points");
     }
 
-            // Charge Attacks
+    #endregion
+
+    #region Charge Attacks
 
     public void sonicJumpBtn()
     {
@@ -91,9 +115,9 @@ public class SkillsList : MonoBehaviour
         {
             //buy it, check if any are active, if not activate it
 
-            if (sonicJump.cost <= 100)  // replace 100 with skillPoints
+            if (sonicJump.cost <= spRef)  // replace 100 with skillPoints
             {
-                sonicJump.buySkill();   // buy it, subtract points
+                GetComponent<StatsManager>().skillPoints = sonicJump.buySkill(spRef);   // buy it, subtract points
                 Debug.Log("bought Sonic Jump skill");
 
                 bool check = false;
@@ -109,6 +133,7 @@ public class SkillsList : MonoBehaviour
                     Debug.Log("Sonic Jump has been enabled.");
                 } // if no skills of type are active, activate it
             }
+            else Debug.Log("Need more skill points");
         }
         else
         {
@@ -124,16 +149,15 @@ public class SkillsList : MonoBehaviour
         }
     }
 
-
     public void boomerangBtn()
     {
         if (!boomerangThrow.enabled)
         {
             //buy it, check if any are active, if not activate it
 
-            if (boomerangThrow.cost <= 100)  // replace 100 with skillPoints
+            if (boomerangThrow.cost <= spRef)  // replace 100 with skillPoints
             {
-                boomerangThrow.buySkill();   // buy it
+                GetComponent<StatsManager>().skillPoints = boomerangThrow.buySkill(spRef);   // buy it
                 Debug.Log("bought Boomerang Throw skill");
 
                 bool check = false;
@@ -149,6 +173,7 @@ public class SkillsList : MonoBehaviour
                     boomerangThrow.activateSkill();  // if no skills of type are active, activate it
                 }
             }
+            else Debug.Log("Need more skill points");
         }
         else
         {
@@ -164,16 +189,15 @@ public class SkillsList : MonoBehaviour
         }
     }
 
-
     public void thirdBtn()
     {
         if (!aThirdOne.enabled)
         {
             //buy it, check if any are active, if not activate it
 
-            if (aThirdOne.cost <= 100)  // replace 100 with skillPoints
+            if (aThirdOne.cost <= spRef)  // replace 100 with skillPoints
             {
-                aThirdOne.buySkill();   // buy it
+                GetComponent<StatsManager>().skillPoints = aThirdOne.buySkill(spRef);   // buy it
                 Debug.Log("bought Other skill");
 
                 bool check = false;
@@ -189,6 +213,7 @@ public class SkillsList : MonoBehaviour
                     aThirdOne.activateSkill();  // if no skills of type are active, activate it
                 }
             }
+            else Debug.Log("Need more skill points");
         }
         else
         {
@@ -204,7 +229,9 @@ public class SkillsList : MonoBehaviour
         }
     }
 
-            // Dodges   will add these when the rest work better
+    // Dodges   will add these when the rest work better
+
+    #endregion
 
     #endregion
 }

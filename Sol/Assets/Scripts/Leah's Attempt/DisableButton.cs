@@ -8,6 +8,8 @@ public class DisableButton : MonoBehaviour
     // disables button once it is clicked
     // should be on all passive skill buttons
 
+    public bool skillActive = false;
+
     void Start()
     {
         gameObject.GetComponent<Button>().onClick.AddListener(turnOff);
@@ -15,6 +17,6 @@ public class DisableButton : MonoBehaviour
 
     void turnOff()
     {
-        gameObject.GetComponent<Button>().interactable = false;
+        if (skillActive) gameObject.GetComponent<Button>().interactable = false;
     }
 }
