@@ -32,9 +32,9 @@ public class Inventory : MonoBehaviour
 
 
     //Adds item to inventory list.
-    public void AddItemToInventory(ItemInfo theItem, int amount)
+    public void AddItemToInventory(int id, int amount)
     {
-       
+        ItemInfo theItem = ItemIDManager.itemIDmanager.GetItem(id).GetComponent<ItemInfo>();
 
         for (int i = 0; i < slots.Length; i++)
         {
@@ -55,7 +55,7 @@ public class Inventory : MonoBehaviour
         for (int i = 0; i < slots.Length; i++)
         {
             
-            if(slots[i].GetItemInfo() == theItem && slots[i].GetAmount() + amount < amountLimit + 1)
+            if(slots[i].itemID == id && slots[i].GetAmount() + amount < amountLimit + 1)
             {
                 slots[i].IncreaseAmount(amount);
                 break;
@@ -63,7 +63,7 @@ public class Inventory : MonoBehaviour
            
             if (slots[i].empty)
             {
-                slots[i].AddItem(theItem, amount);
+                slots[i].AddItem(id, amount);
                 break;
             }
         }

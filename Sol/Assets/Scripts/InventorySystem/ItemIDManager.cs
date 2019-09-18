@@ -42,6 +42,9 @@ public class ItemIDManager : MonoBehaviour
     //Jagged Hash Array
     GameObject[][] array;
 
+    public static ItemIDManager itemIDmanager;
+
+
     void Start() {
         array = new GameObject[][] {
             weapons,
@@ -49,13 +52,32 @@ public class ItemIDManager : MonoBehaviour
             ingredients,
             food
         };
+
+
+        if(itemIDmanager == null)
+        {
+            itemIDmanager = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+
     }
 
     //Call this to get item: ItemIDManager.instance.GetItem( idnumber );
     public GameObject GetItem(int id) {
         int type = GetTypeInt(id);
-        //if there are errors, switch the order of array parameters
-        return array[GetID(type, id)][type-1];
+        //print(id);
+        if (id == 0)
+        {
+            return null;
+        }
+        else
+        {
+            //if there are errors, switch the order of array parameters
+            return array[GetID(type, id)][type - 1];
+        }
     }
 
     int GetTypeInt(int id) {

@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 public class CursorInventory : MonoBehaviour
 {
     private SpriteRenderer sr;
     private int amount;
-    private Text amountText;
     [SerializeField]
     private ItemInfo currentItem;
+
+   
    
 
     /// <summary>
@@ -31,28 +31,42 @@ public class CursorInventory : MonoBehaviour
 
     }
 
-    public void AddItem(ItemInfo item, int amt)
+
+    //Add an item to the cursors inventory.
+    public void AddItem(int id, int amt)
     {
-        sr.sprite = item.sprite;
+
+        GameObject theItem = ItemIDManager.itemIDmanager.GetItem(id);
+        sr.sprite = theItem.GetComponent<ItemInfo>().sprite;
         sr.color = new Color(100, 100, 100, 0.5f);
         amount = amt;
-       // amountText.text = amount.ToString();
-        currentItem = item;
+        currentItem = theItem.GetComponent<ItemInfo>();
+        
     }
 
+
+    //Removes Current Item Script
     public void RemoveItem()
     {
         sr.sprite = null;
         currentItem = null;
         amount = 0;
-       // amountText.text = amount.ToString();
     }
 
-    public ItemInfo GetCurrentItem()
+
+    //Yields the proper ID
+    public int GetCurrentItem()
     {
-        return currentItem;
+        if(currentItem == null)
+        {
+            return 0;
+        } else
+        {
+            return currentItem.ItemID;
+        }
     }
 
+    //Returns the current amount being held in the cursor
     public int GetCurrentAmount()
     {
         return amount;

@@ -8,5 +8,17 @@ public class ItemInfo : MonoBehaviour
     [TextArea(3, 5)]
     public string description;
     public Sprite sprite;
+    public int ItemID;
+
+
+    //Add one of the current item to the players inventory.
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Inventory.inventory.AddItemToInventory(ItemID, 1);
+            Destroy(this.gameObject);
+        }
+    }
 
 }

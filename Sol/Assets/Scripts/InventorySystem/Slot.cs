@@ -34,12 +34,24 @@ public class Slot : MonoBehaviour
 
     }
 
-    public void AddItem(ItemInfo theItem, int theAmount)
+    public void AddItem(int id, int theAmount)
     {
-        item = theItem;
-        amount = theAmount;
-        img.sprite = item.sprite;
-        empty = false;
+        //if the item being fed is null. Default to blank
+        if(id == 0)
+        {
+            itemID = 0;
+            empty = true;
+            img.sprite = defaultImage;
+            amount = 0;
+        }
+        else
+        {
+            GameObject theItem = ItemIDManager.itemIDmanager.GetItem(id);
+            amount = theAmount;
+            img.sprite = theItem.GetComponent<ItemInfo>().sprite;
+            empty = false;
+        }
+        itemID = id;
         amountText.text = amount.ToString();
     }
 
@@ -72,46 +84,54 @@ public class Slot : MonoBehaviour
 
     public void OnClick()
     {
-        //Checks to see if the cursor has an item and this slot has no item
-        if(inventoryManager.CI.GetCurrentItem() != null && item == null)
+        //Declare the correct variables.
+        GameObject theItem;
+        //These MUST be declared as 0. 
+        int theItemID = 0;
+        int itemAmount = 0;
+      
+        //Checks if there is an item
+        if (inventoryManager.CI.GetCurrentItem() != 0)
         {
-            AddItem(inventoryManager.CI.GetCurrentItem(), inventoryManager.CI.GetCurrentAmount());
+            theItem = ItemIDManager.itemIDmanager.GetItem(inventoryManager.CI.GetCurrentItem());
+            theItemID = theItem.GetComponent<ItemInfo>().ItemID;
+            itemAmount = inventoryManager.CI.GetCurrentAmount();
+        }
+       
+        //If there is an item being held by the cursor and this slot is empty, add the item.
+        if (theItemID > 0 && itemID == 0)
+        {
+            AddItem(theItemID, itemAmount);
             inventoryManager.CI.RemoveItem();
         }
-
-        //Checks to see if the items are the same
-        else if(inventoryManager.CI.GetCurrentItem() != null && item != null && inventoryManager.CI.GetCurrentItem().name == item.name)
+        //If the items are the same between both the cursor and this slot, add them together.
+        else if(theItemID == itemID)
         {
-            amount += inventoryManager.CI.GetCurrentAmount();
+            amount += itemAmount;
             inventoryManager.CI.RemoveItem();
-
-            //Checks to make the sure amount is NOT larger than the size cap
-            if (amount > inventoryManager.amountLimit)
+            //Checks for a remainder
+            if(amount > inventoryManager.amountLimit)
             {
-                Debug.Log("The amount is greater than the limit");
                 int leftOver = amount - inventoryManager.amountLimit;
-                inventoryManager.CI.AddItem(item, leftOver);
+                inventoryManager.CI.AddItem(theItemID, leftOver);
                 amount = inventoryManager.amountLimit;
             }
-
-            //Update Amount Text
-            amountText.text = amount.ToString();
-
-            //Swapping items in inventory
-        } else if(inventoryManager.CI.GetCurrentItem() != null && item != null && inventoryManager.CI.GetCurrentItem().name != item.name)
+        }
+        //If the items are different, swap.
+        else if(theItemID != itemID)
         {
-            //Swap items
-            ItemInfo temp = item;
-            int tempAmount = amount;
-
-            AddItem(inventoryManager.CI.GetCurrentItem(), inventoryManager.CI.GetCurrentAmount());
-            inventoryManager.CI.AddItem(temp, tempAmount);
-            //If this slot has an item in it and the cursor has nothing.
-        } else if(inventoryManager.CI.GetCurrentItem() == null && item != null)
+            inventoryManager.CI.AddItem(itemID, amount);
+            AddItem(theItemID, itemAmount);
+        }
+        //If the cursor has nothing in it and this slot holds an item
+        else if(theItemID == 0 && itemID > 0)
         {
-            inventoryManager.CI.AddItem(item, amount);
+            inventoryManager.CI.AddItem(itemID, amount);
             RemoveItem();
-        } 
-        
+        }
+
+        //Update Amount Text
+        amountText.text = amount.ToString();
+
     }
 }
