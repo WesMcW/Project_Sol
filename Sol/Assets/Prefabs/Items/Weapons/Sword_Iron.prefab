@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3132706953530543522}
   - component: {fileID: 3132706953530543517}
   - component: {fileID: 3132706953530543516}
-  - component: {fileID: 3132706953530543519}
   m_Layer: 0
   m_Name: Sword_Iron
   m_TagString: Untagged
@@ -126,15 +125,3 @@ MonoBehaviour:
   description: I SLASH things
   sprite: {fileID: 7441372264213655823, guid: 1cbb2115f0b0b4c64b57c7e78b3687eb, type: 3}
   ItemID: 2
---- !u!114 &3132706953530543519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3132706953530543518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1221c2bb57e0aa443b52eabb6d050b13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
