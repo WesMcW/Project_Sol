@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 24518c0b95fcd4b02bd5a36253e4d638
+guid: 609979be055594bfa9c27f83a5c00d5c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2132858539655770415
-    second: EnimiesFrog_0
+      213: -5386626200510934313
+    second: SisterFront_0
   - first:
-      213: 8874587398995776831
-    second: EnimiesFrog_1
+      213: 7806754231331584604
+    second: SisterFront_1
   - first:
-      213: -9170249170199249302
-    second: EnimiesFrog_2
+      213: 8592612496542498085
+    second: SisterFront_2
   - first:
-      213: -3252628961046244559
-    second: EnimiesFrog_3
+      213: -4904564601402602430
+    second: SisterFront_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -146,13 +146,76 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EnimiesFrog_0
+      name: SisterFront_0
       rect:
         serializedVersion: 2
         x: 0
+        y: 15
+        width: 391
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2645f11cd16452dada7d447f7de22b
+      internalID: -5386626200510934313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SisterFront_1
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 23
+        width: 385
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bceac76d5fc7f4349ae42b094d4eb7b8
+      internalID: 7806754231331584604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SisterFront_2
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 21
+        width: 388
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9024d509f2f2c4dc3b4e4a8e8437fd1c
+      internalID: 8592612496542498085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SisterFront_3
+      rect:
+        serializedVersion: 2
+        x: 1652
         y: 0
-        width: 354
-        height: 377
+        width: 385
+        height: 502
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,71 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e7cef2c6f0d74e11acc790823108af9
-      internalID: 2132858539655770415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnimiesFrog_1
-      rect:
-        serializedVersion: 2
-        x: 571
-        y: 2
-        width: 492
-        height: 341
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 428e17816dc5e4568891ce7ef2c8cc94
-      internalID: 8874587398995776831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnimiesFrog_2
-      rect:
-        serializedVersion: 2
-        x: 1243
-        y: 27
-        width: 534
-        height: 310
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 775bb4cad03ab4b7fa3665332ce08371
-      internalID: -9170249170199249302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnimiesFrog_3
-      rect:
-        serializedVersion: 2
-        x: 1940
-        y: 50
-        width: 520
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d504844b54e64a74a36715bf66c100c
-      internalID: -3252628961046244559
+      spriteID: 2bcdea0f526594d88872b596210b751a
+      internalID: -4904564601402602430
       vertices: []
       indices: 
       edges: []
@@ -232,7 +232,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 092eb825951e74414bea462f99781604
+    spriteID: 697be72f8c3fb4f7e95499d9de23754c
     internalID: 0
     vertices: []
     indices: 

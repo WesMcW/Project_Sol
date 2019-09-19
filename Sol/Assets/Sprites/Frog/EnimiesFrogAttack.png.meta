@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -148,16 +148,16 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 570
-        height: 342
+        width: 569
+        height: 341
       alignment: 9
-      pivot: {x: 0.48452455, y: 0.52063364}
+      pivot: {x: 0.48759785, y: 0.44309026}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e2bd2fcdc3b34695a68cf876a6d246c
+      spriteID: a9df8019600614c63a137d9100be7566
       internalID: 3764802328896585427
       vertices: []
       indices: 
@@ -167,18 +167,18 @@ TextureImporter:
       name: EnimiesFrogAttack_1
       rect:
         serializedVersion: 2
-        x: 679
-        y: 37
-        width: 695
+        x: 683
+        y: 38
+        width: 689
         height: 311
       alignment: 9
-      pivot: {x: 0.4520796, y: 0.47730905}
+      pivot: {x: 0.4871974, y: 0.41490984}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07c98501f74c740358ef72885fadf25e
+      spriteID: 4fb2d54e2fe4d4c809ed3a6236203600
       internalID: 5343667826722805330
       vertices: []
       indices: 
@@ -189,17 +189,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1432
-        y: 48
+        y: 47
         width: 829
-        height: 309
+        height: 310
       alignment: 9
-      pivot: {x: 0.382954, y: 0.46574366}
+      pivot: {x: 0.43402857, y: 0.42032638}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 179899f919b744996a3c636eb607d29b
+      spriteID: d135ee3baf7f844a5b0ff49043f2af70
       internalID: -5747434639370017634
       vertices: []
       indices: 
@@ -208,7 +208,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5d39a0f3360ef423ba76b05b478e0185
+    spriteID: ec9b10eefca8442219b053c44f25d3a4
     internalID: 0
     vertices: []
     indices: 
