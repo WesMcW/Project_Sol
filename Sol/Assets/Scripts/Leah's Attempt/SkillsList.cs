@@ -9,11 +9,16 @@ public class SkillsList : MonoBehaviour
     ///   How to make new skills:
     ///     
     /// Passive:
-    ///     p = new PassiveSkill( COST, { method of what the skill will do/change } )
+    ///     p = new PassiveSkill( COST, { () => method of what the skill will do/change } );
+    ///     passives.Add(p);
+    ///     
+    ///     Then add the button function: basically duplicate existing button method and update 'p'
     ///     
     /// Active:
-    ///     a = new ActiveSkill( COST )
-    ///     ** add to matching List of ActiveSkill
+    ///     a = new ActiveSkill( COST );
+    ///     SKILLTYPELIST.Add(a);
+    ///     
+    ///     Then add button function: same as passive buttons; duplicate and update 'a'
     ///     
     /// I have some examples of both skill types below, use them to make actual skills
     /// I need some movement/ ability scripts before I can really implement this    
@@ -30,27 +35,24 @@ public class SkillsList : MonoBehaviour
     ActiveSkill dodge1, dodge2, dodge3;
 
     [Header("Passive Skills")]
-    PassiveSkill smSize1, smSize2;
-    GameObject lastBtnClicked;      // disables buttons after purchase
+    PassiveSkill p, pEx2;
 
+    GameObject lastBtnClicked;      // disables buttons after purchase
     int spRef;  // in StatsManager
 
-    // Start is called before the first frame update
     void Start()
     {
             //Passive Skills
-        smSize1 = new PassiveSkill(3, () =>
+        p = new PassiveSkill(1, () => Debug.Log("This is an example.")); 
+        pEx2 = new PassiveSkill(3, () =>
         {
-            GameObject temp = GameObject.Find("thing");
-            temp.transform.localScale = new Vector3(temp.transform.localScale.x - 0.1F, temp.transform.localScale.y - 0.1F);
-        });
-        smSize2 = new PassiveSkill(5, () =>
-        {
-            GameObject temp = GameObject.Find("thing");
-            temp.transform.localScale = new Vector3(temp.transform.localScale.x - 0.1F, temp.transform.localScale.y - 0.1F);
+            Debug.Log("How to write multiple lines in here");
+            Debug.Log("wow");
         });
 
         passives = new List<PassiveSkill>();
+        passives.Add(p);
+        passives.Add(pEx2);
 
             //Charge Attacks
         sonicJump = new ActiveSkill(5);
@@ -83,23 +85,12 @@ public class SkillsList : MonoBehaviour
 
     #region Passive Buttons
 
-    public void passive1Btn()
+    public void examplePassiveBtn()
     {
-        if (smSize1.cost <= spRef)
+        if (p.cost <= spRef)
         {
-            GetComponent<StatsManager>().skillPoints -= smSize1.cost;
-            GetComponent<StatsManager>().skillPoints = smSize1.buySkill(spRef);
-            lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
-        }
-        else Debug.Log("Need more skill points");
-    }
-
-    public void passive2Btn()
-    {
-        if (smSize2.cost <= spRef)
-        {
-            GetComponent<StatsManager>().skillPoints -= smSize2.cost;
-            GetComponent<StatsManager>().skillPoints = smSize2.buySkill(spRef);
+            GetComponent<StatsManager>().skillPoints -= p.cost;
+            GetComponent<StatsManager>().skillPoints = p.buySkill(spRef);
             lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
         }
         else Debug.Log("Need more skill points");
@@ -115,7 +106,7 @@ public class SkillsList : MonoBehaviour
         {
             //buy it, check if any are active, if not activate it
 
-            if (sonicJump.cost <= spRef)  // replace 100 with skillPoints
+            if (sonicJump.cost <= spRef)
             {
                 GetComponent<StatsManager>().skillPoints = sonicJump.buySkill(spRef);   // buy it, subtract points
                 Debug.Log("bought Sonic Jump skill");
@@ -153,15 +144,13 @@ public class SkillsList : MonoBehaviour
     {
         if (!boomerangThrow.enabled)
         {
-            //buy it, check if any are active, if not activate it
-
-            if (boomerangThrow.cost <= spRef)  // replace 100 with skillPoints
+            if (boomerangThrow.cost <= spRef)
             {
-                GetComponent<StatsManager>().skillPoints = boomerangThrow.buySkill(spRef);   // buy it
+                GetComponent<StatsManager>().skillPoints = boomerangThrow.buySkill(spRef);
                 Debug.Log("bought Boomerang Throw skill");
 
                 bool check = false;
-                foreach (ActiveSkill a in chargeAttacks)    // check if any skills of type are active
+                foreach (ActiveSkill a in chargeAttacks)
                 {
                     check = a.active;
                     if (check) break;
@@ -170,15 +159,13 @@ public class SkillsList : MonoBehaviour
                 if (!check)
                 {
                     Debug.Log("Boomerang Throw has been enabled.");
-                    boomerangThrow.activateSkill();  // if no skills of type are active, activate it
+                    boomerangThrow.activateSkill();
                 }
             }
             else Debug.Log("Need more skill points");
         }
         else
         {
-            //unactivate everything, activate this
-
             foreach (ActiveSkill a in chargeAttacks)
             {
                 a.deactivateSkill();
@@ -193,15 +180,13 @@ public class SkillsList : MonoBehaviour
     {
         if (!aThirdOne.enabled)
         {
-            //buy it, check if any are active, if not activate it
-
-            if (aThirdOne.cost <= spRef)  // replace 100 with skillPoints
+            if (aThirdOne.cost <= spRef)
             {
-                GetComponent<StatsManager>().skillPoints = aThirdOne.buySkill(spRef);   // buy it
+                GetComponent<StatsManager>().skillPoints = aThirdOne.buySkill(spRef);
                 Debug.Log("bought Other skill");
 
                 bool check = false;
-                foreach (ActiveSkill a in chargeAttacks)    // check if any skills of type are active
+                foreach (ActiveSkill a in chargeAttacks)
                 {
                     check = a.active;
                     if (check) break;
@@ -210,15 +195,13 @@ public class SkillsList : MonoBehaviour
                 if (!check)
                 {
                     Debug.Log("Other has been enabled.");
-                    aThirdOne.activateSkill();  // if no skills of type are active, activate it
+                    aThirdOne.activateSkill();
                 }
             }
             else Debug.Log("Need more skill points");
         }
         else
         {
-            //unactivate everything, activate this
-
             foreach (ActiveSkill a in chargeAttacks)
             {
                 a.deactivateSkill();
@@ -229,7 +212,7 @@ public class SkillsList : MonoBehaviour
         }
     }
 
-    // Dodges   will add these when the rest work better
+    // Dodges   will add these when dodge exists/this connects with player movement
 
     #endregion
 
