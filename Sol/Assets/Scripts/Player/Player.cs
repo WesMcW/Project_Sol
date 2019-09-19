@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     void Update(){
         if (doingSpecialAction)
         {
-
+            GetComponent<SpriteRenderer>().color = Color.blue;
         }
         else if (dead /* || PauseMenu.GameIsPaused*/)
         {
@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
         }
         else
         {
+            GetComponent<SpriteRenderer>().color = Color.white;
             MoveUpdate();
 
             RollUpdate();

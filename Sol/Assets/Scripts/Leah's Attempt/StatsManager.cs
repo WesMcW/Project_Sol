@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class StatsManager : MonoBehaviour
 {
-    // I'm thinking this could be where all player stats (level, xp, max health, speed, damage, defense, etc) are housed?
+    // I'm thinking this could be where all player stats (level, xp, max health, speed, damage, defense, etc) are housed/ easily viewed together
+
+    GameObject player;
     public int xp = 0, level = 1, xpToLevel = 2;
     public int skillPoints = 0;
+    public float speedRef, rollSpeedRef;    // in Player
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
+        speedRef = player.GetComponent<Player>().moveSpeed;
+        rollSpeedRef = player.GetComponent<Player>().rollSpeed;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -35,5 +38,11 @@ public class StatsManager : MonoBehaviour
             Debug.Log("Level Up! You are now level " + level);
             xpToLevel = (int)Mathf.Ceil(xpToLevel * 1.8F);
         }
+    }
+
+    public void updateStats()   // better than in update maybe
+    {
+        player.GetComponent<Player>().moveSpeed = speedRef;
+        player.GetComponent<Player>().rollSpeed = rollSpeedRef;
     }
 }

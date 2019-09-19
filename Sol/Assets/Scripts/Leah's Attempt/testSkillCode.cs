@@ -6,25 +6,31 @@ using UnityEngine.UI;
 
 public class testSkillCode : MonoBehaviour
 {
+    // All this does is change the color of the buttons for enabled/active
+
     SkillsList sl;
     public Button b1, b2, b3;
 
-    // Start is called before the first frame update
     void Start()
     {
         sl = GetComponent<SkillsList>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (sl.chargeAttacks[0].active) b1.GetComponent<Image>().color = Color.green;       // this if statement will enable bools in character movement/controls
-        else b1.GetComponent<Image>().color = Color.red;
+        if (sl.chargeAttacks[0].active) b1.GetComponent<Image>().color = Color.green;
+        else if (sl.chargeAttacks[0].enabled && !sl.chargeAttacks[0].active) b1.GetComponent<Image>().color = Color.yellow;
+        else if (!sl.chargeAttacks[0].enabled && sl.chargeAttacks[0].cost <= sl.spRef) b1.GetComponent<Image>().color = Color.red;
+        else b1.GetComponent<Image>().color = Color.magenta;
 
         if (sl.chargeAttacks[1].active) b2.GetComponent<Image>().color = Color.green;
-        else b2.GetComponent<Image>().color = Color.red;
+        else if (sl.chargeAttacks[1].enabled && !sl.chargeAttacks[1].active) b2.GetComponent<Image>().color = Color.yellow;
+        else if (!sl.chargeAttacks[1].enabled && sl.chargeAttacks[1].cost <= sl.spRef) b2.GetComponent<Image>().color = Color.red;
+        else b2.GetComponent<Image>().color = Color.magenta;
 
         if (sl.chargeAttacks[2].active) b3.GetComponent<Image>().color = Color.green;
-        else b3.GetComponent<Image>().color = Color.red;
+        else if (sl.chargeAttacks[2].enabled && !sl.chargeAttacks[2].active) b3.GetComponent<Image>().color = Color.yellow;
+        else if (!sl.chargeAttacks[2].enabled && sl.chargeAttacks[2].cost <= sl.spRef) b3.GetComponent<Image>().color = Color.red;
+        else b3.GetComponent<Image>().color = Color.magenta;
     }
 }

@@ -13,6 +13,7 @@ public class SkillsList : MonoBehaviour
     ///     passives.Add(p);
     ///     
     ///     Then add the button function: basically duplicate existing button method and update 'p'
+    ///     ** put DisableButton script on all passive buttons **
     ///     
     /// Active:
     ///     a = new ActiveSkill( COST );
@@ -35,24 +36,20 @@ public class SkillsList : MonoBehaviour
     ActiveSkill dodge1, dodge2, dodge3;
 
     [Header("Passive Skills")]
-    PassiveSkill p, pEx2;
+    PassiveSkill speedUp, rollSpeedUp;
 
-    GameObject lastBtnClicked;      // disables buttons after purchase
-    int spRef;  // in StatsManager
+    public GameObject lastBtnClicked;      // disables buttons after purchase
+    public int spRef;  // in StatsManager
 
     void Start()
     {
             //Passive Skills
-        p = new PassiveSkill(1, () => Debug.Log("This is an example.")); 
-        pEx2 = new PassiveSkill(3, () =>
-        {
-            Debug.Log("How to write multiple lines in here");
-            Debug.Log("wow");
-        });
+        speedUp = new PassiveSkill(3, () => GetComponent<StatsManager>().speedRef += 2F);
+        rollSpeedUp = new PassiveSkill(5, () => GetComponent<StatsManager>().rollSpeedRef += 5F);
 
         passives = new List<PassiveSkill>();
-        passives.Add(p);
-        passives.Add(pEx2);
+        passives.Add(speedUp);
+        passives.Add(rollSpeedUp);
 
             //Charge Attacks
         sonicJump = new ActiveSkill(5);
@@ -85,13 +82,26 @@ public class SkillsList : MonoBehaviour
 
     #region Passive Buttons
 
-    public void examplePassiveBtn()
+    public void speedUpBtn()
     {
-        if (p.cost <= spRef)
+        if (speedUp.cost <= spRef)
         {
-            GetComponent<StatsManager>().skillPoints -= p.cost;
-            GetComponent<StatsManager>().skillPoints = p.buySkill(spRef);
+            GetComponent<StatsManager>().skillPoints -= speedUp.cost;
+            GetComponent<StatsManager>().skillPoints = speedUp.buySkill(spRef);
             lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
+            GetComponent<StatsManager>().updateStats();
+        }
+        else Debug.Log("Need more skill points");
+    }
+
+    public void rollSpeedUpBtn()
+    {
+        if (speedUp.cost <= spRef)
+        {
+            GetComponent<StatsManager>().skillPoints -= rollSpeedUp.cost;
+            GetComponent<StatsManager>().skillPoints = rollSpeedUp.buySkill(spRef);
+            lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
+            GetComponent<StatsManager>().updateStats();
         }
         else Debug.Log("Need more skill points");
     }
