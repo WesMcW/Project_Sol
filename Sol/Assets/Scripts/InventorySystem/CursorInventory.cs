@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 public class CursorInventory : MonoBehaviour
 {
-    private SpriteRenderer sr;
+    private Image img;
     private int amount;
     [SerializeField]
     private ItemInfo currentItem;
+    private RectTransform movingObject;
+    public Vector3 offset;
    
    
 
@@ -19,15 +22,15 @@ public class CursorInventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
-        sr.sprite = null;
+        movingObject = GetComponent<RectTransform>();
+        img = GetComponent<Image>();
+        img.sprite = null;
     }
 
     private void Update()
     {
-        Vector3 _mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector3(_mousePos.x, _mousePos.y, transform.position.z);
-
+        Vector3 pos = Input.mousePosition + offset;
+        movingObject.position = pos;
     }
 
 
@@ -37,8 +40,8 @@ public class CursorInventory : MonoBehaviour
 
         GameObject theItem = ItemIDManager.instance.GetItem(id);
         Debug.Log(theItem);
-        sr.sprite = theItem.GetComponent<ItemInfo>().sprite;
-        sr.color = new Color(100, 100, 100, 0.5f);
+        img.sprite = theItem.GetComponent<ItemInfo>().sprite;
+        img.color = new Color(100, 100, 100, 0.5f);
         amount = amt;
         currentItem = theItem.GetComponent<ItemInfo>();
         
@@ -48,7 +51,8 @@ public class CursorInventory : MonoBehaviour
     //Removes Current Item Script
     public void RemoveItem()
     {
-        sr.sprite = null;
+        img.sprite = null;
+        img.color = new Color(100, 100, 100, 0);
         currentItem = null;
         amount = 0;
     }
