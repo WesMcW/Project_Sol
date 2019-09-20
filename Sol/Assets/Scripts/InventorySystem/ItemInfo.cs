@@ -9,6 +9,7 @@ public class ItemInfo : MonoBehaviour
     public string description;
     public Sprite sprite;
     public int ItemID;
+    public int amountLimit = 1;
 
 
     //Add one of the current item to the players inventory.

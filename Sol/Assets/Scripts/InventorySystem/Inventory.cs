@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public Slot[] slots;
-    public int amountLimit;
+    //public int amountLimit;
     public CursorInventory CI;
     public static Inventory inventory;
 
@@ -34,8 +34,8 @@ public class Inventory : MonoBehaviour
     //Adds item to inventory list.
     public void AddItemToInventory(int id, int amount)
     {
-        ItemInfo theItem = ItemIDManager.itemIDmanager.GetItem(id).GetComponent<ItemInfo>();
-
+        ItemInfo theItem = ItemIDManager.instance.GetItem(id).GetComponent<ItemInfo>();
+        int amountLimit = theItem.amountLimit;
         for (int i = 0; i < slots.Length; i++)
         {
             if (slots[i].empty)
@@ -55,6 +55,7 @@ public class Inventory : MonoBehaviour
         for (int i = 0; i < slots.Length; i++)
         {
             
+            //If item pickup has more than 1... oh no...
             if(slots[i].itemID == id && slots[i].GetAmount() + amount < amountLimit + 1)
             {
                 slots[i].IncreaseAmount(amount);

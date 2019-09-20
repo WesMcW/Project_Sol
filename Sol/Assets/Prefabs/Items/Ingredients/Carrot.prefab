@@ -97,7 +97,8 @@ MonoBehaviour:
   name: Carrot
   description: Eat me
   sprite: {fileID: 478288733005568584, guid: 221ebcaf188e54c5c8fc9ab0094d55b4, type: 3}
-  ItemID: 3
+  ItemID: 30
+  amountLimit: 3
 --- !u!61 &9127544854182676497
 BoxCollider2D:
   m_ObjectHideFlags: 0

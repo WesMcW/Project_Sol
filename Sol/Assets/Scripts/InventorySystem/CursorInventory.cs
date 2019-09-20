@@ -7,7 +7,6 @@ public class CursorInventory : MonoBehaviour
     private int amount;
     [SerializeField]
     private ItemInfo currentItem;
-
    
    
 
@@ -36,7 +35,8 @@ public class CursorInventory : MonoBehaviour
     public void AddItem(int id, int amt)
     {
 
-        GameObject theItem = ItemIDManager.itemIDmanager.GetItem(id);
+        GameObject theItem = ItemIDManager.instance.GetItem(id);
+        Debug.Log(theItem);
         sr.sprite = theItem.GetComponent<ItemInfo>().sprite;
         sr.color = new Color(100, 100, 100, 0.5f);
         amount = amt;

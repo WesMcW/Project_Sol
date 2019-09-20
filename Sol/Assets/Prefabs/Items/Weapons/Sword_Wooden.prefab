@@ -123,4 +123,4 @@ MonoBehaviour:
   name: Wooden Sword
   description: I wack things
   sprite: {fileID: 788015303910585071, guid: 1cbb2115f0b0b4c64b57c7e78b3687eb, type: 3}
-  ItemID: 1
+  ItemID: 10

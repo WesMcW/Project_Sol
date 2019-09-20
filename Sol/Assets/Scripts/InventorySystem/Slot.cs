@@ -46,7 +46,7 @@ public class Slot : MonoBehaviour
         }
         else
         {
-            GameObject theItem = ItemIDManager.itemIDmanager.GetItem(id);
+            GameObject theItem = ItemIDManager.instance.GetItem(id);
             amount = theAmount;
             img.sprite = theItem.GetComponent<ItemInfo>().sprite;
             empty = false;
@@ -84,18 +84,21 @@ public class Slot : MonoBehaviour
 
     public void OnClick()
     {
+        
         //Declare the correct variables.
         GameObject theItem;
         //These MUST be declared as 0. 
         int theItemID = 0;
         int itemAmount = 0;
-      
-        //Checks if there is an item
+        int amountLimit = 0;//Intentianaly break with 0
+        //Checks if there is an item in your curser
         if (inventoryManager.CI.GetCurrentItem() != 0)
         {
-            theItem = ItemIDManager.itemIDmanager.GetItem(inventoryManager.CI.GetCurrentItem());
+            
+            theItem = ItemIDManager.instance.GetItem(inventoryManager.CI.GetCurrentItem());
             theItemID = theItem.GetComponent<ItemInfo>().ItemID;
             itemAmount = inventoryManager.CI.GetCurrentAmount();
+            amountLimit = theItem.GetComponent<ItemInfo>().amountLimit;
         }
        
         //If there is an item being held by the cursor and this slot is empty, add the item.
@@ -110,11 +113,11 @@ public class Slot : MonoBehaviour
             amount += itemAmount;
             inventoryManager.CI.RemoveItem();
             //Checks for a remainder
-            if(amount > inventoryManager.amountLimit)
+            if(amount > amountLimit)
             {
-                int leftOver = amount - inventoryManager.amountLimit;
+                int leftOver = amount - amountLimit;
                 inventoryManager.CI.AddItem(theItemID, leftOver);
-                amount = inventoryManager.amountLimit;
+                amount = amountLimit;
             }
         }
         //If the items are different, swap.
@@ -126,10 +129,10 @@ public class Slot : MonoBehaviour
         //If the cursor has nothing in it and this slot holds an item
         else if(theItemID == 0 && itemID > 0)
         {
+            
             inventoryManager.CI.AddItem(itemID, amount);
             RemoveItem();
         }
-
         //Update Amount Text
         amountText.text = amount.ToString();
 
