@@ -26,20 +26,27 @@ public class WanderAction : FSMAction
     }
     public override void OnEnter()
     {
-        if (theMachine != null)
-        {
-            //Debug.Log(theMachine.testNum.ToString());
-            theMachine.stopWandering = false;
-            theMachine.followTargetGo = true;
-            theMachine.target = target;
-        }
         Debug.Log("ToPatrol");
-
-            if (TimeInDir <= 0)
+        if(target != null)
+            if (TimeInDir <= 0 || Vector2.Distance(target.position, theMachine.transform.position) < 1)
             {
                 Finish();
                 return;
             }
+        /***
+        if (theMachine != null)
+        {
+            //if (Vector2.Distance(theMachine.gameObject.transform.position, target.position) > 1)
+            //{
+
+                //Debug.Log(theMachine.testNum.ToString());
+                theMachine.stopWandering = false;
+                theMachine.followTargetGo = true;
+                theMachine.target = target;
+                theMachine.GetAnim().SetFloat("speed", 1);
+           // }
+        }
+        ***/
     }
     public override void OnUpdate()
     {
@@ -58,6 +65,7 @@ public class WanderAction : FSMAction
    
     private void Finish()
     {
+        theMachine.GetAnim().SetFloat("speed", 0);
         if (!string.IsNullOrEmpty(finishEvent))
         {
             GetOwner().SendEvent(finishEvent);

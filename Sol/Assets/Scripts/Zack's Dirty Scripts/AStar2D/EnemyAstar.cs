@@ -24,7 +24,7 @@ public class EnemyAstar : MonoBehaviour
 	{
 		lastPosition = transform.position;
 		rb = GetComponent<Rigidbody2D>();
-		//anim = GetComponent<Animator>();
+		anim = GetComponent<Animator>();
 	}
 	private void Update()
 	{
@@ -46,6 +46,10 @@ public class EnemyAstar : MonoBehaviour
 			StartCoroutine("FollowPath");
 		}
 	}
+    public Animator GetAnim()
+    {
+        return anim;
+    }
 	//This needs to ne reworked, I have some ideas
 	IEnumerator FollowPath()
 	{
@@ -77,7 +81,7 @@ public class EnemyAstar : MonoBehaviour
 					transform.position = Vector2.MoveTowards(transform.position,currentWaypoint, speed * Time.fixedDeltaTime);
 					Vector3 direction = transform.position - lastPosition;
 					Vector3 localVelocity = transform.InverseTransformDirection(direction);
-					/*
+                    /*
 					if (direction.x < 0)
 					{
 						anim.SetBool("LoR", true);
@@ -87,14 +91,14 @@ public class EnemyAstar : MonoBehaviour
 						anim.SetBool("LoR", false);
 					}
 					*/
-					//print(direction);
-					float angle = Mathf.Atan2(localVelocity.y, localVelocity.x) * Mathf.Rad2Deg;
-					Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-					//sight.transform.rotation = Quaternion.Slerp(sight.transform.rotation, rotation, reactionTime);
-					//sight.transform.LookAt(Vector3.up+ sight.transform.rotation * direction);
-					//anim.SetFloat("hVelocity", localVelocity.x);
-					//anim.SetFloat("vVelocity", localVelocity.y);
-					lastPosition = transform.position;
+                    //print(direction);
+                    float angle = Mathf.Atan2(localVelocity.y, localVelocity.x) * Mathf.Rad2Deg;
+                    Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                    sight.transform.rotation = Quaternion.Slerp(sight.transform.rotation, rotation, reactionTime);
+
+                    //anim.SetFloat("speed", rb.velocity.magnitude);
+                    //anim.SetFloat("speed", localVelocity.y);
+                    lastPosition = transform.position;
 				}
 				yield return null;
 
