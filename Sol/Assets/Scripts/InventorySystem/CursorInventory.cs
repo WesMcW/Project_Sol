@@ -10,20 +10,23 @@ public class CursorInventory : MonoBehaviour
     private ItemInfo currentItem;
     private RectTransform movingObject;
     public Vector3 offset;
-   
-   
+
+
 
     /// <summary>
     /// REMEMBER TO MAKE THE CAMERA ORTHOGRAPHIC!
     /// </summary>
 
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         movingObject = GetComponent<RectTransform>();
         img = GetComponent<Image>();
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
+       
         img.sprite = null;
     }
 

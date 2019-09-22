@@ -7,8 +7,6 @@ public class Slot : MonoBehaviour
 {
     public bool empty;
     public int itemID;
-    [SerializeField]
-    private ItemInfo item;
     public Sprite defaultImage;
     [SerializeField]
     private int amount;
@@ -76,19 +74,12 @@ public class Slot : MonoBehaviour
 
     public void RemoveItem()
     {
-        item = null;
         amount = 0;
         img.sprite = defaultImage;
         itemID = 0;
         empty = true;
         amountText.text = amount.ToString();
     }
-
-    public ItemInfo GetItemInfo()
-    {
-        return item;
-    }
-
 
     public void OnClick()
     {
