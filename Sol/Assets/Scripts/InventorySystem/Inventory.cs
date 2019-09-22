@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public Slot[] slots;
-    //public int amountLimit;
+    [Header("Player Input")]
+    public KeyCode inventoryKey;
+    [Header("Cursor Inventory Object")]
     public CursorInventory CI;
+    [HideInInspector]
     public static Inventory inventory;
+    [Header("Inventory UI")]
+    public GameObject inventoryMenu;
+    public Slot[] slots;
 
-    [SerializeField]
-    private List<ItemInfo> items;
-
-    private void Start()
+    private void Awake()
     {
-        if(inventory != null)
+        if (inventory != null)
         {
             Destroy(this.gameObject);
         }
@@ -22,13 +24,25 @@ public class Inventory : MonoBehaviour
         {
             inventory = this;
         }
-
-        if(items == null)
-        {
-            items = new List<ItemInfo>();
-        }
-
+     
     }
+
+    private void Start()
+    {
+       //For some reason the inventory works like this 
+        inventoryMenu.SetActive(false);
+       
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(inventoryKey))
+        {
+            inventoryMenu.SetActive(!inventoryMenu.activeSelf);
+        }
+    }
+
+
 
 
     //Adds item to inventory list.
@@ -36,39 +50,36 @@ public class Inventory : MonoBehaviour
     {
         ItemInfo theItem = ItemIDManager.instance.GetItem(id).GetComponent<ItemInfo>();
         int amountLimit = theItem.amountLimit;
-        for (int i = 0; i < slots.Length; i++)
-        {
-            if (slots[i].empty)
-            {
-                //were good to go.
-                for (int j = 0; j < amount; j++)
-                {
+        bool foundLikeItem = false;
 
-                    items.Add(theItem);
-                }
-                break;
-
-            } 
-        }
         //Adds individual items for the amount there are.
-       
         for (int i = 0; i < slots.Length; i++)
         {
-            
+
             //If item pickup has more than 1... oh no...
-            if(slots[i].itemID == id && slots[i].GetAmount() + amount < amountLimit + 1)
+            if (slots[i].itemID == id && slots[i].GetAmount() + amount < amountLimit + 1)
             {
                 slots[i].IncreaseAmount(amount);
+                foundLikeItem = true;
                 break;
             }
            
-            if (slots[i].empty)
+           
+        }
+
+        //If the loop did NOT found a item in the inventory that matches the itemID
+        if (!foundLikeItem)
+        {
+            for (int i = 0; i < slots.Length; i++)
             {
-                slots[i].AddItem(id, amount);
-                break;
+                if (slots[i].empty)
+                {
+                    slots[i].AddItem(id, amount);
+                    break;
+                }
             }
+           
         }
     }
-
    
 }

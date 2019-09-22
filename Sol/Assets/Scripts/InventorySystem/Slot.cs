@@ -17,19 +17,27 @@ public class Slot : MonoBehaviour
 
     private TextMeshProUGUI amountText;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        img = GetComponent<Image>();
+        amountText = GetComponentInChildren<TextMeshProUGUI>();
+    }
+
+
     void Start()
     {
-        if(item == null)
+        if(itemID == 0)
         {
             empty = true;
         }
-        img = GetComponent<Image>();
+       
         if(itemID == -1)
         {
             this.gameObject.SetActive(false);
         }
 
-        amountText = GetComponentInChildren<TextMeshProUGUI>();
+        
         amountText.text = amount.ToString();
 
     }
@@ -137,4 +145,7 @@ public class Slot : MonoBehaviour
         amountText.text = amount.ToString();
 
     }
+
+
+   
 }

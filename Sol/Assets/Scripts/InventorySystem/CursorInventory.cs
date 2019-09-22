@@ -39,7 +39,7 @@ public class CursorInventory : MonoBehaviour
     {
 
         GameObject theItem = ItemIDManager.instance.GetItem(id);
-        Debug.Log(theItem);
+        //Debug.Log(theItem);
         img.sprite = theItem.GetComponent<ItemInfo>().sprite;
         img.color = new Color(100, 100, 100, 0.5f);
         amount = amt;
