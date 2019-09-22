@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: 119beaa83183045b3a0552c13b74d65f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -27016043633122777
+    second: Garden tiles__0
+  - first:
+      213: 1089122197417873446
+    second: Garden tiles__1
+  - first:
+      213: 8985328598845422390
+    second: Garden tiles__2
+  - first:
+      213: -8591387645377051111
+    second: Garden tiles__3
+  - first:
+      213: 7969170091236769328
+    second: Garden tiles__4
+  - first:
+      213: -6375384247179945033
+    second: Garden tiles__5
+  - first:
+      213: 7727071760947761048
+    second: Garden tiles__6
+  - first:
+      213: 4830232606465424
+    second: Garden tiles__7
+  - first:
+      213: -8766317089308253103
+    second: Garden tiles__8
+  - first:
+      213: -3565013868860339351
+    second: Garden tiles__9
+  - first:
+      213: -4130005214150544687
+    second: Garden tiles__10
+  - first:
+      213: 7059607458353613394
+    second: Garden tiles__11
+  - first:
+      213: 6523432854670352108
+    second: Garden tiles__12
+  - first:
+      213: 984719484349700292
+    second: Garden tiles__13
+  - first:
+      213: -67552813178548727
+    second: Garden tiles__14
+  - first:
+      213: -925787017918899
+    second: Garden tiles__15
+  - first:
+      213: 588843596927573467
+    second: Garden tiles__16
+  - first:
+      213: -3931354739782668780
+    second: Garden tiles__17
+  - first:
+      213: 7776848134243572458
+    second: Garden tiles__18
+  - first:
+      213: 8455193631391202466
+    second: Garden tiles__19
+  - first:
+      213: 2216164847107881682
+    second: Garden tiles__20
+  - first:
+      213: 1036623741561419611
+    second: Garden tiles__21
+  - first:
+      213: -2265086064187600568
+    second: Garden tiles__22
+  - first:
+      213: 8365454139636890791
+    second: Garden tiles__23
+  - first:
+      213: 2956330950283984705
+    second: Garden tiles__24
+  - first:
+      213: 7006703898069152955
+    second: Garden tiles__25
+  - first:
+      213: 7611230063457280277
+    second: Garden tiles__26
+  - first:
+      213: 7720957649169232390
+    second: Garden tiles__27
+  - first:
+      213: -2621417832460962
+    second: Garden tiles__28
+  - first:
+      213: -5682501553085505976
+    second: Garden tiles__29
+  - first:
+      213: -8257807785999687763
+    second: Garden tiles__30
+  - first:
+      213: -7417481886359373523
+    second: Garden tiles__31
+  - first:
+      213: -3259563918532204467
+    second: Garden tiles__32
+  - first:
+      213: 1022586070911989867
+    second: Garden tiles__33
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Garden tiles__0
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2820
+        width: 301
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df45264d92c75468692e9ea9aea2cb69
+      internalID: -27016043633122777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__1
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 2820
+        width: 301
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423840c5a582149b683022f53c4f3edf
+      internalID: 1089122197417873446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__2
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 2820
+        width: 301
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730bbad6598d94070b7554c9df016873
+      internalID: 8985328598845422390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__3
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 1610
+        width: 1460
+        height: 1503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a9287be7e0245fdb56a0600e5e7ace
+      internalID: -8591387645377051111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__4
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 2609
+        width: 293
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92765cf42fd84476ab39762c3ee5f2e8
+      internalID: 7969170091236769328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__5
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 2608
+        width: 134
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7554f0607023c4e6ea13258d7c8295d6
+      internalID: -6375384247179945033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__6
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 2604
+        width: 184
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53813a27fbaf4f1584f664230891fd2
+      internalID: 7727071760947761048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2346
+        width: 114
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e5bcd32e3e149dd86f0279bdfe7fd2
+      internalID: 4830232606465424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__8
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 2392
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3daa668e9bac4f80be564d63db43066
+      internalID: -8766317089308253103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__9
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 2385
+        width: 114
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7c8a1c3768c4eff81830908a9d3371
+      internalID: -3565013868860339351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__10
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 2431
+        width: 117
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c1dd7a8fa964c22acd3f289ae3a3b6
+      internalID: -4130005214150544687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__11
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 2267
+        width: 114
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78143e780111f44fd80f9a6b44d7723d
+      internalID: 7059607458353613394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__12
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 2305
+        width: 115
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034f13e6cee9b4906a8ba79cf1f32ce6
+      internalID: 6523432854670352108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__13
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 2056
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ac9adb160d34b1cb79b3a844f7134c
+      internalID: 984719484349700292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__14
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 2084
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916679b5b5b604e55b0dfba1e1cbd77c
+      internalID: -67552813178548727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__15
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 2057
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82edbfabe3b2e4c3db493d38d98b550a
+      internalID: -925787017918899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__16
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 2086
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cab68708d8c94b78a4b0416d082e138
+      internalID: 588843596927573467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__17
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 2059
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eefd535bfc814c9ba5faff6042ead19
+      internalID: -3931354739782668780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__18
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2087
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4057959c31bd244518161477151c5d30
+      internalID: 7776848134243572458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__19
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 2039
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8bd09b1ba5e4bac9e5d5f5cb4c85d3
+      internalID: 8455193631391202466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__20
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 2041
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1484b2fa677d54d00bead9dd4958fd60
+      internalID: 2216164847107881682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__21
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 2042
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37239279506b4df38531bc07687f884
+      internalID: 1036623741561419611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1866
+        width: 386
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11455c7f9e48447c19a85b4afe6f6fbe
+      internalID: -2265086064187600568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__23
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1866
+        width: 386
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8e0b1c3a9cf4730851d664e3eae90b
+      internalID: 8365454139636890791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1728
+        width: 386
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb5da4b947e44fe1885a186eb9def15
+      internalID: 2956330950283984705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__25
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1728
+        width: 386
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5bbf10e20be4413aa46fccd10957b7
+      internalID: 7006703898069152955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__26
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1381
+        width: 274
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b992dc7c74144e9ba624721ba475a8
+      internalID: 7611230063457280277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__27
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1379
+        width: 209
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec53cf85d66ad46888798510c87ff99c
+      internalID: 7720957649169232390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__28
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 1430
+        width: 145
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3ee597315394b8aa902ab1fd72d6e9
+      internalID: -2621417832460962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__29
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 0
+        width: 1472
+        height: 1502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca28fa2df66b4d47b2256707fe962f3
+      internalID: -5682501553085505976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__30
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1082
+        width: 245
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c282b32cfa04de09e0b8621ee80a48
+      internalID: -8257807785999687763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__31
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1104
+        width: 211
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c04013ae67b43248027e82fda27c9b
+      internalID: -7417481886359373523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 578
+        width: 374
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb79bf0ef56d64204a5f68d6c8608cc2
+      internalID: -3259563918532204467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Garden tiles__33
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 582
+        width: 773
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d61b6d265d34477ad4d885e704e69c
+      internalID: 1022586070911989867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a3f82038783314c24abd5ff003b1857b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
