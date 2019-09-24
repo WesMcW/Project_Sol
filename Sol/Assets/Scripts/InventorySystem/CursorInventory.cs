@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 public class CursorInventory : MonoBehaviour
 {
     private Image img;
@@ -10,7 +11,8 @@ public class CursorInventory : MonoBehaviour
     private ItemInfo currentItem;
     private RectTransform movingObject;
     public Vector3 offset;
-
+    [SerializeField]
+    private Transform playerTransform;
 
 
     /// <summary>
@@ -26,14 +28,38 @@ public class CursorInventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        if(playerTransform == null)
+        {
+            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        }
         img.sprite = null;
+    }
+
+    private void OnDisable()
+    {
+        //When the inventory menu is disabled, dumb the item held.
+        if(currentItem != null)
+        {
+           GameObject tmp = Instantiate(ItemIDManager.instance.GetItem(currentItem.ItemID), playerTransform.position, Quaternion.identity);
+            tmp.GetComponent<ItemInfo>().canBePickedUp = false;
+            RemoveItem();
+        }
+       
     }
 
     private void Update()
     {
         Vector3 pos = Input.mousePosition + offset;
         movingObject.position = pos;
+
+        //Check for the click of an item NOT in the UI. 
+        if(Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject() && currentItem != null)
+        {
+            GameObject tmp = Instantiate(ItemIDManager.instance.GetItem(currentItem.ItemID), playerTransform.position, Quaternion.identity);
+            tmp.GetComponent<ItemInfo>().canBePickedUp = false;
+            RemoveItem();
+        }
+
     }
 
 

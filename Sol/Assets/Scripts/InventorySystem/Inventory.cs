@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [Header("Player Input")]
-    public KeyCode inventoryKey;
+    public KeyCode inventoryKey, quickSwitchKey;
     [Header("Cursor Inventory Object")]
     public CursorInventory CI;
     [HideInInspector]
@@ -13,6 +13,8 @@ public class Inventory : MonoBehaviour
     [Header("Inventory UI")]
     public GameObject inventoryMenu;
     public Slot[] slots;
+    public EquipmentSlot[] equipSlots;
+
 
     private void Awake()
     {
@@ -57,10 +59,11 @@ public class Inventory : MonoBehaviour
         {
 
             //If item pickup has more than 1... oh no...
-            if (slots[i].itemID == id && slots[i].GetAmount() + amount < amountLimit + 1)
+            if (slots[i].itemID == id && (slots[i].GetAmount() + amount) < amountLimit + 1 && slots[i].GetAmount() != amountLimit)
             {
                 slots[i].IncreaseAmount(amount);
                 foundLikeItem = true;
+               // print("Found Like Item");
                 break;
             }
            
@@ -80,6 +83,87 @@ public class Inventory : MonoBehaviour
             }
            
         }
+    }
+
+    public void AddItemToEquipment(int itemID, int amount)
+    {
+        char categoryID = '0';
+        categoryID = itemID.ToString()[0];
+
+        for (int i = 0; i < equipSlots.Length; i++)
+        {
+            //If the equipment slot required ID matches the itemID category.
+            if(equipSlots[i].requiredID == categoryID)
+            {
+                if (!equipSlots[i].empty)
+                {
+                    //If the slot is not empty, swap
+                    AddItemToInventory(equipSlots[i].itemID, equipSlots[i].GetAmount());
+                }
+                //Swap with this
+                equipSlots[i].AddItem(itemID, amount);
+                break;
+                //Else if the slots are all full
+            }
+            
+            else if(equipSlots[i].requiredID != categoryID && i == equipSlots.Length - 1)
+            {
+                //No open slots or the item cannot be equipped
+               AddItemToInventory(itemID, amount);
+            }
+
+            
+        }
+    }
+
+    //returns the first empty slot in the inventory. NOT EQUIPMENT INVENTORY
+    public Slot GetEmptySlot()
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].empty)
+            {
+                return slots[i];
+            } 
+        }
+        return null;
+    }
+
+    //Checks the itemID to see if it can be quick equipped.
+    public bool CategoryIDCheck(int itemID)
+    {
+        char categoryID = '0';
+        categoryID = itemID.ToString()[0];
+
+        for (int i = 0; i < equipSlots.Length; i++)
+        {
+            if(categoryID == equipSlots[i].requiredID)
+            {
+                return true;
+                
+            }
+        }
+        return false;
+    }
+
+    public bool CanAddItem(int itemID, int amount)
+    {
+        ItemInfo theItem = ItemIDManager.instance.GetItem(itemID).GetComponent<ItemInfo>();
+        int amountLimit = theItem.amountLimit;
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].empty)
+            {
+               // print("Can add to inventory");
+                return true;
+            } else if(slots[i].itemID == itemID && (slots[i].GetAmount() + amount) < amountLimit + 1 && slots[i].GetAmount() != amountLimit)
+            {
+               // print("Can add to inventory");
+                return true;
+               
+            }
+        }
+        return false;
     }
    
 }
