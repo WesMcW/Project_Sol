@@ -27,7 +27,7 @@ public class SkillsList : MonoBehaviour
     /// </summary>
 
     [Header("Lists")]
-    public List<PassiveSkill> passives; // ?
+    public List<Skill> allSkills;
     public List<ActiveSkill> chargeAttacks;
     public List<ActiveSkill> newDodges;
 
@@ -36,20 +36,23 @@ public class SkillsList : MonoBehaviour
     ActiveSkill dodge1, dodge2, dodge3;
 
     [Header("Passive Skills")]
-    PassiveSkill speedUp, rollSpeedUp;
+    PassiveSkill dodgeRoll;
+    PassiveSkill speedUp, rollSpeedUp, passive3, passive4, passive5, passive6;
 
     public GameObject lastBtnClicked;      // disables buttons after purchase
     public int spRef;  // in StatsManager
+    public int skillsCount;
 
     void Start()
     {
-            //Passive Skills
-        speedUp = new PassiveSkill(3, () => GetComponent<StatsManager>().speedRef += 2F);
-        rollSpeedUp = new PassiveSkill(5, () => GetComponent<StatsManager>().rollSpeedRef += 5F);
-
-        passives = new List<PassiveSkill>();
-        passives.Add(speedUp);
-        passives.Add(rollSpeedUp);
+        //Passive Skills
+        dodgeRoll = new PassiveSkill(1, () => GetComponent<StatsManager>().player.GetComponent<Player>().canDodge = true);
+        speedUp = new PassiveSkill(1, () => GetComponent<StatsManager>().speedRef += 2F);
+        rollSpeedUp = new PassiveSkill(1, () => GetComponent<StatsManager>().rollSpeedRef += 5F);
+        passive3 = new PassiveSkill(1, () => Debug.Log("skill bought"));
+        passive4 = new PassiveSkill(1, () => Debug.Log("skill bought"));
+        passive5 = new PassiveSkill(1, () => Debug.Log("skill bought"));
+        passive6 = new PassiveSkill(1, () => Debug.Log("skill bought"));
 
             //Charge Attacks
         sonicJump = new ActiveSkill(5);
@@ -70,6 +73,22 @@ public class SkillsList : MonoBehaviour
         newDodges.Add(dodge1);
         newDodges.Add(dodge2);
         newDodges.Add(dodge3);
+
+            // Add all skills to list
+        allSkills = new List<Skill>();
+        allSkills.Add(speedUp);
+        allSkills.Add(rollSpeedUp);
+        allSkills.Add(passive3);
+        allSkills.Add(passive4);
+        allSkills.Add(passive5);
+        allSkills.Add(passive6);
+
+        allSkills.Add(sonicJump);
+        allSkills.Add(boomerangThrow);
+        allSkills.Add(aThirdOne);
+        allSkills.Add(dodge1);
+        allSkills.Add(dodge2);
+        allSkills.Add(dodge3);
     }
 
     void Update()
@@ -82,11 +101,25 @@ public class SkillsList : MonoBehaviour
 
     #region Passive Buttons
 
+    public void dodgeBtn()
+    {
+        if (dodgeRoll.cost <= spRef)
+        {
+            GetComponent<StatsManager>().skillPoints -= dodgeRoll.cost;
+            skillsCount++;
+            GetComponent<StatsManager>().skillPoints = dodgeRoll.buySkill(spRef);
+            lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
+            GetComponent<StatsManager>().updateStats();
+        }
+        else Debug.Log("Need more skill points");
+    }
+
     public void speedUpBtn()
     {
         if (speedUp.cost <= spRef)
         {
             GetComponent<StatsManager>().skillPoints -= speedUp.cost;
+            skillsCount++;
             GetComponent<StatsManager>().skillPoints = speedUp.buySkill(spRef);
             lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
             GetComponent<StatsManager>().updateStats();
@@ -96,10 +129,63 @@ public class SkillsList : MonoBehaviour
 
     public void rollSpeedUpBtn()
     {
-        if (speedUp.cost <= spRef)
+        if (rollSpeedUp.cost <= spRef)
         {
             GetComponent<StatsManager>().skillPoints -= rollSpeedUp.cost;
+            skillsCount++;
             GetComponent<StatsManager>().skillPoints = rollSpeedUp.buySkill(spRef);
+            lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
+            GetComponent<StatsManager>().updateStats();
+        }
+        else Debug.Log("Need more skill points");
+    }
+
+    public void passive3Btn()
+    {
+        if (passive3.cost <= spRef)
+        {
+            GetComponent<StatsManager>().skillPoints -= passive3.cost;
+            skillsCount++;
+            GetComponent<StatsManager>().skillPoints = passive3.buySkill(spRef);
+            lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
+            GetComponent<StatsManager>().updateStats();
+        }
+        else Debug.Log("Need more skill points");
+    }
+
+    public void passive4Btn()
+    {
+        if (passive4.cost <= spRef)
+        {
+            GetComponent<StatsManager>().skillPoints -= passive4.cost;
+            skillsCount++;
+            GetComponent<StatsManager>().skillPoints = passive4.buySkill(spRef);
+            lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
+            GetComponent<StatsManager>().updateStats();
+        }
+        else Debug.Log("Need more skill points");
+    }
+
+    public void passive5Btn()
+    {
+        if (passive5.cost <= spRef)
+        {
+            GetComponent<StatsManager>().skillPoints -= passive5.cost;
+            skillsCount++;
+            GetComponent<StatsManager>().skillPoints = passive5.buySkill(spRef);
+            lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
+            GetComponent<StatsManager>().updateStats();
+        }
+        else Debug.Log("Need more skill points");
+    }
+
+    public void passive6Btn()
+    {
+        if (passive6.cost <= spRef)
+        {
+            GetComponent<StatsManager>().skillPoints -= passive6.cost;
+            skillsCount++;
+            GetComponent<StatsManager>().skillPoints = passive6.buySkill(spRef);
             lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
             GetComponent<StatsManager>().updateStats();
         }

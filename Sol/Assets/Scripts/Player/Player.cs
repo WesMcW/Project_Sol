@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
 
     public Collider2D myHitBox;
 
+    public bool canDodge = false;
+
     public float moveSpeed;
     public float rollSpeed;
 
@@ -42,7 +44,7 @@ public class Player : MonoBehaviour
             GetComponent<SpriteRenderer>().color = Color.white;
             MoveUpdate();
 
-            RollUpdate();
+            if (canDodge) RollUpdate();
         }
     }
 

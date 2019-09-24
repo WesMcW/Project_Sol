@@ -6,9 +6,9 @@ public class StatsManager : MonoBehaviour
 {
     // I'm thinking this could be where all player stats (level, xp, max health, speed, damage, defense, etc) are housed/ easily viewed together
 
-    GameObject player;
+    public GameObject player;
     public int xp = 0, level = 1, xpToLevel = 2;
-    public int skillPoints = 0;
+    public int skillPoints = 0, totalSP = 0;
     public float speedRef, rollSpeedRef;    // in Player
 
     void Start()
@@ -28,6 +28,7 @@ public class StatsManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M))
         {
             skillPoints++;
+            totalSP++;
         }
 
         if(xp >= xpToLevel)     // Level Up!
@@ -35,6 +36,7 @@ public class StatsManager : MonoBehaviour
             xp = xp - xpToLevel;
             level++;
             skillPoints++;
+            totalSP++;
             Debug.Log("Level Up! You are now level " + level);
             xpToLevel = (int)Mathf.Ceil(xpToLevel * 1.8F);
         }
