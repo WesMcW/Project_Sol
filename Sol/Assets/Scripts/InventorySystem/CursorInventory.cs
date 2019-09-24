@@ -41,6 +41,7 @@ public class CursorInventory : MonoBehaviour
         if(currentItem != null)
         {
            GameObject tmp = Instantiate(ItemIDManager.instance.GetItem(currentItem.ItemID), playerTransform.position, Quaternion.identity);
+            tmp.GetComponent<ItemInfo>().amount = amount;
             tmp.GetComponent<ItemInfo>().canBePickedUp = false;
             RemoveItem();
         }
@@ -56,6 +57,7 @@ public class CursorInventory : MonoBehaviour
         if(Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject() && currentItem != null)
         {
             GameObject tmp = Instantiate(ItemIDManager.instance.GetItem(currentItem.ItemID), playerTransform.position, Quaternion.identity);
+            tmp.GetComponent<ItemInfo>().amount = amount;
             tmp.GetComponent<ItemInfo>().canBePickedUp = false;
             RemoveItem();
         }
