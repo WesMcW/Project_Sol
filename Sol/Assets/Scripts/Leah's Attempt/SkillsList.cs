@@ -55,9 +55,9 @@ public class SkillsList : MonoBehaviour
         passive6 = new PassiveSkill(1, () => Debug.Log("skill bought"));
 
             //Charge Attacks
-        sonicJump = new ActiveSkill(5);
-        boomerangThrow = new ActiveSkill(5);
-        aThirdOne = new ActiveSkill(5);
+        sonicJump = new ActiveSkill(2);
+        boomerangThrow = new ActiveSkill(2);
+        aThirdOne = new ActiveSkill(2);
 
         chargeAttacks = new List<ActiveSkill>();
         chargeAttacks.Add(sonicJump);
@@ -206,6 +206,7 @@ public class SkillsList : MonoBehaviour
             {
                 GetComponent<StatsManager>().skillPoints = sonicJump.buySkill(spRef);   // buy it, subtract points
                 Debug.Log("bought Sonic Jump skill");
+                lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
 
                 bool check = false;
                 foreach (ActiveSkill a in chargeAttacks)    // check if any skills of type are active
@@ -217,6 +218,7 @@ public class SkillsList : MonoBehaviour
                 if (!check)
                 {
                     sonicJump.activateSkill();
+                    lastBtnClicked.GetComponent<DisableButton>().actionActive = true;
                     Debug.Log("Sonic Jump has been enabled.");
                 } // if no skills of type are active, activate it
             }
@@ -228,9 +230,14 @@ public class SkillsList : MonoBehaviour
 
             foreach (ActiveSkill a in chargeAttacks)
             {
-                a.deactivateSkill();
+                if (a.active) a.deactivateSkill();
                 Debug.Log(a.ToString() + " has been disabled.");
             }
+
+            GetComponent<SkillsButtons>().line3[1].GetComponent<DisableButton>().actionActive = false;  // I'd like this better
+            GetComponent<SkillsButtons>().line3[2].GetComponent<DisableButton>().actionActive = false;
+
+            lastBtnClicked.GetComponent<DisableButton>().actionActive = true;
             sonicJump.activateSkill();
             Debug.Log("Sonic Jump has been enabled.");
         }
@@ -244,6 +251,7 @@ public class SkillsList : MonoBehaviour
             {
                 GetComponent<StatsManager>().skillPoints = boomerangThrow.buySkill(spRef);
                 Debug.Log("bought Boomerang Throw skill");
+                lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
 
                 bool check = false;
                 foreach (ActiveSkill a in chargeAttacks)
@@ -256,6 +264,7 @@ public class SkillsList : MonoBehaviour
                 {
                     Debug.Log("Boomerang Throw has been enabled.");
                     boomerangThrow.activateSkill();
+                    lastBtnClicked.GetComponent<DisableButton>().actionActive = true;
                 }
             }
             else Debug.Log("Need more skill points");
@@ -267,6 +276,11 @@ public class SkillsList : MonoBehaviour
                 a.deactivateSkill();
                 Debug.Log(a.ToString() + " has been disabled.");
             }
+
+            GetComponent<SkillsButtons>().line3[0].GetComponent<DisableButton>().actionActive = false;
+            GetComponent<SkillsButtons>().line3[2].GetComponent<DisableButton>().actionActive = false;
+
+            lastBtnClicked.GetComponent<DisableButton>().actionActive = true;
             boomerangThrow.activateSkill();
             Debug.Log("Boomerang Throw has been enabled.");
         }
@@ -280,6 +294,7 @@ public class SkillsList : MonoBehaviour
             {
                 GetComponent<StatsManager>().skillPoints = aThirdOne.buySkill(spRef);
                 Debug.Log("bought Other skill");
+                lastBtnClicked.GetComponent<DisableButton>().skillActive = true;
 
                 bool check = false;
                 foreach (ActiveSkill a in chargeAttacks)
@@ -292,6 +307,7 @@ public class SkillsList : MonoBehaviour
                 {
                     Debug.Log("Other has been enabled.");
                     aThirdOne.activateSkill();
+                    lastBtnClicked.GetComponent<DisableButton>().actionActive = true;
                 }
             }
             else Debug.Log("Need more skill points");
@@ -304,6 +320,10 @@ public class SkillsList : MonoBehaviour
                 Debug.Log(a.ToString() + " has been disabled.");
             }
             aThirdOne.activateSkill();
+            GetComponent<SkillsButtons>().line3[0].GetComponent<DisableButton>().actionActive = false;  // I'd like this better
+            GetComponent<SkillsButtons>().line3[1].GetComponent<DisableButton>().actionActive = false;
+
+            lastBtnClicked.GetComponent<DisableButton>().actionActive = true;
             Debug.Log("Other has been enabled.");
         }
     }

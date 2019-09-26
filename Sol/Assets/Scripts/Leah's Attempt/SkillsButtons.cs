@@ -75,6 +75,27 @@ public class SkillsButtons : MonoBehaviour
                                 if (!a.GetComponent<DisableButton>().skillActive) a.GetComponent<DisableButton>().buyable = false;
                             }
                         }
+
+                        if(skillsBought >= 5)
+                        {
+                            if (GetComponent<SkillsList>().allSkills[6].cost <= spRef)
+                            {
+                                foreach (Button a in line3)
+                                {
+                                    if (!a.GetComponent<DisableButton>().skillActive)
+                                    {
+                                        a.GetComponent<DisableButton>().buyable = true;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                foreach (Button a in line3)
+                                {
+                                    if (!a.GetComponent<DisableButton>().skillActive) a.GetComponent<DisableButton>().buyable = false;
+                                }
+                            }
+                        }
                     }
                 }
             }

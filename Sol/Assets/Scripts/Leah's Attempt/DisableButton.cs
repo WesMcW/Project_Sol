@@ -9,21 +9,24 @@ public class DisableButton : MonoBehaviour
     // should be on all passive skill buttons
 
     Animator anim;
+    public bool IsActiveSkill;
     public bool buttonActive = false;
     public bool buyable = false;
     public bool skillActive = false;
+    public bool actionActive = false;
 
     void Start()
     {
         anim = GetComponent<Animator>();
-        gameObject.GetComponent<Button>().onClick.AddListener(turnOff);
+        if(!IsActiveSkill) gameObject.GetComponent<Button>().onClick.AddListener(turnOff);
     }
 
     private void Update()
     {
         anim.SetBool("on", buttonActive);
-        anim.SetBool("buyable", buyable);       // maybe?
+        anim.SetBool("buyable", buyable);
         anim.SetBool("bought", skillActive);
+        if (IsActiveSkill) anim.SetBool("active", actionActive);
     }
 
     void turnOff()
