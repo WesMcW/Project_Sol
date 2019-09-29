@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 6be85bd27aaa04ab4a6a146c7405bf6d
+guid: 97f9b43f17daa442f9fa398da1ecccbe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6064325696786596539
-    second: EnimiesSlime_0
+      213: 1912978527255193290
+    second: EnimiesBunnyBack_0
   - first:
-      213: -1309884476418729286
-    second: EnimiesSlime_1
+      213: 2026367061772279875
+    second: EnimiesBunnyBack_1
   - first:
-      213: 5573709171004779529
-    second: EnimiesSlime_2
+      213: 905160984472904305
+    second: EnimiesBunnyBack_2
   - first:
-      213: -2715183563845340172
-    second: EnimiesSlime_3
-  - first:
-      213: 267807353997222037
-    second: EnimiesSlime_4
-  - first:
-      213: 8319343426385200915
-    second: EnimiesSlime_5
+      213: 919134800803503976
+    second: EnimiesBunnyBack_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -152,127 +146,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EnimiesSlime_0
+      name: EnimiesBunnyBack_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 298
-        height: 264
+        y: 1
+        width: 296
+        height: 252
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 746ca35c0621c4d1faddcd878b4e1205
-      internalID: -6064325696786596539
+      spriteID: a249c666012d548c88194db21e7bd1be
+      internalID: 1912978527255193290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnimiesSlime_1
+      name: EnimiesBunnyBack_1
       rect:
         serializedVersion: 2
-        x: 387
-        y: 8
-        width: 303
-        height: 248
-      alignment: 9
-      pivot: {x: 0.49433723, y: 0.28552204}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: acec2434d961a4786b0dfa8578a04482
-      internalID: -1309884476418729286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnimiesSlime_2
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 14
-        width: 300
-        height: 236
-      alignment: 9
-      pivot: {x: 0.511439, y: 0.18737109}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b72f10ab4e4084441bedfaf7c83a1865
-      internalID: 5573709171004779529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnimiesSlime_3
-      rect:
-        serializedVersion: 2
-        x: 1189
-        y: 15
-        width: 298
-        height: 234
-      alignment: 9
-      pivot: {x: 0.5, y: 0.763973}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcdf064cec6784f91a6a0d7232b7187f
-      internalID: -2715183563845340172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnimiesSlime_4
-      rect:
-        serializedVersion: 2
-        x: 1537
-        y: 8
-        width: 303
-        height: 248
-      alignment: 9
-      pivot: {x: 0.5056628, y: 0.24401018}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3654a57654c0b428cb3d5990c7d99336
-      internalID: 267807353997222037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnimiesSlime_5
-      rect:
-        serializedVersion: 2
-        x: 1902
-        y: 0
+        x: 388
+        y: 2
         width: 297
-        height: 264
+        height: 235
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 220f5613263384d4e9600abb71324b48
-      internalID: 8319343426385200915
+      spriteID: 9f9d10b3e966442f198d7b9070df0870
+      internalID: 2026367061772279875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnimiesBunnyBack_2
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 0
+        width: 324
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85dedd376a65349a6ac644151abc36c6
+      internalID: 905160984472904305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnimiesBunnyBack_3
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 4
+        width: 296
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d047f96f36944e294594dcd72d7f6c
+      internalID: 919134800803503976
       vertices: []
       indices: 
       edges: []
@@ -280,7 +232,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8c728745d471240a4a25570b80f38584
+    spriteID: 74bc7657624f34a6980396cd230bc6fe
     internalID: 0
     vertices: []
     indices: 
