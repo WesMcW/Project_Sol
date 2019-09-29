@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 
     PlayerController controller;
     SpriteRenderer spriteRenderer;
-
+    DialogueManager DM;
     public Collider2D myHitBox;
 
     public bool canDodge = false;
@@ -21,11 +21,15 @@ public class Player : MonoBehaviour
 
     int lastDirection = 1;
 
-    void Start()
+    private void Awake()
     {
         controller = GetComponent<PlayerController>();
 
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+    void Start()
+    {
+        DM = DialogueManager.DM;
     }
 
     void Update(){
@@ -163,4 +167,20 @@ public class Player : MonoBehaviour
         doingSpecialAction = false;
 
     }
+    //THIS WILL NOT BE ABLE TO SUPPORT MULTIPLE NPC AT ONE TIME
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("NPC"))
+        {
+            DM.FoundNPC(collision.GetComponent<NPC_Dialogue>());
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("NPC"))
+        {
+            DM.RemoveNPC();
+        }
+    }
+   
 }
