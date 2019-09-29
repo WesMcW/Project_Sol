@@ -4,17 +4,40 @@ using UnityEngine;
 using TMPro;
 public class DialogueManager : MonoBehaviour
 {
+    [Header("Speed of Text")]
+    [SerializeField]
+    float timeDelay;
+
+    [Header("Main Dialogue Object")]
     [SerializeField]
     GameObject DialogueObj;
+
+    [Header("Player Input")]
     [SerializeField]
     KeyCode dialogueInitiateKey;
 
-    private NPC_Dialogue theNPC = null;
+    private string currentText;
+    private NPC_Dialogue npcDiag = null;
+
+    [Header("UI Text Objects")]
     [SerializeField]
-    TextMeshProUGUI npcName, npcText, response1, response2, response3;
-    public static DialogueManager DM;
+    TextMeshProUGUI npcName;
 
     [SerializeField]
+    TextMeshProUGUI npcText;
+
+    [SerializeField]
+    TextMeshProUGUI response1;
+
+    [SerializeField]
+    TextMeshProUGUI response2;
+
+    [SerializeField]
+    TextMeshProUGUI response3;
+
+    public static DialogueManager DM;
+
+    //[SerializeField]
     bool canTalk, talking;
     // Start is called before the first frame update
     private void Awake()
@@ -36,7 +59,7 @@ public class DialogueManager : MonoBehaviour
         if (Input.GetKeyDown(dialogueInitiateKey) && canTalk && !talking)
         {
             DialogueObj.SetActive(true);
-            theNPC.enabled = true;
+            npcDiag.enabled = true;
             talking = true;
         } else if (talking && Input.GetKeyDown(dialogueInitiateKey))
         {
@@ -79,39 +102,68 @@ public class DialogueManager : MonoBehaviour
             response3.gameObject.SetActive(true);
             response3.text = res_3;
         }
-        npcName.text = theNPC.name;
-        npcText.text = text;
+        npcName.text = npcDiag.name;
+        //Animate the Text printing
+        StartCoroutine(printText(text));
     }
+
+    //Prints out the text sequentially
+    IEnumerator printText(string text)
+    {
+        for (int i = 0; i < text.Length; i++)
+        {
+            currentText = text.Substring(0, i + 1);
+            npcText.text = currentText;
+            yield return new WaitForSeconds(timeDelay);
+        }
+        //IDK if this is needed or not
+        StopCoroutine(printText(text));
+    }
+
 
     public NPC_Dialogue GetCurrentNPC()
     {
-        return theNPC;
+        return npcDiag;
     }
 
+    /// <summary>
+    /// Advances the Finite State Machine to the next path which matches the correct ID
+    /// </summary>
+    /// <param name="id"></param>
     public void AdvancePath(int id)
     {
-        theNPC.GetAnim().SetTrigger("path" + id);
+        //Stop all the coroutines because the text gets glitchy if you dont.
+        StopAllCoroutines();
+        npcDiag.GetAnim().SetTrigger("path" + id);
     }
 
     public void FoundNPC(NPC_Dialogue Npc)
     {
-        theNPC = Npc;
+        npcDiag = Npc;
         canTalk = true;
     }
 
     public void RemoveNPC()
     {
-        theNPC = null;
+        npcDiag = null;
         canTalk = false;
     }
 
+    /// <summary>
+    /// Ends the current conversation and resets all of the objects to their original states.
+    /// </summary>
     public void EndConversation()
     {
-        //Could be changed
-        theNPC.GetAnim().SetTrigger("Back");
+        //Stop the text from printing and glitching out
+        StopAllCoroutines();
+        //Reset the conversation back to the beginning
+        npcDiag.GetAnim().SetTrigger("Back");
+        //Turn off Dialogue Object
         DialogueObj.SetActive(false);
+        //No longer talking
         talking = false;
-       
+
+        npcDiag.enabled = false;
 
     }
 }

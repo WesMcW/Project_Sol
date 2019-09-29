@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NPC_Dialogue : MonoBehaviour
 {
+    [Header("This Object should start disabled")]
     public string name;
     [SerializeField]
     Animator anim;
@@ -16,5 +17,10 @@ public class NPC_Dialogue : MonoBehaviour
     public Animator GetAnim()
     {
         return anim;
+    }
+
+    private void OnDisable()
+    {
+        anim.enabled = false;
     }
 }
