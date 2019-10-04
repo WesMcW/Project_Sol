@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - NPC
+  - Carrot
+  - Apple
+  - Sword
   layers:
   - Default
   - TransparentFX
