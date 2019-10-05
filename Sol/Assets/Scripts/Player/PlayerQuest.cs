@@ -14,6 +14,28 @@ public class PlayerQuest : MonoBehaviour
     private void Start()
     {
         CombatEvent.OnEnemyDeath += EnemyToExperience;
+
+        foreach(Quest a in quest)
+        {
+            a.resetQuests();
+        }
+        foreach (Quest a in finishedQuests)
+        {
+            a.resetQuests();
+        }
+    }
+
+    private void Update()
+    {
+        if(activeQuests < GetComponent<Journal>().activeButtons.Count)
+        {
+            //subtract
+        }
+        else if(activeQuests > GetComponent<Journal>().activeButtons.Count)
+        {
+            //add
+            GetComponent<Journal>().addButton(quest[quest.Count - 1]);
+        }
     }
 
     public void EnemyToExperience(IEnemy enemy)

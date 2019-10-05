@@ -5,25 +5,29 @@ using UnityEngine.UI;
 
 public class Journal : MonoBehaviour
 {
-    public GameObject journal;
-    public Text jTit, jTitFinished;
+    public GameObject journal, active;
+    public Text jTit, jTitFinished, buttDesc;
     public bool open;
-
-    //private Quest quest;
+    public Button buttonPrefab;
 
     private PlayerQuest PQ;
+
+    public List<Button> activeButtons;
+    public List<Button> completedButtons;
 
 
     void Start()
     {
         PQ = GetComponent<PlayerQuest>();
         journal.SetActive(false);
+        activeButtons = new List<Button>();
+        completedButtons = new List<Button>();
     }
 
     void Update()
     {
         openJ();
-        updateJ();
+        //updateJ();
     }
 
     public void openJ()
@@ -58,4 +62,20 @@ public class Journal : MonoBehaviour
         }
         jTitFinished.text = string.Join("\n", doneTit);
     }
+
+    public void addButton(Quest q)
+    {
+        Button temp;
+        temp = Instantiate(buttonPrefab, journal.transform.position, Quaternion.identity);
+        temp.transform.SetParent(active.transform);
+
+        activeButtons.Add(temp);
+
+        //temp.GetComponent<ScrollRect>().viewport = active.GetComponent<RectTransform>();
+
+        temp.GetComponent<jButton>().title = q.title;
+        temp.GetComponent<jButton>().desc = q.description;
+        temp.GetComponent<jButton>().descriptionText = buttDesc;
+    }
+
 }

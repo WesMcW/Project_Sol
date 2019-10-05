@@ -31,7 +31,7 @@ public class QuestGiver : MonoBehaviour
             {
                 descriptionText.text = "Thank you so much!!";
                 player.CurrentExperience += quest.experienceReward;
-                //quest.resetQuests();
+                quest.resetQuests();
                 player.activeQuests--;
                 player.quest.Remove(quest);
                 player.finishedQuests.Add(quest);
