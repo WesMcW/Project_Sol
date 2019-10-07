@@ -8,6 +8,7 @@ TagManager:
   - Carrot
   - Apple
   - Sword
+  - Item
   layers:
   - Default
   - TransparentFX

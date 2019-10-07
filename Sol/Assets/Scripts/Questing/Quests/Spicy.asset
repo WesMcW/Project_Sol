@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a331d1f45d18ab44ba31ea63d4cae087, type: 3}
-  m_Name: SwordPickup
+  m_Name: Spicy
   m_EditorClassIdentifier: 
   isActive: 1
   helped: 0
   finished: 0
-  title: Spicy sword.
-  description: Go pick up that sword (press E)
-  experienceReward: 150
+  title: Spicy
+  description: Pick up that spicy sword
+  experienceReward: 50
   goal:
     goalType: 1
     requiredAmount: 1
-    currentAmount: 3
-    requiredID: 0
+    currentAmount: 0
+    requiredID: 10

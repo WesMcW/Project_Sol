@@ -65,12 +65,15 @@ public class PlayerQuest : MonoBehaviour
     {
         for (int i = 0; i < activeQuests; i++)
         {
-            if (collision.CompareTag("Apple") || collision.CompareTag("Carrot") || collision.CompareTag("Sword"))
+            if (collision.CompareTag("Item"))
             {
-                if (quest[i].isActive)
+                int item = collision.GetComponent<ItemInfo>().ItemID;
+                //Debug.Log(item);
+
+                if (quest[i].isActive && item == quest[i].goal.requiredID)
                 {
                     quest[i].goal.ItemCollected();
-                    Destroy(collision.gameObject);
+                    //Destroy(collision.gameObject);
                 }
                 if (quest[i].goal.IsReached())
                 {

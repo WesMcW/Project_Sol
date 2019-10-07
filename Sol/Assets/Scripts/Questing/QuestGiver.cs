@@ -13,6 +13,11 @@ public class QuestGiver : MonoBehaviour
 
     public bool multipleQuests = false;
 
+    private void Start()
+    {
+        quest.resetQuests();
+    }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -31,7 +36,7 @@ public class QuestGiver : MonoBehaviour
             {
                 descriptionText.text = "Thank you so much!!";
                 player.CurrentExperience += quest.experienceReward;
-                quest.resetQuests();
+                //quest.resetQuests();
                 player.activeQuests--;
                 player.quest.Remove(quest);
                 player.finishedQuests.Add(quest);
