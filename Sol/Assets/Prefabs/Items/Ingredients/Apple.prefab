@@ -50,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -115,6 +115,6 @@ MonoBehaviour:
   description: Gud 4 u
   sprite: {fileID: 7694450150383205056, guid: 221ebcaf188e54c5c8fc9ab0094d55b4, type: 3}
   ItemID: 31
-  amountLimit: 1
+  amountLimit: 3
   canBePickedUp: 1
   amount: 1
