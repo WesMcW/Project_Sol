@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 8514833015028824332}
   - component: {fileID: 8514833015028824333}
   - component: {fileID: 8514833015028824334}
+  - component: {fileID: 213378596}
+  - component: {fileID: 213378603}
   m_Layer: 0
   m_Name: character
   m_TagString: Player
@@ -30,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 8514833015028824328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.72, y: 0.95, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.458, y: 0.458, z: 0.458}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -52,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myHitBox: {fileID: 8514833015028824334}
+  canDodge: 0
   moveSpeed: 10
   rollSpeed: 10
 --- !u!50 &8514833015028824332
@@ -143,9 +146,47 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 5.43, y: 5.49}
   m_Direction: 0
+--- !u!114 &213378596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514833015028824328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce5d6d8c2c1c28348aaaff74b630c219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeQuests: 0
+  completedQuests: 0
+  quest: []
+  finishedQuests: []
+--- !u!114 &213378603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514833015028824328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bca2361cd277514eb88c673958908a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  journal: {fileID: 0}
+  active: {fileID: 0}
+  jTit: {fileID: 0}
+  jTitFinished: {fileID: 0}
+  buttDesc: {fileID: 0}
+  open: 0
+  buttonPrefab: {fileID: 1121877179748797938, guid: 8f38716a88331054f9259f68dbe9f413,
+    type: 3}
+  activeButtons: []
+  completedButtons: []

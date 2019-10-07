@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerQuest : MonoBehaviour
 {
+    public static PlayerQuest instance;
+
     public int CurrentExperience { get; set; }
 
     public int activeQuests = 0, completedQuests = 0;
@@ -11,6 +13,18 @@ public class PlayerQuest : MonoBehaviour
     public List<Quest> quest = new List<Quest>();
     public List<Quest> finishedQuests = new List<Quest>();
 
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
     private void Start()
     {
         CombatEvent.OnEnemyDeath += EnemyToExperience;
