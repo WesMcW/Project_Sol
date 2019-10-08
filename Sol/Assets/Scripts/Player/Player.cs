@@ -179,6 +179,7 @@ public class Player : MonoBehaviour
     {
         if (collision.CompareTag("NPC"))
         {
+            DM.EndConversation();
             DM.RemoveNPC();
         }
     }

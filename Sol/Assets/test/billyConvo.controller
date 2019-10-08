@@ -16,6 +16,19 @@ MonoBehaviour:
   response1: You're a fucking retard!
   response2: 
   response3: 
+--- !u!114 &-7082715528128900632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd5eb69a2b7595b45938dfda10265b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 9c796f5e5b389444db5263f353d1e3da, type: 2}
 --- !u!1101 &-6738307767045816069
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -224,6 +237,7 @@ AnimatorState:
   - {fileID: 4915736986441988727}
   m_StateMachineBehaviours:
   - {fileID: 456065951780080079}
+  - {fileID: -7082715528128900632}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1

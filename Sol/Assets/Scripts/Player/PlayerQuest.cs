@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerQuest : MonoBehaviour
 {
+    public static PlayerQuest instance;
+
     public int CurrentExperience { get; set; }
 
     public int activeQuests = 0, completedQuests = 0;
@@ -11,6 +13,18 @@ public class PlayerQuest : MonoBehaviour
     public List<Quest> quest = new List<Quest>();
     public List<Quest> finishedQuests = new List<Quest>();
 
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
     private void Start()
     {
         CombatEvent.OnEnemyDeath += EnemyToExperience;
@@ -65,12 +79,15 @@ public class PlayerQuest : MonoBehaviour
     {
         for (int i = 0; i < activeQuests; i++)
         {
-            if (collision.CompareTag("Apple") || collision.CompareTag("Carrot") || collision.CompareTag("Sword"))
+            if (collision.CompareTag("Item"))
             {
-                if (quest[i].isActive)
+                int item = collision.GetComponent<ItemInfo>().ItemID;
+                //Debug.Log(item);
+
+                if (quest[i].isActive && item == quest[i].goal.requiredID)
                 {
                     quest[i].goal.ItemCollected();
-                    Destroy(collision.gameObject);
+                    //Destroy(collision.gameObject);
                 }
                 if (quest[i].goal.IsReached())
                 {

@@ -111,7 +111,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 164
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -396,8 +396,8 @@ TextureImporter:
         y: 482
         width: 279
         height: 517
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -498,11 +498,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 957
-        y: 0
+        y: 1
         width: 104
         height: 173
       alignment: 9
-      pivot: {x: 0.46713844, y: 0.6379472}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -519,11 +519,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1105
-        y: 2
+        y: 3
         width: 104
         height: 173
       alignment: 9
-      pivot: {x: 0.46844834, y: 0.634116}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -544,7 +544,7 @@ TextureImporter:
         width: 104
         height: 173
       alignment: 9
-      pivot: {x: 0.46926177, y: 0.62949646}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -561,11 +561,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1369
-        y: 3
-        width: 104
+        y: 4
+        width: 103
         height: 173
       alignment: 9
-      pivot: {x: 0.46926057, y: 0.63205135}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -581,12 +581,12 @@ TextureImporter:
       name: Basementiles_18
       rect:
         serializedVersion: 2
-        x: 1511
+        x: 1512
         y: 0
-        width: 105
+        width: 103
         height: 173
       alignment: 9
-      pivot: {x: 0.4674479, y: 0.6315622}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -604,10 +604,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1644
         y: 0
-        width: 104
+        width: 103
         height: 173
       alignment: 9
-      pivot: {x: 0.46501276, y: 0.6315622}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -624,11 +624,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1811
-        y: 5
+        y: 6
         width: 104
         height: 173
       alignment: 9
-      pivot: {x: 0.4693627, y: 0.6343532}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -644,12 +644,12 @@ TextureImporter:
       name: Basementiles_21
       rect:
         serializedVersion: 2
-        x: 1958
+        x: 1954
         y: 8
         width: 104
         height: 173
       alignment: 9
-      pivot: {x: 0.47359407, y: 0.6307145}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

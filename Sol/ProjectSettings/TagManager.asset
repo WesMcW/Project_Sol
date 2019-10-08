@@ -8,6 +8,7 @@ TagManager:
   - Carrot
   - Apple
   - Sword
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -42,6 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2872712177
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
