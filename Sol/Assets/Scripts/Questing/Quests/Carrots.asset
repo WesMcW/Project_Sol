@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a331d1f45d18ab44ba31ea63d4cae087, type: 3}
   m_Name: Carrots
   m_EditorClassIdentifier: 
-  isActive: 1
-  helped: 1
-  finished: 1
+  isActive: 0
+  helped: 0
+  finished: 0
   title: Cruncy orange things.
   description: Collect 2 carrots (press E)
   experienceReward: 50
+  questID: 1
   goal:
     goalType: 1
     requiredAmount: 2
-    currentAmount: 2
+    currentAmount: 0
     requiredID: 30
+  player: {fileID: 0}

@@ -29,7 +29,7 @@ public class PlayerQuest : MonoBehaviour
     {
         CombatEvent.OnEnemyDeath += EnemyToExperience;
 
-        foreach(Quest a in quest)
+        foreach (Quest a in quest)
         {
             a.resetQuests();
         }

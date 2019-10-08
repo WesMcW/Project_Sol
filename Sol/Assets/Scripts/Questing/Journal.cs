@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Journal : MonoBehaviour
 {
     public GameObject journal, active;
-    public Text jTit, jTitFinished, buttDesc;
+    public Text buttDesc;
     public bool open;
     public Button buttonPrefab;
 
@@ -45,6 +45,7 @@ public class Journal : MonoBehaviour
         }
     }
 
+    /*
     public void updateJ()
     {
         List<string> tit = new List<string>();
@@ -62,6 +63,7 @@ public class Journal : MonoBehaviour
         }
         jTitFinished.text = string.Join("\n", doneTit);
     }
+    */
 
     public void addButton(Quest q)
     {

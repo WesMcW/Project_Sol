@@ -10,8 +10,9 @@ public class Quest : ScriptableObject
 
     public string title;
     public string description;
-    public int experienceReward;
+    public int experienceReward, questID;
     public QuestGoal goal;
+    public PlayerQuest player;
 
     public void Complete()
     {

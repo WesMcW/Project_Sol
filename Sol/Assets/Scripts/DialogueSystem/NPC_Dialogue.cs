@@ -8,6 +8,9 @@ public class NPC_Dialogue : MonoBehaviour
     public string name;
     [SerializeField]
     Animator anim;
+
+    public List<int> acceptableIDs = new List<int>();
+
     private void OnEnable()
     {
         anim.enabled = true;
