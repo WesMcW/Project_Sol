@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8514833015028824334}
   - component: {fileID: 213378596}
   - component: {fileID: 213378603}
+  - component: {fileID: 935170738}
   m_Layer: 0
   m_Name: character
   m_TagString: Player
@@ -149,8 +150,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 5.43, y: 5.49}
+  m_Offset: {x: -0.16927251, y: 0.42338768}
+  m_Size: {x: 7.2920113, y: 7.2920113}
   m_Direction: 0
 --- !u!114 &213378596
 MonoBehaviour:
@@ -182,11 +183,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   journal: {fileID: 0}
   active: {fileID: 0}
-  jTit: {fileID: 0}
-  jTitFinished: {fileID: 0}
   buttDesc: {fileID: 0}
   open: 0
   buttonPrefab: {fileID: 1121877179748797938, guid: 8f38716a88331054f9259f68dbe9f413,
     type: 3}
   activeButtons: []
   completedButtons: []
+--- !u!58 &935170738
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514833015028824328}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.735

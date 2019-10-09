@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7e8845997c9f942be284d10276d381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeDelay: 0.07
+  timeDelay: 0.03
   DialogueObj: {fileID: 0}
   dialogueInitiateKey: 101
   npcName: {fileID: 0}
