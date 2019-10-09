@@ -58,7 +58,10 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(dialogueInitiateKey) && canTalk && !talking)
         {
+            /*
             DialogueObj.SetActive(true);
+            npcDiag.enabled = true;
+            */
             npcDiag.enabled = true;
             talking = true;
         } else if (talking && Input.GetKeyDown(dialogueInitiateKey))
@@ -76,30 +79,34 @@ public class DialogueManager : MonoBehaviour
     /// <param name="res_3"></param>
     public void StartDialogue(string text, string res_1 = null, string res_2 = null, string res_3 = null)
     {
-        if(res_1 == null)
+        DialogueObj.SetActive(true);
+        
+        //If the responses are not being disabled, make sure the response fields are actually blank and not full of blank spaces.
+
+        if (res_1 == "")
         {
-            response1.gameObject.SetActive(false);
+            response1.rectTransform.parent.gameObject.SetActive(false);
         }
         else
         {
-            response1.gameObject.SetActive(true);
+            response1.rectTransform.parent.gameObject.SetActive(true);
             response1.text = res_1;
         }
-        if(res_2 == null)
+        if(res_2 == "")
         {
-            response2.gameObject.SetActive(false);
+            response2.rectTransform.parent.gameObject.SetActive(false);
         } else
         {
-            response2.gameObject.SetActive(true);
+            response2.rectTransform.parent.gameObject.SetActive(true);
             response2.text = res_2;
         }
-        if(res_3 == null)
+        if(res_3 == "")
         {
-            response3.gameObject.SetActive(false);
+            response3.rectTransform.parent.gameObject.SetActive(false);
         }
         else
         {
-            response3.gameObject.SetActive(true);
+            response3.rectTransform.parent.gameObject.SetActive(true);
             response3.text = res_3;
         }
         npcName.text = npcDiag.name;
