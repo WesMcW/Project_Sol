@@ -22,12 +22,17 @@ public class QuestCheck : StateMachineBehaviour
                     {
                         if (id == player.quest[i].questID && player.quest[i].finished)
                         {
-                            Debug.Log("TURN IN");
                             player.quest[i].resetQuests();
+
+                            //Adds quest to completed list
+                            player.CurrentExperience += player.quest[i].experienceReward;
+                            player.activeQuests--;
+                            player.finishedQuests.Add(player.quest[i]);
+                            player.quest.Remove(player.quest[i]);
+
                             animator.SetInteger("Progress", animator.GetInteger("Progress") + 1);
                             animator.SetTrigger("Qcomplete");
-                            Debug.Log("Feck");
-                            //break;
+                            break;
                         }
                     }
                 }
