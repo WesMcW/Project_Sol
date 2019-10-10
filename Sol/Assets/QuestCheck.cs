@@ -9,9 +9,12 @@ public class QuestCheck : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        //Get the instance of player quest
         player = PlayerQuest.instance;
+        //Get the list of acceptable quest id's for the NPC.
         List<int> ids = animator.gameObject.GetComponent<NPC_Dialogue>().acceptableIDs;
 
+        //Check the player's active quests
         if (player.activeQuests != 0)
         {
             for (int i = 0; i < player.activeQuests; i++)
