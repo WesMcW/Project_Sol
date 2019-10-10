@@ -38,7 +38,7 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager DM;
 
     //[SerializeField]
-    bool canTalk, talking;
+    bool canTalk, talking, isCutscene;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -58,16 +58,18 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(dialogueInitiateKey) && canTalk && !talking)
         {
-            /*
-            DialogueObj.SetActive(true);
-            npcDiag.enabled = true;
-            */
             npcDiag.enabled = true;
             talking = true;
         } else if (talking && Input.GetKeyDown(dialogueInitiateKey))
         {
             EndConversation();
         }
+        //Cutscene Functionality may or may not be needed
+        /*else if(isCutscene && Input.GetKeyDown(dialogueInitiateKey))
+        {
+            EndCutscene();
+        }
+        */
     }
 
     /// <summary>
@@ -113,6 +115,23 @@ public class DialogueManager : MonoBehaviour
         //Animate the Text printing
         StartCoroutine(printText(text));
     }
+
+    /// <summary>
+    /// Starts a dialogue with no conversation, just text that the NPC wants to say. (WIP)
+    /// </summary>
+    /// <param name="text"></param>
+    /// <param name="name"></param>
+    public void StartCutscene(string text, string name)
+    {
+        isCutscene = true;
+        DialogueObj.SetActive(true);
+        response1.rectTransform.parent.gameObject.SetActive(false);
+        response2.rectTransform.parent.gameObject.SetActive(false);
+        response3.rectTransform.parent.gameObject.SetActive(false);
+        npcName.text = name;
+        StartCoroutine(printText(text));
+    }
+   
 
     //Prints out the text sequentially
     IEnumerator printText(string text)
@@ -172,5 +191,14 @@ public class DialogueManager : MonoBehaviour
 
         npcDiag.enabled = false;
 
+    }
+
+    public void EndCutscene()
+    {
+        //Stop the text from printing and glitching out
+        StopAllCoroutines();
+        //Turn off Dialogue Object
+        DialogueObj.SetActive(false);
+        isCutscene = false;
     }
 }
