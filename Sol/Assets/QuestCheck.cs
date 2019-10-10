@@ -31,6 +31,7 @@ public class QuestCheck : StateMachineBehaviour
                             player.CurrentExperience += player.quest[i].experienceReward;
                             player.activeQuests--;
                             player.finishedQuests.Add(player.quest[i]);
+                            player.gameObject.GetComponent<Journal>().removeButton(player.quest[i]);
                             player.quest.Remove(player.quest[i]);
 
                             animator.SetInteger("Progress", animator.GetInteger("Progress") + 1);

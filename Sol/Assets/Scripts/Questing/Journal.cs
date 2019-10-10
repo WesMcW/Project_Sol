@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Journal : MonoBehaviour
 {
-    public GameObject journal, active;
+    public GameObject journal, active, complete;
     public Text buttDesc;
     public bool open;
     public Button buttonPrefab;
@@ -73,11 +73,23 @@ public class Journal : MonoBehaviour
 
         activeButtons.Add(temp);
 
-        //temp.GetComponent<ScrollRect>().viewport = active.GetComponent<RectTransform>();
-
         temp.GetComponent<jButton>().title = q.title;
         temp.GetComponent<jButton>().desc = q.description;
         temp.GetComponent<jButton>().descriptionText = buttDesc;
+
+        q.button = temp;
+    }
+    public void removeButton(Quest q)
+    {
+        /*
+        Button temp2;
+        temp2 = Instantiate(buttonPrefab, journal.transform.position, Quaternion.identity);
+        temp2.transform.SetParent(complete.transform);
+        */
+
+        completedButtons.Add(q.button);
+        activeButtons.Remove(q.button);
+        q.button.transform.SetParent(complete.transform);
     }
 
 }

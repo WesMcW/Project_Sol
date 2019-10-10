@@ -44,6 +44,7 @@ public class PlayerQuest : MonoBehaviour
         if(activeQuests < GetComponent<Journal>().activeButtons.Count)
         {
             //subtract
+            //GetComponent<Journal>().removeButton(quest[finishedQuests.Count - 1]);
         }
         else if(activeQuests > GetComponent<Journal>().activeButtons.Count)
         {
