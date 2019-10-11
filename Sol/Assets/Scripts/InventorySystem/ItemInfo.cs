@@ -16,7 +16,7 @@ public class ItemInfo : MonoBehaviour
     //Add one of the current item to the players inventory.
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && Inventory.inventory.CanAddItem(ItemID, amount) && canBePickedUp)
+        if (collision.gameObject.CompareTag("Player") && Inventory.inventory.CanAddItem(ItemID, amount) && canBePickedUp && !collision.isTrigger)
         {
             Inventory.inventory.AddItemToInventory(ItemID, amount);
             Destroy(this.gameObject);
@@ -26,7 +26,7 @@ public class ItemInfo : MonoBehaviour
     //This is for dropped items.
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && collision.isTrigger)
         {
             canBePickedUp = true;
         }

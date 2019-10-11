@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "Quest.asset", menuName = "Quest")]
 
@@ -13,6 +14,7 @@ public class Quest : ScriptableObject
     public int experienceReward, questID;
     public QuestGoal goal;
     public PlayerQuest player;
+    public Button button;
 
     public void Complete()
     {
