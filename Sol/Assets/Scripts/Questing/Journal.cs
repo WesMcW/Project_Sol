@@ -19,7 +19,7 @@ public class Journal : MonoBehaviour
     void Start()
     {
         PQ = GetComponent<PlayerQuest>();
-        journal.SetActive(false);
+        if(journal != null) journal.SetActive(false);
         activeButtons = new List<Button>();
         completedButtons = new List<Button>();
     }
