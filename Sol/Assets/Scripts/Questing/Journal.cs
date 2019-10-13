@@ -22,6 +22,7 @@ public class Journal : MonoBehaviour
         if(journal != null) journal.SetActive(false);
         activeButtons = new List<Button>();
         completedButtons = new List<Button>();
+
     }
 
     void Update()
