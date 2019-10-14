@@ -12,6 +12,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     GameObject DialogueObj;
 
+    [Header("Alert Image")]
+    [SerializeField] GameObject alertBox;
+
     [Header("Player Input")]
     [SerializeField]
     KeyCode dialogueInitiateKey;
@@ -82,7 +85,8 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(string text, string res_1 = null, string res_2 = null, string res_3 = null)
     {
         DialogueObj.SetActive(true);
-        
+        alertBox.SetActive(false);
+
         //If the responses are not being disabled, make sure the response fields are actually blank and not full of blank spaces.
 
         if (res_1 == "")
@@ -167,12 +171,14 @@ public class DialogueManager : MonoBehaviour
     {
         npcDiag = Npc;
         canTalk = true;
+        alertBox.SetActive(true);
     }
 
     public void RemoveNPC()
     {
         npcDiag = null;
         canTalk = false;
+        alertBox.SetActive(false);
     }
 
     /// <summary>
