@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CombatEvent : MonoBehaviour
 {
+    //This is used to check for an enemy death
+
     public delegate void EnemyEventHandler(IEnemy enemy);
     public static event EnemyEventHandler OnEnemyDeath;
 

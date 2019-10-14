@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 
 public class jButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    //Sets the quest description in the journal if quest is hovered on. 
+
     public string title, desc;
     public Text descriptionText;
 
@@ -22,6 +24,7 @@ public class jButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     void Start()
     {
         GetComponent<Button>().interactable = false;
+        //Sets the text on the Button
         transform.Find("Text").GetComponent<Text>().text = title;
     }
 }

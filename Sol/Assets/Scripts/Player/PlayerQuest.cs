@@ -27,16 +27,8 @@ public class PlayerQuest : MonoBehaviour
     }
     private void Start()
     {
+        //Checks for enemy death
         CombatEvent.OnEnemyDeath += EnemyToExperience;
-
-        foreach (Quest a in quest)
-        {
-            a.resetQuests();
-        }
-        foreach (Quest a in finishedQuests)
-        {
-            a.resetQuests();
-        }
     }
 
     private void Update()
@@ -53,6 +45,7 @@ public class PlayerQuest : MonoBehaviour
         }
     }
 
+    //Gives exp for kill and checks if it was for a quest
     public void EnemyToExperience(IEnemy enemy)
     {
         GrantExperience(enemy.Experience);
@@ -88,7 +81,6 @@ public class PlayerQuest : MonoBehaviour
                 if (quest[i].isActive && item == quest[i].goal.requiredID)
                 {
                     quest[i].goal.ItemCollected();
-                    //Destroy(collision.gameObject);
                 }
                 if (quest[i].goal.IsReached())
                 {

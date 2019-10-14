@@ -22,13 +22,11 @@ public class Journal : MonoBehaviour
         if(journal != null) journal.SetActive(false);
         activeButtons = new List<Button>();
         completedButtons = new List<Button>();
-
     }
 
     void Update()
     {
         openJ();
-        //updateJ();
     }
 
     public void openJ()
@@ -37,7 +35,6 @@ public class Journal : MonoBehaviour
         {
             journal.SetActive(true);
             open = true;
-            //updateJ();
         }
         else if (Input.GetKeyDown(KeyCode.Space) && open)
         {
@@ -46,26 +43,7 @@ public class Journal : MonoBehaviour
         }
     }
 
-    /*
-    public void updateJ()
-    {
-        List<string> tit = new List<string>();
-        List<string> doneTit = new List<string>();
-
-        for (int i = 0; i < PQ.quest.Count; i++)
-        {
-            tit.Add(PQ.quest[i].title);
-        }
-        jTit.text = string.Join("\n", tit);
-
-        for (int i = 0; i < PQ.finishedQuests.Count; i++)
-        {
-            doneTit.Add(PQ.finishedQuests[i].title);
-        }
-        jTitFinished.text = string.Join("\n", doneTit);
-    }
-    */
-
+    //Creates buttons in the journal for active quests
     public void addButton(Quest q)
     {
         Button temp;
@@ -80,14 +58,10 @@ public class Journal : MonoBehaviour
 
         q.button = temp;
     }
+
+    //Addes button to completed 
     public void removeButton(Quest q)
     {
-        /*
-        Button temp2;
-        temp2 = Instantiate(buttonPrefab, journal.transform.position, Quaternion.identity);
-        temp2.transform.SetParent(complete.transform);
-        */
-
         completedButtons.Add(q.button);
         activeButtons.Remove(q.button);
         q.button.transform.SetParent(complete.transform);
