@@ -89,6 +89,20 @@ public class Slot : MonoBehaviour
         amountText.text = amount.ToString();
     }
 
+    public void DecreaseAmount(int amt)
+    {
+        amount -= amt;
+        if(amount <= 0)
+        {
+            RemoveItem();
+        }
+        else
+        {
+            amountText.text = amount.ToString();
+        }
+       
+    }
+
     public void OnClick()
     {
         

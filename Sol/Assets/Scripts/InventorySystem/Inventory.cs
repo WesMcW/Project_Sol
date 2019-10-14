@@ -47,7 +47,11 @@ public class Inventory : MonoBehaviour
 
 
 
-    //Adds item to inventory list.
+    /// <summary>
+    /// Adds item(s) to the Inventory list. Use CanAddItems() to check and see if the inventory can add the correct amount of items.
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="amount"></param>
     public void AddItemToInventory(int id, int amount)
     {
         ItemInfo theItem = ItemIDManager.instance.GetItem(id).GetComponent<ItemInfo>();
@@ -84,7 +88,11 @@ public class Inventory : MonoBehaviour
            
         }
     }
-
+    /// <summary>
+    /// Adds indicated item to the appropriate equipment slot.
+    /// </summary>
+    /// <param name="itemID"></param>
+    /// <param name="amount"></param>
     public void AddItemToEquipment(int itemID, int amount)
     {
         char categoryID = '0';
@@ -116,7 +124,9 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    //returns the first empty slot in the inventory. NOT EQUIPMENT INVENTORY
+    /// <summary>
+    ///  returns the first empty slot in the inventory. NOT EQUIPMENT INVENTORY
+    /// </summary>
     public Slot GetEmptySlot()
     {
         for (int i = 0; i < slots.Length; i++)
@@ -128,8 +138,11 @@ public class Inventory : MonoBehaviour
         }
         return null;
     }
-
-    //Checks the itemID to see if it can be quick equipped.
+    /// <summary>
+    /// Checks the itemID to see if it can be quick equipped.
+    /// </summary>
+    /// <param name="itemID"></param>
+    /// <returns></returns>
     public bool CategoryIDCheck(int itemID)
     {
         char categoryID = '0';
@@ -146,6 +159,12 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
+    /// <summary>
+    /// Checks to see if the inventory can add the indicated item and amount
+    /// </summary>
+    /// <param name="itemID"></param>
+    /// <param name="amount"></param>
+    /// <returns></returns>
     public bool CanAddItem(int itemID, int amount)
     {
         ItemInfo theItem = ItemIDManager.instance.GetItem(itemID).GetComponent<ItemInfo>();
@@ -164,6 +183,73 @@ public class Inventory : MonoBehaviour
             }
         }
         return false;
+    }
+
+    /// <summary>
+    /// Checks to make sure inventory contains the correct amount of items
+    /// </summary>
+    /// <param name="itemID"></param>
+    /// <param name="amount"></param>
+    /// <returns></returns>
+    public bool HasItems(int itemID, int amount)
+    {
+        int totalAmountFound = 0;
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if(slots[i].itemID == itemID)
+            {
+                //Found like item Check amount
+                //Apply amount found to totalAmountFound
+                totalAmountFound += slots[i].GetAmount();
+            }
+            if(totalAmountFound >= amount)
+            {
+                //Found enough like items
+                return true;
+            }
+        }
+
+        //Didn't find enough like items
+        return false;
+    }
+
+    /// <summary>
+    /// Goes through Inventory and removes the requested items and their amounts. BE SURE TO CHECK BEFOREHAND WITH HasItems() TO MAKE SURE IT'S POSSIBLE
+    /// </summary>
+    /// <param name="itemID"></param>
+    /// <param name="amountNeeded"></param>
+    public void RemoveItems(int itemID, int amountNeeded)
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            print(amountNeeded);
+            if(slots[i].itemID == itemID)
+            {
+                if(amountNeeded == 0)
+                {
+                    //No reason to continue checking slots
+                    break;
+                }
+                //Found like item
+                if(slots[i].GetAmount() == amountNeeded)
+                {
+                    //Remove item because it's equal
+                    slots[i].RemoveItem();
+                    break;
+                } else if(slots[i].GetAmount() < amountNeeded)
+                {
+                    //Not enough items in slot
+                    amountNeeded =  amountNeeded - slots[i].GetAmount();
+                    slots[i].RemoveItem();
+                } else if(slots[i].GetAmount() > amountNeeded)
+                {
+                    //More than enough items in the slot
+                    slots[i].DecreaseAmount(amountNeeded);
+                    break;
+                }
+
+            }
+        }
     }
    
 }
