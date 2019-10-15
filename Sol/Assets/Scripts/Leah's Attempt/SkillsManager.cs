@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class SkillsManager : MonoBehaviour
 {
-    public int money = 0, skillsBought = 0;
-    int sCount;
+    public static SkillsManager inst; 
+
+    public int skillPoints = 0, skillsBought = 0;
+    int mon, sCount;
     public Text nameTxt, descTxt;
     SetSkills set;
 
@@ -20,6 +22,12 @@ public class SkillsManager : MonoBehaviour
     public ActiveSkill[] dodgeRoll;
     public ActiveSkill[] chargeSkills;
 
+    private void Awake()
+    {
+        if (inst != null) Destroy(this);
+        else inst = this;
+    }
+
     void Start()
     {
         set = GetComponent<SetSkills>();
@@ -27,17 +35,22 @@ public class SkillsManager : MonoBehaviour
         resetButton();
         setSkillButtons();
         dodgeRoll[0].turnButtonOn();
+        mon = skillPoints;
         sCount = skillsBought;
     }
 
     void Update()
     {
-        int mon = money;
-        if (Input.GetKeyDown(KeyCode.Space)) money++;
-        if (mon != money) checkPrices();
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            Debug.Log("Manually added skill point");
+            skillPoints++;
+        }
+        if (mon != skillPoints) checkPrices();
 
         if (sCount != skillsBought) onSkills();
         sCount = skillsBought;
+        mon = skillPoints;
     }
 
 
@@ -46,7 +59,7 @@ public class SkillsManager : MonoBehaviour
         if(!skill.enabled)
         {
             skillsBought++;
-            if (skill.buySkill(money)) money -= skill.cost;
+            if (skill.buySkill(skillPoints)) skillPoints -= skill.cost;
             checkPrices();
         }
     }
@@ -55,10 +68,10 @@ public class SkillsManager : MonoBehaviour
     {
         if (!array[index].enabled)
         {
-            if (array[index].buySkill(money))
+            if (array[index].buySkill(skillPoints))
             {
                 skillsBought++;
-                money -= array[index].cost;
+                skillPoints -= array[index].cost;
                 checkPrices();
                 bool anyActive = false;
                 foreach (ActiveSkill a in array) if (a.active) anyActive = true;    // if no skills are active, activate this one
@@ -98,7 +111,7 @@ public class SkillsManager : MonoBehaviour
         {
             if (a.on && !a.enabled)
             {
-                if (a.cost <= money) a.setBuyable();
+                if (a.cost <= skillPoints) a.setBuyable();
                 else a.setUnbuyable();
             }
         }

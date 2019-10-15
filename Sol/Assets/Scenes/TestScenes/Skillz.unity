@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 198220535}
   - component: {fileID: 198220536}
   m_Layer: 0
-  m_Name: unofficialManager
+  m_Name: SkillsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -459,7 +459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbad0eddee1fc549975b01f6596e84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  skillPoints: 0
   skillsBought: 0
   nameTxt: {fileID: 2025631188}
   descTxt: {fileID: 811012331}
@@ -2013,6 +2013,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220451177}
   m_CullTransparentMesh: 0
+--- !u!1 &1284505619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8514833015028824328, guid: af1dff02406975d4ebbe38c7f83ce5fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 2054409837}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1284505620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284505619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a307474a14a20404b9a31f5e23f3ae22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstBoss: 0
+  leveled: 0
+  level: 1
+  xp: 0
+  xpToLevel: 100
 --- !u!1 &1376768554
 GameObject:
   m_ObjectHideFlags: 0
@@ -3153,6 +3176,14 @@ PrefabInstance:
         type: 3}
       propertyPath: rollSpeed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 213378596, guid: af1dff02406975d4ebbe38c7f83ce5fc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 213378603, guid: af1dff02406975d4ebbe38c7f83ce5fc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af1dff02406975d4ebbe38c7f83ce5fc, type: 3}
