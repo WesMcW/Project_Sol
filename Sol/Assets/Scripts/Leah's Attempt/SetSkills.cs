@@ -14,11 +14,7 @@ public class SetSkills : MonoBehaviour
         sm = GetComponent<SkillsManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        // Each method will enable the skill it is attached to in SkillsManager
 
     public void enableDodge()
     {
