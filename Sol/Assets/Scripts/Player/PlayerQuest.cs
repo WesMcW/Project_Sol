@@ -33,12 +33,7 @@ public class PlayerQuest : MonoBehaviour
 
     private void Update()
     {
-        if(activeQuests < GetComponent<Journal>().activeButtons.Count)
-        {
-            //subtract
-            //GetComponent<Journal>().removeButton(quest[finishedQuests.Count - 1]);
-        }
-        else if(activeQuests > GetComponent<Journal>().activeButtons.Count)
+        if(activeQuests > GetComponent<Journal>().activeButtons.Count)
         {
             //add
             GetComponent<Journal>().addButton(quest[quest.Count - 1]);

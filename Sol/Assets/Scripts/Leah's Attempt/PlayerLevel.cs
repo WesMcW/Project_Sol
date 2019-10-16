@@ -8,7 +8,7 @@ public class PlayerLevel : MonoBehaviour
     public static PlayerLevel inst;
 
     public bool firstBoss = false, leveled = false;
-    public int level = 1, xp = 0;
+    public int level = 1, xpRef = 0;    // main xp in PlayerQuest
     public int xpToLevel = 100;
     float xpScaler = 1.5F;
 
@@ -21,6 +21,8 @@ public class PlayerLevel : MonoBehaviour
 
     void Update()
     {
+        xpRef = PlayerQuest.instance.CurrentExperience;
+
         if (level == 1 && firstBoss)
         {
             level = 2;
@@ -29,14 +31,14 @@ public class PlayerLevel : MonoBehaviour
 
         if(level > 1)
         {
-            if (xp >= xpToLevel) leveled = true;
+            if (xpRef >= xpToLevel) leveled = true;
         }
 
         if (leveled)
         {
             level++;
             sm.skillPoints++;
-            xp -= xpToLevel;
+            PlayerQuest.instance.CurrentExperience -= xpToLevel;
             xpToLevel = Mathf.RoundToInt(xpToLevel * xpScaler);
             xpScaler += 0.5F;
 
@@ -46,7 +48,7 @@ public class PlayerLevel : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             Debug.Log("XP gained.");
-            xp++;
+            PlayerQuest.instance.CurrentExperience++;
         }
     }
 }
