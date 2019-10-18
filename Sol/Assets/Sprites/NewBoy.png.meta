@@ -1,34 +1,61 @@
 fileFormatVersion: 2
-guid: d8814853464e2457384c592d0f2bbae6
+guid: acc10c7b9152c4b7cb4ce8230d40d8c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3485499946661133496
-    second: BoyRun_0
+      213: 4017496596975202026
+    second: NewBoy_0
   - first:
-      213: 738163341398380905
-    second: BoyRun_1
+      213: 7961347037843915649
+    second: NewBoy_1
   - first:
-      213: 7995518120193506157
-    second: BoyRun_2
+      213: 7985030117425220537
+    second: NewBoy_2
   - first:
-      213: -6941621650327211637
-    second: BoyRun_3
+      213: 8375746665132458397
+    second: NewBoy_3
   - first:
-      213: 286901013172272856
-    second: BoyRun_4
+      213: 2176955516421440728
+    second: NewBoy_4
   - first:
-      213: 8910569633292045797
-    second: BoyRun_5
+      213: -5184494177705582220
+    second: NewBoy_5
   - first:
-      213: -4319069155202381784
-    second: BoyRun_6
+      213: -4255531525676495187
+    second: NewBoy_6
   - first:
-      213: -4176015204266583096
-    second: BoyRun_7
+      213: -8266575178014800161
+    second: NewBoy_7
   - first:
-      213: 1654546500448589451
-    second: BoyRun_8
+      213: -8309598749081856120
+    second: NewBoy_8
+  - first:
+      213: 166300395120523487
+    second: NewBoy_9
+  - first:
+      213: 6482579988825101089
+    second: NewBoy_10
+  - first:
+      213: 2284190399681163247
+    second: NewBoy_11
+  - first:
+      213: -4285557821957360269
+    second: NewBoy_12
+  - first:
+      213: -6795051798226375694
+    second: NewBoy_13
+  - first:
+      213: 1896464436916325543
+    second: NewBoy_14
+  - first:
+      213: 6545849150400614762
+    second: NewBoy_15
+  - first:
+      213: 7817518288744389122
+    second: NewBoy_16
+  - first:
+      213: 4391246338255191895
+    second: NewBoy_17
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -59,7 +86,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: -1
-    aniso: 1
+    aniso: 2
     mipBias: -100
     wrapU: 1
     wrapV: 1
@@ -161,11 +188,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BoyRun_0
+      name: NewBoy_0
       rect:
         serializedVersion: 2
         x: 42
-        y: 751
+        y: 2133
         width: 226
         height: 267
       alignment: 0
@@ -175,18 +202,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5856132069e6d49c1b22a5feada09a5c
-      internalID: -3485499946661133496
+      spriteID: f572b46e827374cf597c16b7bd94a4ac
+      internalID: 4017496596975202026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoyRun_1
+      name: NewBoy_1
       rect:
         serializedVersion: 2
         x: 381
-        y: 748
+        y: 2130
         width: 236
         height: 289
       alignment: 0
@@ -196,18 +223,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c658a4956debe46bc9a60ec9a6a40b44
-      internalID: 738163341398380905
+      spriteID: b703f658f60334a488da07b9fe8c3a0d
+      internalID: 7961347037843915649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoyRun_2
+      name: NewBoy_2
       rect:
         serializedVersion: 2
         x: 743
-        y: 748
+        y: 2130
         width: 239
         height: 289
       alignment: 0
@@ -217,18 +244,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2f0b743711324fd6ab85be6d6d5629c
-      internalID: 7995518120193506157
+      spriteID: a31abd00b9c544b68b1183fd652415e9
+      internalID: 7985030117425220537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoyRun_3
+      name: NewBoy_3
       rect:
         serializedVersion: 2
         x: 11
-        y: 414
+        y: 1796
         width: 226
         height: 260
       alignment: 0
@@ -238,18 +265,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 894cea5d088274ccca64a6e682f894bb
-      internalID: -6941621650327211637
+      spriteID: b7e6cd8bf5c5f4762aa14938af250832
+      internalID: 8375746665132458397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoyRun_4
+      name: NewBoy_4
       rect:
         serializedVersion: 2
         x: 372
-        y: 393
+        y: 1775
         width: 225
         height: 264
       alignment: 0
@@ -259,18 +286,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 174f779400a1b44a08835470d5a0b0e0
-      internalID: 286901013172272856
+      spriteID: 52806e357adfd4bb493d72ed4e900cfe
+      internalID: 2176955516421440728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoyRun_5
+      name: NewBoy_5
       rect:
         serializedVersion: 2
         x: 730
-        y: 375
+        y: 1757
         width: 225
         height: 273
       alignment: 0
@@ -280,18 +307,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6c3e94c595b344f394f8940ed454f6f
-      internalID: 8910569633292045797
+      spriteID: 724212d280d634eac88c20058c7fdbc6
+      internalID: -5184494177705582220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoyRun_6
+      name: NewBoy_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 7
+        y: 1389
         width: 236
         height: 260
       alignment: 0
@@ -301,18 +328,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8dcb820a669d4f94995847c9811fe98
-      internalID: -4319069155202381784
+      spriteID: ab257d687033b41bc89307f1f5141e69
+      internalID: -4255531525676495187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoyRun_7
+      name: NewBoy_7
       rect:
         serializedVersion: 2
         x: 356
-        y: 10
+        y: 1392
         width: 236
         height: 275
       alignment: 0
@@ -322,18 +349,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4e594e22eeff488ca72ad1e9ab06142
-      internalID: -4176015204266583096
+      spriteID: 64e9d53aed1864cfd9c831a2988b5cb0
+      internalID: -8266575178014800161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoyRun_8
+      name: NewBoy_8
       rect:
         serializedVersion: 2
         x: 716
-        y: 0
+        y: 1382
         width: 236
         height: 289
       alignment: 0
@@ -343,8 +370,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6d2a710565c446ab8921e72236e5eae
-      internalID: 1654546500448589451
+      spriteID: 9c919a4b5b4554b3bb339f7365ae4bac
+      internalID: -8309598749081856120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBoy_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 771
+        width: 225
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a86ec639980043ceb6bba1fd0ed449a
+      internalID: 166300395120523487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBoy_10
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 761
+        width: 225
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0767710314774dcc8c204ffe7efac4a
+      internalID: 6482579988825101089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBoy_11
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 771
+        width: 225
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29678095d5fbb4b5aa5da5295d1da717
+      internalID: 2284190399681163247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBoy_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 382
+        width: 225
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b509b7e9f6d1449e2a6631d2b141aaae
+      internalID: -4285557821957360269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBoy_13
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 379
+        width: 226
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0c5e3efcb994e8f80cc74dfdc328f1
+      internalID: -6795051798226375694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBoy_14
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 372
+        width: 226
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691bb5243599343058def7c610575e1c
+      internalID: 1896464436916325543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBoy_15
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 0
+        width: 235
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82c9a477bc624ed1b9eed55768bb6c1
+      internalID: 6545849150400614762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBoy_16
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 11
+        width: 236
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896ebfa5e1936454d883c19739a05a3c
+      internalID: 7817518288744389122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewBoy_17
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 2
+        width: 235
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2993059db364c4f018337b850f438ba5
+      internalID: 4391246338255191895
       vertices: []
       indices: 
       edges: []
@@ -352,7 +568,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 912c8d8877a484c0c9c0f8b4a1546b98
+    spriteID: c91345894e1c74d5da6d660c1f4e0152
     internalID: 0
     vertices: []
     indices: 
