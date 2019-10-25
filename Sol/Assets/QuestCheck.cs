@@ -5,12 +5,14 @@ using UnityEngine;
 public class QuestCheck : StateMachineBehaviour
 {
     PlayerQuest player;
+    Inventory inv;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        //Get the instance of player quest
+        //Get the instance of player quest & inventory
         player = PlayerQuest.instance;
+        inv = Inventory.inventory;
         //Get the list of acceptable quest id's for the NPC.
         List<int> ids = animator.gameObject.GetComponent<NPC_Dialogue>().acceptableIDs;
 
@@ -25,6 +27,7 @@ public class QuestCheck : StateMachineBehaviour
                     {
                         if (id == player.quest[i].questID && player.quest[i].finished)
                         {
+                            inv.RemoveItems(player.quest[i].goal.requiredID, player.quest[i].goal.requiredAmount);
                             player.quest[i].resetQuests();
 
                             //Adds quest to completed list

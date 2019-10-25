@@ -25,3 +25,4 @@ MonoBehaviour:
     currentAmount: 0
     requiredID: 10
   player: {fileID: 0}
+  button: {fileID: 0}

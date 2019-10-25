@@ -6,14 +6,25 @@ public class QuestBehaviour : StateMachineBehaviour
 {
     public Quest quest;
     PlayerQuest player;
+    Inventory inv;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         player = PlayerQuest.instance;
+        inv = Inventory.inventory;
         quest.isActive = true;
         player.activeQuests++;
         player.quest.Add(quest);
+
+        for (int i = 0; i < player.activeQuests; i++)
+        {
+            if (inv.HasItems(player.quest[i].goal.requiredID, player.quest[i].goal.requiredAmount))
+            {
+                player.quest[i].Complete();
+                //inv.RemoveItems(player.quest[i].goal.requiredID, player.quest[i].goal.requiredAmount);
+            }
+        }
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
