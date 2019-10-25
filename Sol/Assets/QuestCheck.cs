@@ -27,6 +27,7 @@ public class QuestCheck : StateMachineBehaviour
                     {
                         if (id == player.quest[i].questID && player.quest[i].finished)
                         {
+                            //Removes the items required for the quest
                             inv.RemoveItems(player.quest[i].goal.requiredID, player.quest[i].goal.requiredAmount);
                             player.quest[i].resetQuests();
 

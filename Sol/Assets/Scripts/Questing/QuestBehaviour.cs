@@ -17,12 +17,12 @@ public class QuestBehaviour : StateMachineBehaviour
         player.activeQuests++;
         player.quest.Add(quest);
 
+        //Completes the quest if you have the items required for it
         for (int i = 0; i < player.activeQuests; i++)
         {
             if (inv.HasItems(player.quest[i].goal.requiredID, player.quest[i].goal.requiredAmount))
             {
                 player.quest[i].Complete();
-                //inv.RemoveItems(player.quest[i].goal.requiredID, player.quest[i].goal.requiredAmount);
             }
         }
     }
