@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ActiveSkill
   type: 1
   button: {fileID: 0}
-  description: Charge Attack:@Throws weapon in an arc that curves back to the player.@Hold
-    (attack) to use.
+  description: 'Boomerang Throw:@Throw weapon in an arch that comes back to the player.@[Controls]@@Cost:
+    2'
   cost: 2
-  on: 1
-  enabled: 1
+  on: 0
+  enabled: 0
   active: 0
   actionType: 1

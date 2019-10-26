@@ -9,11 +9,11 @@ public class SkillsManager : MonoBehaviour
 
     public int skillPoints = 0, skillsBought = 0;
     int mon, sCount;
-    public Text nameTxt, descTxt;
+    public Text nameTxt, descTxt, costTxt;
     SetSkills set;
 
     Skill[] allSkills;
-    public PassiveSkill[] passivesRow1;
+    //public PassiveSkill[] passivesRow1, passivesRow2;
 
     [Header("All Skill Buttons")]
     public Button[] allButtons;
@@ -21,6 +21,10 @@ public class SkillsManager : MonoBehaviour
     [Header("Active Skill Arrays")]
     public ActiveSkill[] dodgeRoll;
     public ActiveSkill[] chargeSkills;
+
+    [Header("Passive Skill Arrays")]
+    public PassiveSkill[] passivesRow1;
+    public PassiveSkill[] passivesRow2;
 
     private void Awake()
     {
@@ -46,9 +50,11 @@ public class SkillsManager : MonoBehaviour
             Debug.Log("Manually added skill point");
             skillPoints++;
         }
-        if (mon != skillPoints) checkPrices();
+        //if (mon != skillPoints) checkPrices();
 
         if (sCount != skillsBought) onSkills();
+        if (mon != skillPoints) checkPrices();
+
         sCount = skillsBought;
         mon = skillPoints;
     }
@@ -96,12 +102,14 @@ public class SkillsManager : MonoBehaviour
         string desc = skill.description.Replace("@", System.Environment.NewLine);
         nameTxt.text = skill.name;
         descTxt.text = desc;
+        if (costTxt != null) costTxt.text = "Cost: " + skill.cost;
     }
 
     public void noText()
     {
         nameTxt.text = "";
         descTxt.text = "";
+        if (costTxt != null) costTxt.text = "";
     }
 
     void checkPrices()
@@ -119,14 +127,24 @@ public class SkillsManager : MonoBehaviour
 
     void onSkills()
     {
+        bool turnedOn = false;
         if(skillsBought > 0 && !passivesRow1[0].on)
         {
+            turnedOn = true;
             foreach (PassiveSkill a in passivesRow1) a.turnButtonOn();
         }
         else if (skillsBought > 2 && !chargeSkills[0].on)
         {
+            turnedOn = true;
             foreach (ActiveSkill a in chargeSkills) a.turnButtonOn();
         }
+        else if(skillsBought > 4 && !passivesRow2[0].on)
+        {
+            turnedOn = true;
+            foreach (PassiveSkill a in passivesRow2) a.turnButtonOn();
+        }
+
+        //if (turnedOn) checkPrices();
     }
 
     void setSkillButtons()
@@ -135,8 +153,14 @@ public class SkillsManager : MonoBehaviour
         allSkills[0] = dodgeRoll[0];
         for (int i = 0; i < 3; i++) allSkills[i + 1] = passivesRow1[i];
         for (int i = 0; i < 3; i++) allSkills[i + 4] = chargeSkills[i];
+        for (int i = 0; i < 3; i++) allSkills[i + 7] = passivesRow2[i];
 
-        for (int i = 0; i < allSkills.Length; i++) allSkills[i].button = allButtons[i];
+        for (int i = 0; i < allSkills.Length; i++)
+        {
+            allSkills[i].button = allButtons[i];
+            allButtons[i].interactable = false;
+        }
+        dodgeRoll[0].button.interactable = true;
     }
 
     #region Button Methods
@@ -144,11 +168,12 @@ public class SkillsManager : MonoBehaviour
     public void dodgeBtn()
     {
         enableActive(dodgeRoll, 0);
-        set.enableDodge();
+        //set.enableDodge();
+        set.enableSkill(0);
     }
     public void hoverOnDodgeBtn() { setText(dodgeRoll[0]); }
 
-    //
+    /*
 
     public void passiveBtn1() { enablePassive(passivesRow1[0]); }
     public void hoverOnPassive1Btn() { setText(passivesRow1[0]); }
@@ -169,6 +194,22 @@ public class SkillsManager : MonoBehaviour
 
     public void chargeBtn3() { enableActive(chargeSkills, 2); }
     public void hoverOnCharge3Btn() { setText(chargeSkills[2]); }
+    */
+
+    // testing for simplicity:
+    public void showText(int index) { setText(allSkills[index]); }
+    public void buyPassive(int index)
+    {
+        enablePassive(allSkills[index]);
+        set.enableSkill(index);
+    }
+    public void buyActive(int index)
+    {
+        // this will only apply for charge attacks right now, needs charge attack index
+        enableActive(chargeSkills, index);
+        set.enableSkill(index + 4);
+    }
+
 
     public void resetButton()
     {
@@ -189,6 +230,12 @@ public class SkillsManager : MonoBehaviour
             a.enabled = false;
             a.on = false;
             a.active = false;
+        }
+
+        foreach (PassiveSkill a in passivesRow2)
+        {
+            a.enabled = false;
+            a.on = false;
         }
     }
 

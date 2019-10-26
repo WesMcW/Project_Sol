@@ -121,10 +121,12 @@ public class Player : MonoBehaviour
 
     void AttackUpdate()
     {
-        if (!doingSpecialAction && Input.GetMouseButtonDown(0) && Inventory.inventory.equipSlots[1].itemID != 0)
-        {
-            doingSpecialAction = true;
-            StartCoroutine(Attack());
+        if (Inventory.inventory != null) {
+            if (!doingSpecialAction && Input.GetMouseButtonDown(0) && Inventory.inventory.equipSlots[1].itemID != 0)
+            {
+                doingSpecialAction = true;
+                StartCoroutine(Attack());
+            }
         }
     }
 
