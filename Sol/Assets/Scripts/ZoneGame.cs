@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ZoneGame : MonoBehaviour
 {
     public float currentValue = 0;
-
+    
     [Header("Difficulty")]
     public float speed;
     public float percentDifficulty;
