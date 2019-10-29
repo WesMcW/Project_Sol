@@ -9,6 +9,7 @@ TagManager:
   - Apple
   - Sword
   - Item
+  - Interactable
   layers:
   - Default
   - TransparentFX
