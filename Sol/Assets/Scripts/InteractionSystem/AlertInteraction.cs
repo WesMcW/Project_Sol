@@ -6,7 +6,12 @@ public class AlertInteraction : MonoBehaviour
 {
     KeyCode interactionButton;
     float time, timeReset;
-
+    /*
+     * This script is only running when the alert is turned on. 
+     * It will check for player input on an interactable object
+     * (interactable objects must have a class which DERIVES from Interactable)
+     * 
+     */
     private void Start()
     {
         time = InteractionManager.IM.timeDelay;
@@ -25,6 +30,7 @@ public class AlertInteraction : MonoBehaviour
                 {
                     InteractionManager.IM.StartInteracting();
                 }
+                time = timeReset;
             }
         }
     }

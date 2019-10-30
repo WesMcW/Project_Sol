@@ -11,8 +11,9 @@ public class ZoneGame : MonoBehaviour
     [Header("Difficulty")]
     public float speed;
     public float percentDifficulty;
-
+    private int timesComplete = 0;
     private bool flip;
+    private int timesSucceeded;
 
     [Header("Slider Background")]
     public RectTransform sliderBackground;
@@ -22,10 +23,7 @@ public class ZoneGame : MonoBehaviour
     [Header("The Slider")]
     public Slider slider;
 
-    
     private float targetLow, targetHigh;
-
-    public bool success;
     private bool complete;
 
     // Start is called before the first frame update
@@ -58,16 +56,17 @@ public class ZoneGame : MonoBehaviour
         UpdateSliderUI();
 
         //Checks for the player to stop the bar at the right point.
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && timesComplete < 3)
         {
           if(currentValue >= targetLow && currentValue <= targetHigh)
             {
-                success = true;
+                timesSucceeded++;
             }
-          else
-            {
-                success = false;
-            }
+            timesComplete++;
+          
+        } else if(timesComplete >= 3)
+        {
+            //game is complete
             complete = true;
         }
 
@@ -76,6 +75,9 @@ public class ZoneGame : MonoBehaviour
       
     }
 
+    /// <summary>
+    /// Updates the current value based on time
+    /// </summary>
     void UpdateValue()
     {
         //If the current value should be decreasing
@@ -89,6 +91,10 @@ public class ZoneGame : MonoBehaviour
             currentValue += speed * Time.deltaTime;
         }
     }
+
+    /// <summary>
+    /// Checks to see if the value needs to flip or not
+    /// </summary>
     void CheckFlip()
     {
         if (currentValue >= 100)
@@ -101,12 +107,43 @@ public class ZoneGame : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Update the slider value UI
+    /// </summary>
     void UpdateSliderUI()
     {
         if(!complete)
         slider.value = currentValue;
     }
 
+    /// <summary>
+    /// Returns the result percentage
+    /// </summary>
+    /// <returns></returns>
+    public float Result()
+    {
+        return (timesSucceeded / 3f);
+    }
 
-   
+    /// <summary>
+    /// Returns whether or not the game is complete
+    /// </summary>
+    /// <returns></returns>
+    public bool isComplete()
+    {
+        return complete;
+    }
+
+    /// <summary>
+    /// Reset the zone game for future use
+    /// </summary>
+    public void ResetGame()
+    {
+        currentValue = 0;
+        timesSucceeded = 0;
+        timesComplete = 0;
+        complete = false;
+
+    }
+
 }

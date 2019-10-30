@@ -6,6 +6,6 @@ public class Stove : Interactable
 {
     public override void Interact()
     {
-        Debug.Log("Working");
+        CookingManager.CM.StartCooking();
     }
 }

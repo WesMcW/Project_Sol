@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class InteractionManager : MonoBehaviour
 {
+    [Header("Alert Object")]
     [SerializeField] GameObject alert;
     Transform target;
     public static InteractionManager IM;
+    [Header("Player Input")]
     [SerializeField] KeyCode interactionButton;
+    [Header("Time Delay for Interactions")]
     public float timeDelay;
     bool interacting;
 
@@ -99,6 +102,15 @@ public class InteractionManager : MonoBehaviour
     public bool IsInteracting()
     {
         return interacting;
+    }
+
+
+    /// <summary>
+    /// Stops the current Interaction
+    /// </summary>
+    public void StopInteraction()
+    {
+        interacting = false;
     }
 
 }
