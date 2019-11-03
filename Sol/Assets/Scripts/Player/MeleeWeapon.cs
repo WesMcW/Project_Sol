@@ -39,6 +39,8 @@ public class MeleeWeapon : MonoBehaviour{
         }
         IDamageable damageableObject = hit.collider.GetComponent<IDamageable>();
         if (damageableObject != null) {
+            //Do all the things
+            //
             damageableObject.TakeDamage(damage);
             Debug.Log(hit.collider.gameObject.name + " takes " + damage + " damage.");
             

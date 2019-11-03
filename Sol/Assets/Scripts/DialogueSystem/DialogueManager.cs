@@ -59,6 +59,7 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(canTalk + "    " + talking);
         if (Input.GetKeyDown(dialogueInitiateKey) && canTalk && !talking)
         {
             npcDiag.enabled = true;
@@ -169,6 +170,7 @@ public class DialogueManager : MonoBehaviour
 
     public void FoundNPC(NPC_Dialogue Npc)
     {
+        Debug.Log("Found NPC");
         npcDiag = Npc;
         canTalk = true;
         alertBox.SetActive(true);

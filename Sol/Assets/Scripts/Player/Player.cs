@@ -159,10 +159,13 @@ public class Player : MonoBehaviour
         float i = 0;
         float increment = -(startTheta*2) / (50f * attackTime);
         Vector2 current = start;
-        //Spawn sowrd
+        //ACTIVATE SWORD
         sword.SetActive(true);
         sword.GetComponent<MeleeWeapon>().GetStats();
+        sword.GetComponent<MeleeWeapon>().ClearSet();
         sword.transform.position = weaponRotatePoint.position + new Vector3(current.x, current.y, 0f);
+
+
         while (i <= attackTime) {
 
             current = RotateVectorByDeg(current, increment);
@@ -173,7 +176,10 @@ public class Player : MonoBehaviour
             Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
             sword.transform.rotation = q;
             ///////////////////////////////////////////////////////////
+            //Do stuff with sword
+            sword.GetComponent<MeleeWeapon>().Cast();
 
+            //////////////////////////////////////////////////////////
             controller.Move(moveAngle * rollSpeed);
             i += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
