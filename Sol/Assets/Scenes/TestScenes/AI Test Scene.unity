@@ -850,6 +850,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b472e4ba6d0664bad458100aa4842e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heuristics: 1
+  isSmall: 1
 --- !u!114 &1695550209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1074,10 +1076,14 @@ MonoBehaviour:
   target: {fileID: 2116934960}
   followTargetGo: 0
   stopWandering: 1
-  testNum: 32
   speed: 5
   encounter: 0
   sight: {fileID: 1823189991}
+  stop: {fileID: 0}
+  stunned: 0
+  slowed: 0
+  MaxSpeed: 2
+  blobVoice: []
 --- !u!114 &1722995901
 MonoBehaviour:
   m_ObjectHideFlags: 0
