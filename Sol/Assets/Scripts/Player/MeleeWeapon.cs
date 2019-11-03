@@ -11,6 +11,13 @@ public class MeleeWeapon : MonoBehaviour{
 
     float weaponReach = 2f;
     int damage = 1;
+    public float attackSpeed = 0; //Additional attack speed
+
+    float critChance = 0;
+    float critMultiplier = 0;
+
+    //float blockChance = 0;
+    float stunChance = 0;
 
     // Start is called before the first frame update
     void Start(){
@@ -22,8 +29,15 @@ public class MeleeWeapon : MonoBehaviour{
     }
 
     public void GetStats() {
-        sprite = ItemIDManager.instance.GetItem(Inventory.inventory.equipSlots[1].itemID).GetComponent<ItemInfo>().sprite;
-        sr.sprite = sprite;
+        WeaponInfo info = ItemIDManager.instance.GetItem(Inventory.inventory.equipSlots[1].itemID).GetComponent<WeaponInfo>();
+        sr.sprite = info.sprite;
+
+        damage = info.damage;
+        attackSpeed = info.attackSpeed;
+        critChance = info.critChance;
+        critMultiplier = info.critMultiplier;
+        //blockChance
+        stunChance = info.stunChance;
     }
 
     public void Cast() {
@@ -41,8 +55,13 @@ public class MeleeWeapon : MonoBehaviour{
         IEnemy enemy = hit.collider.GetComponent<IEnemy>();
         if (enemy != null) {
             //Do all the things
-            //
-            enemy.TakeDamage(damage);
+            if (Random.Range(0f, 1f) < critChance) {
+                enemy.TakeDamage((int)(damage * critMultiplier));
+            }
+            else{
+                enemy.TakeDamage(damage);
+            }
+            
             //Debug.Log(hit.collider.gameObject.name + " takes " + damage + " damage.");
             
         }

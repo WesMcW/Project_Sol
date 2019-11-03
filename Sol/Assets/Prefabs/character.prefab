@@ -47,6 +47,7 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 4096
+  attackSpeed: 0
 --- !u!212 &2116141567
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -205,7 +206,7 @@ MonoBehaviour:
   rollSpeed: 15
   attackMoveSpeed: 10
   attackRange: 2
-  attackDuration: 0.33
+  attackDuration: 0.5
 --- !u!50 &8514833015028824332
 Rigidbody2D:
   serializedVersion: 4
