@@ -37,6 +37,7 @@ public class MeleeWeapon : MonoBehaviour{
         if (hits.Contains(hit.collider.gameObject)) {
             return;
         }
+        hits.Add(hit.collider.gameObject);
         IDamageable damageableObject = hit.collider.GetComponent<IDamageable>();
         if (damageableObject != null) {
             //Do all the things

@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2116141564}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.283578, y: -2.8009446, z: -5.358666}
-  m_LocalScale: {x: 2.183406, y: 2.183406, z: 2.183406}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 8514833015028824330}
   m_RootOrder: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4096
 --- !u!212 &2116141567
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -203,7 +203,9 @@ MonoBehaviour:
   weaponRotatePoint: {fileID: 8514833015028824330}
   moveSpeed: 10
   rollSpeed: 15
-  attackRange: 3
+  attackMoveSpeed: 10
+  attackRange: 2
+  attackDuration: 0.33
 --- !u!50 &8514833015028824332
 Rigidbody2D:
   serializedVersion: 4
@@ -224,7 +226,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &8514833015028824333
 MonoBehaviour:
   m_ObjectHideFlags: 0

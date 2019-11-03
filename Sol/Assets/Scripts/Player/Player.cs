@@ -16,7 +16,9 @@ public class Player : MonoBehaviour
     public Transform weaponRotatePoint;
     public float moveSpeed;
     public float rollSpeed;
+    public float attackMoveSpeed;
     public float attackRange = 1f;
+    public float attackDuration;
 
     bool doingSpecialAction = false;
     bool isMoving;
@@ -155,7 +157,7 @@ public class Player : MonoBehaviour
         //testA.transform.position = weaponRotatePoint.position + new Vector3(start.x, start.y, 0f);
         //testB.transform.position = weaponRotatePoint.position + new Vector3(end.x, end.y, 0f);
 
-        float attackTime = 1 / 2f;
+        float attackTime = attackDuration; //THIS IS DURATION OF ATTACK
         float i = 0;
         float increment = -(startTheta*2) / (50f * attackTime);
         Vector2 current = start;
@@ -180,7 +182,7 @@ public class Player : MonoBehaviour
             sword.GetComponent<MeleeWeapon>().Cast();
 
             //////////////////////////////////////////////////////////
-            controller.Move(moveAngle * rollSpeed);
+            controller.Move(moveAngle * attackMoveSpeed);
             i += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
         }
