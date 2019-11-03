@@ -38,12 +38,12 @@ public class MeleeWeapon : MonoBehaviour{
             return;
         }
         hits.Add(hit.collider.gameObject);
-        IDamageable damageableObject = hit.collider.GetComponent<IDamageable>();
-        if (damageableObject != null) {
+        IEnemy enemy = hit.collider.GetComponent<IEnemy>();
+        if (enemy != null) {
             //Do all the things
             //
-            damageableObject.TakeDamage(damage);
-            Debug.Log(hit.collider.gameObject.name + " takes " + damage + " damage.");
+            enemy.TakeDamage(damage);
+            //Debug.Log(hit.collider.gameObject.name + " takes " + damage + " damage.");
             
         }
     }
