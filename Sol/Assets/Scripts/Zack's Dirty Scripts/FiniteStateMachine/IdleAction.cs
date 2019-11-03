@@ -28,23 +28,21 @@ public class IdleAction : FSMAction
         Debug.Log("ToIdle");
         if(theEnemy != null)
             theEnemy.GetAnim().SetFloat("speed", 0);
-        if (duration <= 0)
-        {
-            Finish();
-            return;
-        }
     }
 
     public override void OnUpdate()
     {
         duration -= Time.deltaTime;
-
-        if (duration <= 0)
+        if (theEnemy != null)
         {
-            Finish();
-            return;
+            
+            
+            if (duration <= 0 && Vector2.Distance(theEnemy.gameObject.transform.position, target.position) > 1)
+            {
+                Finish();
+                return;
+            }
         }
-
         Debug.Log(textToShow);
     }
 
@@ -58,20 +56,15 @@ public class IdleAction : FSMAction
         
         if (!string.IsNullOrEmpty(finishEvent) && finishEvent == "ToPatrol")
         {
-            if (theEnemy != null)
-            {
-                if (Vector2.Distance(theEnemy.gameObject.transform.position, target.position) > 1)
-                {
 
+                    Debug.Log(theEnemy);
                         //Debug.Log(theMachine.testNum.ToString());
                         theEnemy.stopWandering = false;
                         theEnemy.followTargetGo = true;
                         theEnemy.target = target;
                         if (!theEnemy.stopWandering && theEnemy.followTargetGo)
                             theEnemy.GetAnim().SetFloat("speed", 1);
-                }
-            }
-
+            
         }
         if (!string.IsNullOrEmpty(finishEvent))
         {
