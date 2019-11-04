@@ -53,14 +53,12 @@ public class WanderAction : FSMAction
         polledTime += Time.deltaTime;
         TimeInDir -= Time.deltaTime;
         Debug.Log("OnPatrol");
-        if (theMachine != null)
-        {
             if (TimeInDir <= 0 || Vector2.Distance(target.position, theMachine.transform.position) < 1)
             {
                 Finish();
                 return;
             }
-        }
+        
     }
    
     private void Finish()

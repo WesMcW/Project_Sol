@@ -30,7 +30,7 @@ public class AITest : MonoBehaviour
         PatrolState.AddTransition("ToIdle", IdleState);
         IdleState.AddTransition("ToPatrol", PatrolState);
         ScanState.AddTransition("ToScanning", ScanState);
-        PatrolAction.Init(target, 3.0f, gameObject.GetComponent<EnemyAstar>());
+        PatrolAction.Init(target, 3.0f, gameObject.GetComponent<EnemyAstar>(), "ToIdle");
         IdleAction.Init(target, "AI on Idle", 3.0f, gameObject.GetComponent<EnemyAstar>(), "ToPatrol");
         ScanAction.Init(3.0f);
         fsm.StartMachine("IdleState");
