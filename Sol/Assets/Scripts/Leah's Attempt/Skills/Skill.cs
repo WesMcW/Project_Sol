@@ -34,6 +34,7 @@ public abstract class Skill : ScriptableObject
             return true;
         }
         else Debug.Log("Need more skill points");
+        Debug.Log("hullo");
         return false;
     }
 
@@ -56,6 +57,15 @@ public abstract class Skill : ScriptableObject
         button.GetComponent<Animator>().SetBool("bought", true);
     }
 }
+
+
+
+
+
+
+
+
+
 
 [CreateAssetMenu(fileName = "passiveSkill", menuName = "Passive Skill", order = 51)]
 public class PassiveSkill : Skill
@@ -81,6 +91,15 @@ public class PassiveSkill : Skill
         return false;
     }
 }
+
+
+
+
+
+
+
+
+
 
 [CreateAssetMenu(fileName = "activeSkill", menuName = "Active Skill", order = 51)]
 public class ActiveSkill : Skill

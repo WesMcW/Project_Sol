@@ -8,7 +8,7 @@ public class SetSkills : MonoBehaviour
     SkillsManager sm;
 
     [Header("Stat Modifiers:")]
-    public float speedUp;
+    public float rollSpdUp;
     public float critChance;
     public float attackSpeed;
     public float critDmg;
@@ -24,17 +24,18 @@ public class SetSkills : MonoBehaviour
 
     public void enableSkill(int x)  // less methods
     {
-        Debug.Log("x is " + x);
+        //Debug.Log("x is " + x);
         switch (x)
         {
             case 0:
                 {
                     if (sm.dodgeRoll[0].active) player.GetComponent<Player>().canDodge = true;
+                    Debug.Log("I did the thing");
                     break;
                 }
             case 1:
                 {
-                    if (sm.passivesRow1[0].enabled) player.GetComponent<Player>().moveSpeed = speedUp;
+                    if (sm.passivesRow1[0].enabled) player.GetComponent<Player>().rollSpeed = rollSpdUp;
                     break;
                 }
             case 2:

@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &263524219351634778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263524219351634773}
+  - component: {fileID: 263524219351634779}
+  - component: {fileID: 263524219351634772}
+  m_Layer: 0
+  m_Name: SkillsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &263524219351634773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263524219351634778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.25, y: 4.26, z: -0.5035513}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &263524219351634779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263524219351634778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bbad0eddee1fc549975b01f6596e84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillPoints: 0
+  skillsBought: 0
+  nameTxt: {fileID: 0}
+  descTxt: {fileID: 0}
+  costTxt: {fileID: 0}
+  allButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  dodgeRoll:
+  - {fileID: 11400000, guid: c243a74c15490ce4ab81ea0f58601fa8, type: 2}
+  chargeSkills:
+  - {fileID: 11400000, guid: d7810efed2b2dad4cad463bf2fb8cabf, type: 2}
+  - {fileID: 11400000, guid: e77c97c85e3943448886c017ca534363, type: 2}
+  - {fileID: 11400000, guid: 25ff2f87a602b2c4f859d9e78ed40b84, type: 2}
+  passivesRow1:
+  - {fileID: 11400000, guid: 00fa4fb3c23e0cf4f957a08bb2056450, type: 2}
+  - {fileID: 11400000, guid: aa1b0d515294f1d498ca22ab791e7fff, type: 2}
+  - {fileID: 11400000, guid: 96414c448ad1dbf40ba2002bd208f49d, type: 2}
+  passivesRow2:
+  - {fileID: 11400000, guid: 78340cbd61089094b992e3d5e964d489, type: 2}
+  - {fileID: 11400000, guid: 933a1fee1f68ce2429c2ffc0ed074004, type: 2}
+  - {fileID: 11400000, guid: a1d515e25aa28e44595f9b3d809ca7ad, type: 2}
+--- !u!114 &263524219351634772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263524219351634778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29f9b82249c142c4ebd74c331e55f9df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  speedUp: 0
+  critChance: 0
+  attackSpeed: 0
+  critDmg: 0
+  blockChance: 0
+  stunChance: 0

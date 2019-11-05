@@ -45,7 +45,7 @@ public class PlayerLevel : MonoBehaviour
             leveled = false;
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Keypad2))
         {
             Debug.Log("XP gained.");
             PlayerQuest.instance.CurrentExperience++;
