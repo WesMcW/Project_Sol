@@ -59,7 +59,6 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(canTalk + "    " + talking);
         if (Input.GetKeyDown(dialogueInitiateKey) && canTalk && !talking)
         {
             npcDiag.enabled = true;

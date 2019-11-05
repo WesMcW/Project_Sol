@@ -6,6 +6,6 @@ public class Stove : Interactable
 {
     public override void Interact()
     {
-        CookingManager.CM.StartCooking();
+        CookingManager.CM.OpenIngredientMenu();
     }
 }

@@ -7222,7 +7222,8 @@ MonoBehaviour:
   - {fileID: 5403755204295003810, guid: 91c18e574b8d91842a9e4b95e924e6bd, type: 3}
   - {fileID: 2512230863442341823, guid: 1ecf4b8a82a4dc14bb02654e700875b5, type: 3}
   - {fileID: 8728464687876963302, guid: db1817492de09b3489e84887690aa58b, type: 3}
-  food: []
+  food:
+  - {fileID: 8180773180928056272, guid: 5717729ceaf4313439db2af5cc2d5eb9, type: 3}
 --- !u!114 &6748538231589621153
 MonoBehaviour:
   m_ObjectHideFlags: 0
