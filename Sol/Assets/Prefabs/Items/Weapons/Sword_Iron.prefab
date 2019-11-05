@@ -111,7 +111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3132706953530543523}
   - component: {fileID: 3132706953530543517}
-  - component: {fileID: 3132706953530543516}
+  - component: {fileID: -2382316438572357453}
   m_Layer: 0
   m_Name: Sword_Iron
   m_TagString: Untagged
@@ -161,7 +161,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.36, y: 1.55}
   m_EdgeRadius: 0
---- !u!114 &3132706953530543516
+--- !u!114 &-2382316438572357453
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,16 +170,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3132706953530543518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59265a012604e7d4a8a8d9ee1ebd33f9, type: 3}
+  m_Script: {fileID: 11500000, guid: d5bab21687cde134baa3828df80d3288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   name: Iron Sword
-  description: I SLASH things
+  description: Shwing!
   sprite: {fileID: 7441372264213655823, guid: 1cbb2115f0b0b4c64b57c7e78b3687eb, type: 3}
   ItemID: 11
   amountLimit: 1
   canBePickedUp: 1
   amount: 1
+  damage: 3
+  attackSpeed: 0.5
+  critChance: 0.1
+  critMultiplier: 0
+  blockChance: 0
+  stunChance: 0
 --- !u!1001 &8217572969826613702
 PrefabInstance:
   m_ObjectHideFlags: 0

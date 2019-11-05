@@ -16,7 +16,9 @@ public class Player : MonoBehaviour
     public Transform weaponRotatePoint;
     public float moveSpeed;
     public float rollSpeed;
+    public float attackMoveSpeed;
     public float attackRange = 1f;
+    public float attackDuration; //Base attack speed
 
     bool doingSpecialAction = false;
     bool isMoving;
@@ -154,15 +156,20 @@ public class Player : MonoBehaviour
         Vector2 end = attackRange*RotateVectorByDeg(mouseAngle, -startTheta);
         //testA.transform.position = weaponRotatePoint.position + new Vector3(start.x, start.y, 0f);
         //testB.transform.position = weaponRotatePoint.position + new Vector3(end.x, end.y, 0f);
-
-        float attackTime = 1 / 2f;
-        float i = 0;
-        float increment = -(startTheta*2) / (50f * attackTime);
+        
         Vector2 current = start;
-        //Spawn sowrd
+        //ACTIVATE SWORD
         sword.SetActive(true);
         sword.GetComponent<MeleeWeapon>().GetStats();
+        sword.GetComponent<MeleeWeapon>().ClearSet();
+
+        ;
         sword.transform.position = weaponRotatePoint.position + new Vector3(current.x, current.y, 0f);
+
+        float attackTime = attackDuration/(1 + sword.GetComponent<MeleeWeapon>().attackSpeed); //THIS IS DURATION OF ATTACK
+        float i = 0;
+        float increment = -(startTheta * 2) / (50f * attackTime);
+
         while (i <= attackTime) {
 
             current = RotateVectorByDeg(current, increment);
@@ -173,8 +180,11 @@ public class Player : MonoBehaviour
             Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
             sword.transform.rotation = q;
             ///////////////////////////////////////////////////////////
+            //Do stuff with sword
+            sword.GetComponent<MeleeWeapon>().Cast();
 
-            controller.Move(moveAngle * rollSpeed);
+            //////////////////////////////////////////////////////////
+            controller.Move(moveAngle * attackMoveSpeed);
             i += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
         }

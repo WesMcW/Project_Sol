@@ -169,6 +169,7 @@ public class DialogueManager : MonoBehaviour
 
     public void FoundNPC(NPC_Dialogue Npc)
     {
+        Debug.Log("Found NPC");
         npcDiag = Npc;
         canTalk = true;
         alertBox.SetActive(true);

@@ -11,10 +11,20 @@ public class MeleeWeapon : MonoBehaviour{
 
     float weaponReach = 2f;
     int damage = 1;
+    public float attackSpeed = 0; //Additional attack speed
+
+    float critChance = 0;
+    float critMultiplier = 0;
+
+    //float blockChance = 0;
+    float stunChance = 0;
+
+    SetSkills skills;
 
     // Start is called before the first frame update
     void Start(){
         sr = GetComponent<SpriteRenderer>();
+        skills = SkillsManager.inst.gameObject.GetComponent<SetSkills>();
     }
 
     public void ClearSet() {
@@ -22,8 +32,15 @@ public class MeleeWeapon : MonoBehaviour{
     }
 
     public void GetStats() {
-        sprite = ItemIDManager.instance.GetItem(Inventory.inventory.equipSlots[1].itemID).GetComponent<ItemInfo>().sprite;
-        sr.sprite = sprite;
+        WeaponInfo info = ItemIDManager.instance.GetItem(Inventory.inventory.equipSlots[1].itemID).GetComponent<WeaponInfo>();
+        sr.sprite = info.sprite;
+
+        damage = info.damage;
+        attackSpeed = info.attackSpeed * skills.attackSpeed;        // are we multiplying these?
+        critChance = info.critChance + skills.critChance;
+        critMultiplier = info.critMultiplier + skills.critDmg;
+        //blockChance
+        stunChance = info.stunChance + skills.stunChance;
     }
 
     public void Cast() {
@@ -37,10 +54,18 @@ public class MeleeWeapon : MonoBehaviour{
         if (hits.Contains(hit.collider.gameObject)) {
             return;
         }
-        IDamageable damageableObject = hit.collider.GetComponent<IDamageable>();
-        if (damageableObject != null) {
-            damageableObject.TakeDamage(damage);
-            Debug.Log(hit.collider.gameObject.name + " takes " + damage + " damage.");
+        hits.Add(hit.collider.gameObject);
+        IEnemy enemy = hit.collider.GetComponent<IEnemy>();
+        if (enemy != null) {
+            //Do all the things
+            if (Random.Range(0f, 1f) < critChance) {
+                enemy.TakeDamage((int)(damage * critMultiplier));
+            }
+            else{
+                enemy.TakeDamage(damage);
+            }
+            
+            //Debug.Log(hit.collider.gameObject.name + " takes " + damage + " damage.");
             
         }
     }

@@ -10,7 +10,9 @@ public class SkillsManager : MonoBehaviour
     public int skillPoints = 0, skillsBought = 0;
     int mon, sCount;
     public Text nameTxt, descTxt, costTxt;
+    public Image skillImg;
     SetSkills set;
+    bool isVisible = false;
 
     Skill[] allSkills;
     //public PassiveSkill[] passivesRow1, passivesRow2;
@@ -41,16 +43,18 @@ public class SkillsManager : MonoBehaviour
         dodgeRoll[0].turnButtonOn();
         mon = skillPoints;
         sCount = skillsBought;
+
+        skillImg.rectTransform.position = new Vector3(5009.6F, -144.7F, 0);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha0))
+        if (Input.GetKeyDown(KeyCode.Keypad0))
         {
             Debug.Log("Manually added skill point");
             skillPoints++;
         }
-        //if (mon != skillPoints) checkPrices();
+        if (Input.GetKeyDown(KeyCode.P)) showSkills();
 
         if (sCount != skillsBought) onSkills();
         if (mon != skillPoints) checkPrices();
@@ -59,18 +63,26 @@ public class SkillsManager : MonoBehaviour
         mon = skillPoints;
     }
 
+    void showSkills()
+    {
+        if (isVisible) skillImg.rectTransform.position = new Vector3(5009.6F, -144.7F, 0);
+        else skillImg.rectTransform.position = new Vector3(509.6F, 100.7F, 0);
+        isVisible = !isVisible;
+    }
 
-    void enablePassive(Skill skill)
+    bool enablePassive(Skill skill)
     {
         if(!skill.enabled)
         {
             skillsBought++;
             if (skill.buySkill(skillPoints)) skillPoints -= skill.cost;
             checkPrices();
+            return true;
         }
+        return false;
     }
 
-    void enableActive(ActiveSkill[] array, int index)
+    bool enableActive(ActiveSkill[] array, int index)
     {
         if (!array[index].enabled)
         {
@@ -82,7 +94,9 @@ public class SkillsManager : MonoBehaviour
                 bool anyActive = false;
                 foreach (ActiveSkill a in array) if (a.active) anyActive = true;    // if no skills are active, activate this one
                 if (!anyActive) array[index].activateSkill();
+                return true;
             }
+            return false;
         }
 
         else
@@ -93,6 +107,7 @@ public class SkillsManager : MonoBehaviour
                 if (a != array[index]) a.setUnactiveAnim();
             }
             array[index].activateSkill();
+            return true;
         }
     }
 
@@ -167,47 +182,18 @@ public class SkillsManager : MonoBehaviour
 
     public void dodgeBtn()
     {
-        enableActive(dodgeRoll, 0);
-        //set.enableDodge();
-        set.enableSkill(0);
+        if (enableActive(dodgeRoll, 0)) set.enableSkill(0);
     }
-    public void hoverOnDodgeBtn() { setText(dodgeRoll[0]); }
 
-    /*
-
-    public void passiveBtn1() { enablePassive(passivesRow1[0]); }
-    public void hoverOnPassive1Btn() { setText(passivesRow1[0]); }
-
-    public void passiveBtn2() { enablePassive(passivesRow1[1]); }
-    public void hoverOnPassive2Btn() { setText(passivesRow1[1]); }
-
-    public void passiveBtn3() { enablePassive(passivesRow1[2]); }
-    public void hoverOnPassive3Btn() { setText(passivesRow1[2]); }
-
-    //
-
-    public void chargeBtn1() { enableActive(chargeSkills, 0); }
-    public void hoverOnCharge1Btn() { setText(chargeSkills[0]); }
-
-    public void chargeBtn2() { enableActive(chargeSkills, 1); }
-    public void hoverOnCharge2Btn() { setText(chargeSkills[1]); }
-
-    public void chargeBtn3() { enableActive(chargeSkills, 2); }
-    public void hoverOnCharge3Btn() { setText(chargeSkills[2]); }
-    */
-
-    // testing for simplicity:
-    public void showText(int index) { setText(allSkills[index]); }
+    public void showText(int index){ setText(allSkills[index]); }
     public void buyPassive(int index)
     {
-        enablePassive(allSkills[index]);
-        set.enableSkill(index);
+        if (enablePassive(allSkills[index])) set.enableSkill(index);
     }
     public void buyActive(int index)
     {
         // this will only apply for charge attacks right now, needs charge attack index
-        enableActive(chargeSkills, index);
-        set.enableSkill(index + 4);
+        if (enableActive(chargeSkills, index)) set.enableSkill(index + 4);
     }
 
 
