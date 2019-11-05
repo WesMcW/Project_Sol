@@ -9,11 +9,11 @@ public class SetSkills : MonoBehaviour
 
     [Header("Stat Modifiers:")]
     public float rollSpdUp;
-    public float critChance;
-    public float attackSpeed;
-    public float critDmg;
-    public float blockChance;
-    public float stunChance;
+    public float critChance, critChanceUp;
+    public float attackSpeed, attackSpeedUp;
+    public float critDmg, critDmgUp;
+    public float blockChance, blockChanceUp;
+    public float stunChance, stunChanceUp;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +30,6 @@ public class SetSkills : MonoBehaviour
             case 0:
                 {
                     if (sm.dodgeRoll[0].active) player.GetComponent<Player>().canDodge = true;
-                    Debug.Log("I did the thing");
                     break;
                 }
             case 1:
@@ -40,12 +39,12 @@ public class SetSkills : MonoBehaviour
                 }
             case 2:
                 {
-                    if (sm.passivesRow1[1].enabled) Debug.Log("Increase crit chance to " + critChance);     // cant do until damage is done
+                    if (sm.passivesRow1[1].enabled) critChance = critChanceUp;     // cant do until damage is done
                     break;
                 }
             case 3:
                 {
-                    if (sm.passivesRow1[2].enabled) Debug.Log("Increase attack speed to " + attackSpeed);   // ask first
+                    if (sm.passivesRow1[2].enabled) attackSpeed = attackSpeedUp;   // ask first
                     break;
                 }
             case 4:
@@ -74,17 +73,17 @@ public class SetSkills : MonoBehaviour
                 }
             case 7:
                 {
-                    if (sm.passivesRow2[0].enabled) Debug.Log("Increase crit damage to " + critDmg);     // cant do until damage is done
+                    if (sm.passivesRow2[0].enabled) critDmg = critDmgUp;     // cant do until damage is done
                     break;
                 }
             case 8:
                 {
-                    if (sm.passivesRow2[1].enabled) Debug.Log("Increase chance to block to " + blockChance);
+                    if (sm.passivesRow2[1].enabled) blockChance = blockChanceUp;
                     break;
                 }
             case 9:
                 {
-                    if (sm.passivesRow2[2].enabled) Debug.Log("Increase chance to stun to " + stunChance);
+                    if (sm.passivesRow2[2].enabled) stunChance = stunChanceUp;
                     break;
                 }
         }

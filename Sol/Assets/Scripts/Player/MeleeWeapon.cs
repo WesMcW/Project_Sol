@@ -19,9 +19,12 @@ public class MeleeWeapon : MonoBehaviour{
     //float blockChance = 0;
     float stunChance = 0;
 
+    SetSkills skills;
+
     // Start is called before the first frame update
     void Start(){
         sr = GetComponent<SpriteRenderer>();
+        skills = SkillsManager.inst.gameObject.GetComponent<SetSkills>();
     }
 
     public void ClearSet() {
@@ -33,11 +36,11 @@ public class MeleeWeapon : MonoBehaviour{
         sr.sprite = info.sprite;
 
         damage = info.damage;
-        attackSpeed = info.attackSpeed;
-        critChance = info.critChance;
-        critMultiplier = info.critMultiplier;
+        attackSpeed = info.attackSpeed * skills.attackSpeed;        // are we multiplying these?
+        critChance = info.critChance + skills.critChance;
+        critMultiplier = info.critMultiplier + skills.critDmg;
         //blockChance
-        stunChance = info.stunChance;
+        stunChance = info.stunChance + skills.stunChance;
     }
 
     public void Cast() {
