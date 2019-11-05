@@ -57,7 +57,7 @@ public class Inventory : MonoBehaviour
         ItemInfo theItem = ItemIDManager.instance.GetItem(id).GetComponent<ItemInfo>();
         int amountLimit = theItem.amountLimit;
         bool foundLikeItem = false;
-
+        //print("Adding itemID: " + id + " | Amount: " + amount);
         //Adds individual items for the amount there are.
         for (int i = 0; i < slots.Length; i++)
         {

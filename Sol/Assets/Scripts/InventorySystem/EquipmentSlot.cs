@@ -66,6 +66,15 @@ public class EquipmentSlot : MonoBehaviour
       //  amountText.text = amount.ToString();
     }
 
+    public void DecreaseAmount(int amt)
+    {
+        amount -= amt;
+        if(amount <= 0)
+        {
+            RemoveItem();
+        }
+    }
+
     public void OnClick()
     {
 
