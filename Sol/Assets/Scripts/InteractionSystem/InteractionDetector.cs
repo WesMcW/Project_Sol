@@ -10,6 +10,10 @@ public class InteractionDetector : MonoBehaviour
         {
             InteractionManager.IM.SetTarget(collision.transform);
         }
+        if (collision.CompareTag("NPC"))
+        {
+            DialogueManager.DM.FoundNPC(collision.GetComponent<NPC_Dialogue>());
+        }
     }
 
 
@@ -18,6 +22,11 @@ public class InteractionDetector : MonoBehaviour
         if (collision.CompareTag("Interactable"))
         {
             InteractionManager.IM.SetTarget(null);
+        }
+        //if its the correct npc
+        if (collision.CompareTag("NPC") && (DialogueManager.DM.GetCurrentNPC() == collision.GetComponent<NPC_Dialogue>()))
+        {
+            DialogueManager.DM.RemoveNPC();
         }
     }
 }

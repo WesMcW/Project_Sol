@@ -6,7 +6,7 @@ using UnityEngine;
 public class Recipe : ScriptableObject
 {
     [Header("Ingredient ID's, Lowest ID First")]
-    public int id;
+    public int[] ids;
     [Header("ID matching ID in ItemID Manager")]
     public int finishedProductID;
 }

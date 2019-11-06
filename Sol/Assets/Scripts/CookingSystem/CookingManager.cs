@@ -60,23 +60,24 @@ public class CookingManager : MonoBehaviour
         }
         foreach (Recipe recipe in recipes)
         {
-            //Look for matching recipes
-            if (recipe.id.ToString() == cookingID)
+
+            for (int i = 0; i < recipe.ids.Length; i++)
             {
-                //Found a match
-                print("Found Match!");
-                return recipe.finishedProductID;
-                
+                //Look for matching recipes
+                if (recipe.ids[i].ToString() == cookingID)
+                {
+                    //Found a match
+                    print("Found Match!");
+                    return recipe.finishedProductID;
+
+                }
+               
             }
-            else
-            {
-                //Did not find match
-                print("No Match!");
-                //Disgusting Soup ID
-                return 41;
-            }
+           
         }
-        return 0;
+        //No match
+        //Use disgusting soup ItemID
+        return 41;
     }
 
 

@@ -8,6 +8,7 @@ public class Alert : MonoBehaviour
     private void OnEnable()
     {
         NPC_Dialogue npc = DialogueManager.DM.GetCurrentNPC();
-        this.transform.position = npc.transform.position + new Vector3(0, npc.transform.parent.GetComponent<SpriteRenderer>().bounds.size.y);
+        SpriteRenderer sr = npc.transform.GetComponent<SpriteRenderer>() ?? npc.transform.parent.GetComponent<SpriteRenderer>();
+        this.transform.position = npc.transform.position + new Vector3(0, sr.bounds.size.y);
     }
 }

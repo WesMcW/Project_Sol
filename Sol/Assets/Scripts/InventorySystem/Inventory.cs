@@ -167,6 +167,7 @@ public class Inventory : MonoBehaviour
     /// <returns></returns>
     public bool CanAddItem(int itemID, int amount)
     {
+        //print("The Item ID: " + itemID);
         ItemInfo theItem = ItemIDManager.instance.GetItem(itemID).GetComponent<ItemInfo>();
         int amountLimit = theItem.amountLimit;
         for (int i = 0; i < slots.Length; i++)

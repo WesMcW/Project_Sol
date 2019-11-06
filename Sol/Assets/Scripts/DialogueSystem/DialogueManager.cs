@@ -59,11 +59,11 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(dialogueInitiateKey) && canTalk && !talking)
+        if (Input.GetKeyUp(dialogueInitiateKey) && canTalk && !talking && !InteractionManager.IM.IsInteracting())
         {
             npcDiag.enabled = true;
             talking = true;
-        } else if (talking && Input.GetKeyDown(dialogueInitiateKey))
+        } else if (talking && Input.GetKeyUp(dialogueInitiateKey))
         {
             EndConversation();
         }
@@ -169,7 +169,7 @@ public class DialogueManager : MonoBehaviour
 
     public void FoundNPC(NPC_Dialogue Npc)
     {
-        Debug.Log("Found NPC");
+        //Debug.Log("Found NPC");
         npcDiag = Npc;
         canTalk = true;
         alertBox.SetActive(true);
