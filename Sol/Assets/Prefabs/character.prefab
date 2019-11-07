@@ -45,9 +45,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 2.04}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 6
+  m_Radius: 3
 --- !u!114 &145164430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,7 +173,9 @@ GameObject:
   - component: {fileID: 8514833015028824334}
   - component: {fileID: 213378596}
   - component: {fileID: 213378603}
-  - component: {fileID: 935170738}
+  - component: {fileID: 688197385}
+  - component: {fileID: 688197386}
+  - component: {fileID: 688197377}
   m_Layer: 0
   m_Name: character
   m_TagString: Player
@@ -190,7 +192,7 @@ Transform:
   m_GameObject: {fileID: 8514833015028824328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.72, y: 0.95, z: 0}
-  m_LocalScale: {x: 0.458, y: 0.458, z: 0.458}
+  m_LocalScale: {x: 1, y: 1, z: 0.458}
   m_Children:
   - {fileID: 2116141565}
   - {fileID: 145164429}
@@ -214,7 +216,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -234,8 +236,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 1056854763338646253, guid: e435da7f5fc7648b6beaab41f476fc4a,
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -4285557821957360269, guid: acc10c7b9152c4b7cb4ce8230d40d8c4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -246,7 +248,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &8514833015028824335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myHitBox: {fileID: 8514833015028824334}
+  anim: {fileID: 688197386}
   canDodge: 0
   sword: {fileID: 2116141564}
   weaponRotatePoint: {fileID: 8514833015028824330}
@@ -285,9 +288,9 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &8514833015028824333
 MonoBehaviour:
@@ -314,8 +317,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16927251, y: 1.55}
-  m_Size: {x: 7.2920113, y: 7.2920113}
+  m_Offset: {x: 0, y: -0.08}
+  m_Size: {x: 4, y: 4}
   m_Direction: 0
 --- !u!114 &213378596
 MonoBehaviour:
@@ -354,8 +357,8 @@ MonoBehaviour:
     type: 3}
   activeButtons: []
   completedButtons: []
---- !u!58 &935170738
-CircleCollider2D:
+--- !u!61 &688197385
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -367,6 +370,52 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.1748682}
+  m_Offset: {x: -0.053282857, y: -0.721771}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.31, y: 2.56}
+    newSize: {x: 5.73, y: 5.51}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.5601318
+  m_Size: {x: 1.076144, y: 1.086458}
+  m_EdgeRadius: 0
+--- !u!95 &688197386
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514833015028824328}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 83520753bd3e5fc44999db4cce31258b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &688197377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514833015028824328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a307474a14a20404b9a31f5e23f3ae22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstBoss: 0
+  leveled: 0
+  level: 1
+  xpRef: 0
+  xpToLevel: 100

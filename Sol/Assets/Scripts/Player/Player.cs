@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     SpriteRenderer spriteRenderer;
     DialogueManager DM;
     public Collider2D myHitBox;
+    [SerializeField] Animator anim;
 
     public bool canDodge = false;
 
@@ -110,6 +111,11 @@ public class Player : MonoBehaviour
             anim.SetFloat("moveDirection", moveInput.y);
         }
         */
+
+        //Sends the movement values to the animator
+        anim.SetFloat("moveX", moveInput.x);
+        anim.SetFloat("moveY", moveInput.y);
+
     }
 
     void RollUpdate()
