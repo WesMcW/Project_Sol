@@ -12,7 +12,7 @@ public class Slot : MonoBehaviour
     private int amount;
     private Image img;
     public Inventory inventoryManager;
-    private KeyCode switchKey;
+    private KeyCode switchKey, singleItemKey;
 
     private TextMeshProUGUI amountText;
     // Start is called before the first frame update
@@ -45,6 +45,7 @@ public class Slot : MonoBehaviour
         }
 
         switchKey = inventoryManager.quickSwitchKey;
+        singleItemKey = inventoryManager.singleItemKey;
 
     }
 
@@ -105,9 +106,9 @@ public class Slot : MonoBehaviour
 
     public void OnClick()
     {
-        
+
         //Declare the correct variables.
-        GameObject theItem;
+        GameObject theItem = null;
         //These MUST be declared as 0. 
         int theItemID = 0;
         int itemAmount = 0;
@@ -131,6 +132,26 @@ public class Slot : MonoBehaviour
             RemoveItem();
             inventoryManager.AddItemToEquipment(savedID, savedAmount);
            
+            //If the player is holding the single item key, only put 1 item.
+        } else if(Input.GetKey(singleItemKey) && theItemID != 0)
+        {
+            //If slot has same item
+            if(theItemID == itemID && (1 + amount) <= theItem.GetComponent<ItemInfo>().amountLimit)
+            {
+                IncreaseAmount(1);
+                inventoryManager.CI.DecreaseCurrentAmount(1);
+                //If slot is empty
+            } else if(itemID == 0)
+            {
+                AddItem(theItemID, 1);
+                inventoryManager.CI.DecreaseCurrentAmount(1);
+            }
+            //If different items
+            else if (theItemID != itemID)
+            {
+                inventoryManager.CI.AddItem(itemID, amount);
+                AddItem(theItemID, itemAmount);
+            }
         }
         //If the player is NOT holding the shift key then do the pickup stuff
         else if (!Input.GetKey(switchKey))
