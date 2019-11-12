@@ -153,17 +153,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1454
+        y: 719
         width: 498
         height: 527
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5049757, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a3a478d0432e4483a350f32cc0156b8
+      spriteID: 81b3b3233828af24ebe601c7421e291d
       internalID: 8360180821258374603
       vertices: []
       indices: 
@@ -174,17 +174,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 596
-        y: 1450
+        y: 715
         width: 559
         height: 555
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.48968047, y: 0.21872504}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31252f617197c4da0a983bede650a8c0
+      spriteID: 5ddadd4d8cfa45c42976a215b48d92aa
       internalID: -6203055758245662136
       vertices: []
       indices: 
@@ -195,17 +195,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1267
-        y: 1464
+        y: 729
         width: 541
         height: 547
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b1ed102824d14c0680f1b6532d5fb13
+      spriteID: 4f7c4e17bc3db2b4fafc369542dc7a18
       internalID: 67960179072854543
       vertices: []
       indices: 
@@ -215,40 +215,19 @@ TextureImporter:
       name: Foliage_3
       rect:
         serializedVersion: 2
-        x: 718
-        y: 323
-        width: 520
-        height: 501
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b204cbc5b2854c4e899bb0eb4dbcef9
-      internalID: -2304257163545256177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Foliage_4
-      rect:
-        serializedVersion: 2
-        x: 564
+        x: 15
         y: 0
-        width: 897
-        height: 172
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 521
+        height: 486
+      alignment: 9
+      pivot: {x: 0.49716422, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01ff9a0f46f7e4652920678db9d61da9
-      internalID: -3274668144163037157
+      spriteID: ca6999db37269b743b00c0853a06b8c8
+      internalID: -2304257163545256177
       vertices: []
       indices: 
       edges: []
