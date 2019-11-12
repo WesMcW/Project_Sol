@@ -1,7 +1,49 @@
 fileFormatVersion: 2
 guid: 1952284516be14a7e8c81376f0d1c51d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3235428160104714948
+    second: longlineofdecorations_0
+  - first:
+      213: 7564634455123072238
+    second: longlineofdecorations_1
+  - first:
+      213: 639344512019344972
+    second: longlineofdecorations_2
+  - first:
+      213: -2816309401148833170
+    second: longlineofdecorations_3
+  - first:
+      213: 8398643858669137928
+    second: longlineofdecorations_4
+  - first:
+      213: -3381815655555316267
+    second: longlineofdecorations_5
+  - first:
+      213: -7413870696617586132
+    second: longlineofdecorations_6
+  - first:
+      213: -4414306065405659750
+    second: longlineofdecorations_7
+  - first:
+      213: 1905392673803608744
+    second: longlineofdecorations_8
+  - first:
+      213: 3465338852738690094
+    second: longlineofdecorations_9
+  - first:
+      213: -8156615812979308789
+    second: longlineofdecorations_10
+  - first:
+      213: -3548625554534579807
+    second: longlineofdecorations_11
+  - first:
+      213: -5609055483408448936
+    second: longlineofdecorations_12
+  - first:
+      213: 3299215489874416515
+    second: longlineofdecorations_13
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +82,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,11 +174,305 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: longlineofdecorations_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4810.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7b4b6cb3bb0e54791b6a4a23f56467
+      internalID: 3235428160104714948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_1
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 4810.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ff17c470b441c46afe1c017ab78ecc
+      internalID: 7564634455123072238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4123.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765e55c25372e504aa189a14b2e00b31
+      internalID: 639344512019344972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_3
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 4123.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf01c0160d76b6e4b98e45c4189876f7
+      internalID: -2816309401148833170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3436.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8642f49ad3ad747bd434a13458189e
+      internalID: 8398643858669137928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_5
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 3436.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965a391d4ab2a374090194a7a39de0fa
+      internalID: -3381815655555316267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2749.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880af2a9431a60f4f99705cb74bae14b
+      internalID: -7413870696617586132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_7
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 2749.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb2c201f235d98459d28f00d2c01d69
+      internalID: -4414306065405659750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2062.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8989c631370e3c142be1065717e1752a
+      internalID: 1905392673803608744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_9
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 2062.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0839269f044faea469557c290bccd8f6
+      internalID: 3465338852738690094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1375.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11335541d7af0874eba104e87a8a9c8e
+      internalID: -8156615812979308789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_11
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1375.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f232a87916e5c42a547f4d597a9b32
+      internalID: -3548625554534579807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ce6f8dcafb2c44cbbeb07441ff4bb7
+      internalID: -5609055483408448936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: longlineofdecorations_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.75
+        width: 754.5
+        height: 687.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2aa55708eff4a4988e5d20d1c122e4
+      internalID: 3299215489874416515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

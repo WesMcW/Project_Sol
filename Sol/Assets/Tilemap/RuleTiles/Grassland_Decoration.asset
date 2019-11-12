@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535f8e525ff367c4ba67961e201a05ed, type: 3}
+  m_Name: Grassland_Decoration
+  m_EditorClassIdentifier: 
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Transform:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  m_InstancedGameObject: {fileID: 0}
+  m_Flags: 1
+  m_ColliderType: 1
+  m_Sprites:
+  - {fileID: 3235428160104714948, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: 7564634455123072238, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: 639344512019344972, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: -2816309401148833170, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: 8398643858669137928, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: -3381815655555316267, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: -7413870696617586132, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: -4414306065405659750, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: 1905392673803608744, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: 3465338852738690094, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: -8156615812979308789, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: -3548625554534579807, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: -5609055483408448936, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
+  - {fileID: 3299215489874416515, guid: 1952284516be14a7e8c81376f0d1c51d, type: 3}
