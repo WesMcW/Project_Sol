@@ -113,8 +113,8 @@ public class Player : MonoBehaviour
         */
 
         //Sends the movement values to the animator
-        anim.SetFloat("moveX", moveInput.x);
-        anim.SetFloat("moveY", moveInput.y);
+        if (anim != null) anim.SetFloat("moveX", moveInput.x);
+        if (anim != null) anim.SetFloat("moveY", moveInput.y);
 
     }
 

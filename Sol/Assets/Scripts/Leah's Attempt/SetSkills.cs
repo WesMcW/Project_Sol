@@ -51,7 +51,10 @@ public class SetSkills : MonoBehaviour
                 {
                     if (sm.chargeSkills[0].enabled)                 // gotta make these first
                     {
-                        Debug.Log("Enable one, disable others");
+                        for (int i = 0; i < 3; i++) player.GetComponent<ChargeAttacks>().activeBools[i] = false;
+                        player.GetComponent<ChargeAttacks>().activeBools[0] = true;
+
+                        player.GetComponent<ChargeAttacks>().activeSkill = 0;
                     }
                     break;
                 }
@@ -59,7 +62,10 @@ public class SetSkills : MonoBehaviour
                 {
                     if (sm.chargeSkills[1].enabled)                 // gotta make these first
                     {
-                        Debug.Log("Enable one, disable others");
+                        for (int i = 0; i < 3; i++) player.GetComponent<ChargeAttacks>().activeBools[i] = false;
+                        player.GetComponent<ChargeAttacks>().activeBools[1] = true;
+
+                        player.GetComponent<ChargeAttacks>().activeSkill = 1;
                     }
                     break;
                 }
@@ -67,7 +73,10 @@ public class SetSkills : MonoBehaviour
                 {
                     if (sm.chargeSkills[2].enabled)                 // gotta make these first
                     {
-                        Debug.Log("Enable one, disable others");
+                        for (int i = 0; i < 3; i++) player.GetComponent<ChargeAttacks>().activeBools[i] = false;
+                        player.GetComponent<ChargeAttacks>().activeBools[2] = true;
+
+                        player.GetComponent<ChargeAttacks>().activeSkill = 2;
                     }
                     break;
                 }
