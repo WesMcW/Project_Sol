@@ -110,6 +110,12 @@ public class CursorInventory : MonoBehaviour
     public void DecreaseCurrentAmount(int amt)
     {
         amount -= amt;
+       // print("amount:" + amount);
+        //Empty so remove item
+        if(amount <= 0)
+        {
+            RemoveItem();
+        }
     }
 
 

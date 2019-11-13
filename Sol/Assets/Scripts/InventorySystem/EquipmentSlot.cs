@@ -8,7 +8,7 @@ public class EquipmentSlot : MonoBehaviour
     public bool empty;
     [HideInInspector]
     public int itemID;
-    private KeyCode switchKey;
+    private KeyCode switchKey, singleItemKey;
     [Header("Required Category ID")]
     public char requiredID;
     [Header("Default UI Image")]
@@ -27,6 +27,7 @@ public class EquipmentSlot : MonoBehaviour
     {
         inventoryManager = Inventory.inventory;
         switchKey = inventoryManager.quickSwitchKey;
+        singleItemKey = inventoryManager.singleItemKey;
     }
     public void AddItem(int id, int theAmount)
     {
@@ -87,11 +88,25 @@ public class EquipmentSlot : MonoBehaviour
         //Checks if there is an item in your curser
         if (inventoryManager.CI.GetCurrentItem() != 0)
         {
-          
+
             theItem = ItemIDManager.instance.GetItem(inventoryManager.CI.GetCurrentItem());
             theItemID = theItem.GetComponent<ItemInfo>().ItemID;
             itemAmount = inventoryManager.CI.GetCurrentAmount();
             categoryID = theItemID.ToString()[0];
+            if (Input.GetKey(singleItemKey) && theItemID != 0)
+            {
+               // print("Here");
+                if (theItemID == itemID && (1 + amount) <= theItem.GetComponent<ItemInfo>().amountLimit)
+                {
+                    IncreaseAmount(1);
+                    inventoryManager.CI.DecreaseCurrentAmount(1);
+                }
+                else if (itemID == 0)
+                {
+                    AddItem(theItemID, 1);
+                    inventoryManager.CI.DecreaseCurrentAmount(1);
+                }
+            }
             if (Input.GetKey(switchKey) && itemID > 0 && inventoryManager.CanAddItem(itemID, amount))
             {
                 inventoryManager.AddItemToInventory(itemID, amount);
@@ -100,14 +115,17 @@ public class EquipmentSlot : MonoBehaviour
                 inventoryManager.CI.RemoveItem();
             }
             //If there isnt an item in the cursor but an item here.
-        } else if (Input.GetKey(switchKey) && itemID > 0 && inventoryManager.CanAddItem(itemID, amount))
+        }
+        
+        else if (Input.GetKey(switchKey) && itemID > 0 && inventoryManager.CanAddItem(itemID, amount))
         {
             //Send the item here into an empty slot.
             inventoryManager.AddItemToInventory(itemID, amount);
             RemoveItem();
         }
-        //if the player isn't holding down the quick switch key.
-        if (!Input.GetKey(switchKey))
+        
+            //if the player isn't holding down the quick switch key.
+            if (!Input.GetKey(switchKey))
         {
             //If there is an item being held by the cursor and this slot is empty, add the item.
             if (categoryID == requiredID && itemID == 0)
@@ -132,6 +150,7 @@ public class EquipmentSlot : MonoBehaviour
 
       
     }
+
 
 
 }

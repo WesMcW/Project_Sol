@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [Header("Player Input")]
-    public KeyCode inventoryKey, quickSwitchKey;
+    public KeyCode inventoryKey, quickSwitchKey, singleItemKey;
     [Header("Cursor Inventory Object")]
     public CursorInventory CI;
     [HideInInspector]
