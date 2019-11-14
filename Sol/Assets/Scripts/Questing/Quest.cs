@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Quest : ScriptableObject
 {
-    public bool isActive, helped, finished = false;
+    public bool isActive, helped, take, finished = false;
 
     public string title;
     public string description;

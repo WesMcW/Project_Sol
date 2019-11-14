@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   helped: 0
+  take: 0
   finished: 0
   title: Pick Up Your Weapon
   description: Take up arms!
