@@ -10,7 +10,7 @@ public class ChargeAttacks : MonoBehaviour
     public int activeSkill = -1;
     public bool charged = false;
     public bool isAttacking = false;
-    public float chargeTime = 0F, timeToCharge;
+    public float chargeTime = 0F, timeToCharge, colorTesting;
 
     // while charging: should not be able to do a normal attack, cannot change direction(?)/cannot move
     // while attacking: cannot do a normal attack, depending if attack has an animation could be able to move again
@@ -22,16 +22,35 @@ public class ChargeAttacks : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.R))
+        if (activeSkill != -1)
         {
-            chargeTime += Time.deltaTime;
-            if (chargeTime >= timeToCharge) charged = true;
+            if (Input.GetKey(KeyCode.R))
+            {
+                chargeTime += Time.deltaTime;
+                if (chargeTime >= timeToCharge)
+                {
+                    charged = true;
+                    gameObject.GetComponent<SpriteRenderer>().color = new Color32(0, 255, 0, 255);
+                }
+                else
+                {
+                    colorTesting = (timeToCharge - chargeTime) * 255F;
+                    gameObject.GetComponent<SpriteRenderer>().color = new Color32(255, 255, (byte)colorTesting, 255);
+                }
+            }
+            if (Input.GetKeyUp(KeyCode.R))
+            {
+                //reset values
+                if (charged) DoAttack(activeSkill);
+                chargeTime = colorTesting = 0F;
+                gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+            }
         }
-        if (Input.GetKeyUp(KeyCode.R))
+        else
         {
-            //reset values
-            if (charged) DoAttack(activeSkill);
-            chargeTime = 0F;
+            gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+            if (chargeTime != 0) chargeTime = 0;
+            if (colorTesting != 0) colorTesting = 0;
         }
     }
 

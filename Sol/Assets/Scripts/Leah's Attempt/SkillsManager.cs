@@ -14,7 +14,8 @@ public class SkillsManager : MonoBehaviour
     SetSkills set;
     bool isVisible = false;
 
-    Skill[] allSkills;
+    public string[] buttonColors;
+    public Skill[] allSkills;
     //public PassiveSkill[] passivesRow1, passivesRow2;
 
     [Header("All Skill Buttons")]
@@ -37,14 +38,13 @@ public class SkillsManager : MonoBehaviour
     void Start()
     {
         set = GetComponent<SetSkills>();
+        buttonColors = new string[10];
 
         resetButton();
         setSkillButtons();
         dodgeRoll[0].turnButtonOn();
         mon = skillPoints;
         sCount = skillsBought;
-
-        skillImg.rectTransform.position = new Vector3(5009.6F, -144.7F, 0);
     }
 
     void Update()
@@ -65,8 +65,8 @@ public class SkillsManager : MonoBehaviour
 
     void showSkills()
     {
-        if (isVisible) skillImg.rectTransform.position = new Vector3(5009.6F, -144.7F, 0);
-        else skillImg.rectTransform.position = new Vector3(509.6F, 100.7F, 0);
+        if (isVisible) skillImg.gameObject.SetActive(false);
+        else skillImg.gameObject.SetActive(true);
         isVisible = !isVisible;
     }
 
@@ -88,6 +88,7 @@ public class SkillsManager : MonoBehaviour
         {
             if (array[index].buySkill(skillPoints))
             {
+                if(array != dodgeRoll) buttonColors[index + 4] = "activeStatic";
                 skillsBought++;
                 skillPoints -= array[index].cost;
                 checkPrices();
@@ -101,8 +102,13 @@ public class SkillsManager : MonoBehaviour
 
         else
         {
+            buttonColors[4] = "boughtStatic";
+            buttonColors[5] = "boughtStatic";
+            buttonColors[6] = "boughtStatic";
+
             foreach (ActiveSkill a in array)
             {
+                buttonColors[index + 4] = "activeStatic";
                 if (a.active) a.deactivateSkill(); // deactivate all actives, activate this one
                 if (a != array[index]) a.setUnactiveAnim();
             }
@@ -127,15 +133,23 @@ public class SkillsManager : MonoBehaviour
         if (costTxt != null) costTxt.text = "";
     }
 
-    void checkPrices()
+    public void checkPrices()
     {
         Debug.Log("checking prices...");
-        foreach (Skill a in allSkills)
+        for(int i = 0; i < allSkills.Length; i++)
         {
-            if (a.on && !a.enabled)
+            if (allSkills[i].on && !allSkills[i].enabled)
             {
-                if (a.cost <= skillPoints) a.setBuyable();
-                else a.setUnbuyable();
+                if (allSkills[i].cost <= skillPoints)
+                {
+                    buttonColors[i] = "buyableStatic";
+                    allSkills[i].setBuyable();
+                }
+                else
+                {
+                    buttonColors[i] = "moreMoneyStatic";
+                    allSkills[i].setUnbuyable();
+                }
             }
         }
     }
@@ -146,17 +160,29 @@ public class SkillsManager : MonoBehaviour
         if(skillsBought > 0 && !passivesRow1[0].on)
         {
             turnedOn = true;
-            foreach (PassiveSkill a in passivesRow1) a.turnButtonOn();
+            for(int i = 0; i < passivesRow1.Length; i++)
+            {
+                passivesRow1[i].turnButtonOn();
+                buttonColors[i + 1] = "moreMoneyStatic";
+            }
         }
         else if (skillsBought > 2 && !chargeSkills[0].on)
         {
             turnedOn = true;
-            foreach (ActiveSkill a in chargeSkills) a.turnButtonOn();
+            for (int i = 0; i < chargeSkills.Length; i++)
+            {
+                chargeSkills[i].turnButtonOn();
+                buttonColors[i + 4] = "moreMoneyStatic";
+            }
         }
         else if(skillsBought > 4 && !passivesRow2[0].on)
         {
             turnedOn = true;
-            foreach (PassiveSkill a in passivesRow2) a.turnButtonOn();
+            for (int i = 0; i < passivesRow2.Length; i++)
+            {
+                passivesRow2[i].turnButtonOn();
+                buttonColors[i + 7] = "moreMoneyStatic";
+            }
         }
 
         //if (turnedOn) checkPrices();
@@ -182,13 +208,21 @@ public class SkillsManager : MonoBehaviour
 
     public void dodgeBtn()
     {
-        if (enableActive(dodgeRoll, 0)) set.enableSkill(0);
+        if (enableActive(dodgeRoll, 0))
+        {
+            set.enableSkill(0);
+            buttonColors[0] = "activeStatic";
+        }
     }
 
     public void showText(int index){ setText(allSkills[index]); }
     public void buyPassive(int index)
     {
-        if (enablePassive(allSkills[index])) set.enableSkill(index);
+        if (enablePassive(allSkills[index]))
+        {
+            buttonColors[index] = "boughtStatic";
+            set.enableSkill(index);
+        }
     }
     public void buyActive(int index)
     {

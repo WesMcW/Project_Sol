@@ -405,12 +405,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d75a242b5332ab54ba95f59a90a4d473, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeBools: 000000
+  activeBools: 010000
   activeSkill: -1
   charged: 0
   isAttacking: 0
   chargeTime: 0
   timeToCharge: 1
+  colorTesting: 0
 --- !u!1 &1376768554
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,6 +733,16 @@ PrefabInstance:
     - target: {fileID: 213378603, guid: af1dff02406975d4ebbe38c7f83ce5fc, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514833015028824331, guid: af1dff02406975d4ebbe38c7f83ce5fc,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514833015028824331, guid: af1dff02406975d4ebbe38c7f83ce5fc,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af1dff02406975d4ebbe38c7f83ce5fc, type: 3}
