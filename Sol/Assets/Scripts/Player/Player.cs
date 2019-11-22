@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    ChargeAttacks ca;
     PlayerController controller;
     SpriteRenderer spriteRenderer;
     DialogueManager DM;
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         controller = GetComponent<PlayerController>();
-
+        ca = GetComponent<ChargeAttacks>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
     void Start()
@@ -42,9 +42,9 @@ public class Player : MonoBehaviour
     void Update(){
         if (doingSpecialAction)
         {
-            GetComponent<SpriteRenderer>().color = Color.blue;
+            spriteRenderer.color = Color.blue;
         }
-        else if (dead /* || PauseMenu.GameIsPaused*/)
+        else if (dead || ca.isCharging /* || PauseMenu.GameIsPaused*/)
         {
             controller.Move(Vector2.zero);
             //anim.SetFloat("moveDirection", 0f);
@@ -54,8 +54,9 @@ public class Player : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().color = Color.white;
             MoveUpdate();
-            AttackUpdate();
-            if (canDodge) RollUpdate();
+            if(!ca.isAttacking) AttackUpdate();
+            if (canDodge && !ca.isAttacking) RollUpdate();
+            else if (canDodge && ca.isAttacking && ca.activeSkill == 1) RollUpdate();
         }
     }
 

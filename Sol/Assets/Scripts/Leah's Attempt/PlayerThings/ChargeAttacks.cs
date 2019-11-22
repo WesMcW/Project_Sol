@@ -8,9 +8,10 @@ public class ChargeAttacks : MonoBehaviour
 
     [Header("Reset Stuff")]
     public int activeSkill = -1;
-    public bool charged = false;
+    public bool charged = false, isCharging = false;
     public bool isAttacking = false;
     public float chargeTime = 0F, timeToCharge, colorTesting;
+    public GameObject sonicPref;
 
     // while charging: should not be able to do a normal attack, cannot change direction(?)/cannot move
     // while attacking: cannot do a normal attack, depending if attack has an animation could be able to move again
@@ -26,6 +27,7 @@ public class ChargeAttacks : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.R))
             {
+                isCharging = true;
                 chargeTime += Time.deltaTime;
                 if (chargeTime >= timeToCharge)
                 {
@@ -40,6 +42,7 @@ public class ChargeAttacks : MonoBehaviour
             }
             if (Input.GetKeyUp(KeyCode.R))
             {
+                isCharging = false;
                 //reset values
                 if (charged) DoAttack(activeSkill);
                 chargeTime = colorTesting = 0F;
@@ -56,16 +59,28 @@ public class ChargeAttacks : MonoBehaviour
 
     void DoAttack(int aSkill)
     {
-        if (aSkill == 0) SonicBlastAttack();
-        else if (aSkill == 1) BoomerangThrowAttack();
-        else if (aSkill == 2) numThree();
-        else Debug.Log("No charge attacks active.");
-        charged = false;
+        if (Inventory.inventory.equipSlots[1].itemID != 0)
+        {
+            isAttacking = true;
+            if (aSkill == 0) StartCoroutine(SonicBlastAttack());
+            else if (aSkill == 1) BoomerangThrowAttack();
+            else if (aSkill == 2) numThree();
+            else Debug.Log("No charge attacks active.");
+            charged = isAttacking = false;
+        }
     }
 
-    void SonicBlastAttack()
+    IEnumerator SonicBlastAttack()
     {
         Debug.Log("BOOOM sonic blast attack!");
+
+        // mimic dodge movement
+        //instansiate blast object
+        //give blast attack values
+
+        WaitUntil wait = new WaitUntil(() => isAttacking);
+        yield return wait;
+
     }
 
     void BoomerangThrowAttack()
