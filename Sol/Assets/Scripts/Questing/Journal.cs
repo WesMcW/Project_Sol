@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Journal : MonoBehaviour
 {
+    public static Journal inst;
+
     public GameObject journal, active, complete;
     public Text buttDesc;
     public bool open;
@@ -15,6 +17,11 @@ public class Journal : MonoBehaviour
     public List<Button> activeButtons;
     public List<Button> completedButtons;
 
+    private void Awake()
+    {
+        if (inst != null) Destroy(this);
+        else inst = this;
+    }
 
     void Start()
     {
