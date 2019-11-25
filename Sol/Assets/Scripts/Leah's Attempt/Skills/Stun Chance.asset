@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PassiveSkill
   type: 0
   button: {fileID: 0}
-  description: 'Chance to stun enemies on hit.@@Cost: 1'
+  description: Chance to stun enemies on hit.
   cost: 1
   on: 0
   enabled: 0

@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ActiveSkill
   type: 1
   button: {fileID: 0}
-  description: 'Boomerang Throw:@Throw weapon in an arch that comes back to the player.@[Controls]@@Cost:
-    2'
+  description: Boomerang Throw:@Throw weapon in an arch that comes back to the player.@[Controls]
   cost: 2
-  on: 0
+  on: 1
   enabled: 0
   active: 0
   actionType: 1

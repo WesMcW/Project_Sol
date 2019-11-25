@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PassiveSkill
   type: 0
   button: {fileID: 0}
-  description: 'Increase attack speed.@@Cost: 1'
+  description: Increase attack speed.
   cost: 1
-  on: 0
+  on: 1
   enabled: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PassiveSkill
   type: 0
   button: {fileID: 0}
-  description: 'Chance to block damage taken.@@Cost: 1'
+  description: Chance to block damage taken.
   cost: 1
   on: 0
   enabled: 0

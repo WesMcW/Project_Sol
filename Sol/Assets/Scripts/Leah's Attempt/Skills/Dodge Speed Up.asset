@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PassiveSkill
   type: 0
   button: {fileID: 0}
-  description: 'Increase dodge movement speed.@@Cost: 1'
+  description: Increase dodge movement speed.
   cost: 1
-  on: 0
-  enabled: 0
+  on: 1
+  enabled: 1

@@ -23,7 +23,7 @@ public class ChargeAttacks : MonoBehaviour
 
     void Update()
     {
-        if (activeSkill != -1)
+        if (activeSkill != -1 && Inventory.inventory.equipSlots[1].itemID != 0)
         {
             if (Input.GetKey(KeyCode.R))
             {
@@ -65,7 +65,15 @@ public class ChargeAttacks : MonoBehaviour
             if (aSkill == 0) StartCoroutine(SonicBlastAttack());
             else if (aSkill == 1) BoomerangThrowAttack();
             else if (aSkill == 2) numThree();
-            else Debug.Log("No charge attacks active.");
+            else
+            {
+                Debug.Log("No charge attacks active.");
+                charged = isAttacking = false;
+            }
+        }
+        else
+        {
+            Debug.Log("No weapon equipped.");
             charged = isAttacking = false;
         }
     }
@@ -78,7 +86,7 @@ public class ChargeAttacks : MonoBehaviour
         //instansiate blast object
         //give blast attack values
 
-        WaitUntil wait = new WaitUntil(() => isAttacking);
+        WaitUntil wait = new WaitUntil(() => isAttacking = false);
         yield return wait;
 
     }

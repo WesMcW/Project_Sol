@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ActiveSkill
   type: 1
   button: {fileID: 0}
-  description: 'Charge Attack:@Creates a circular blast around the player.@[Controls]@@Cost:
-    2'
+  description: Charge Attack:@Creates a circular blast around the player.@[Controls]
   cost: 2
-  on: 0
-  enabled: 0
-  active: 0
+  on: 1
+  enabled: 1
+  active: 1
   actionType: 1

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PassiveSkill
   type: 0
   button: {fileID: 0}
-  description: 'Increase crit damage.@@Cost: 1'
+  description: Increase crit damage.
   cost: 1
   on: 0
   enabled: 0
