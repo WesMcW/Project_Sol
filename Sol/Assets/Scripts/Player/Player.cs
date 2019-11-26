@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         controller = GetComponent<PlayerController>();
-        ca = GetComponent<ChargeAttacks>();
+        if(GetComponent<ChargeAttacks>() != null) ca = GetComponent<ChargeAttacks>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
     void Start()
