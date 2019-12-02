@@ -1,0 +1,2623 @@
+fileFormatVersion: 2
+guid: 8220bff4bd77b7641909902a426af2d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3837332062807034243
+    second: GrassLight
+  - first:
+      213: 6472891965696809474
+    second: GrassDark
+  - first:
+      213: 1016356474858856443
+    second: DirtLight
+  - first:
+      213: 8739081067925197392
+    second: DirtLight2
+  - first:
+      213: 2265733724356913235
+    second: DirtDark
+  - first:
+      213: 7738279147722236461
+    second: DirtRocksDeco
+  - first:
+      213: 4623843581157933472
+    second: DirtRocksDeco2
+  - first:
+      213: 2851992815675650969
+    second: DirtRocksDeco3
+  - first:
+      213: 8886703496670905122
+    second: GrassDecoRocks1
+  - first:
+      213: 4325412275305189850
+    second: GrassDecoRocks2
+  - first:
+      213: -1140819496141648227
+    second: GrassDecoRocks3
+  - first:
+      213: -6657422360537337560
+    second: GrassDecoRocks4
+  - first:
+      213: 7561442523119594992
+    second: GrassDecoRocks5
+  - first:
+      213: -4484973413977151509
+    second: PathBottomRight
+  - first:
+      213: -3607467548105179371
+    second: PathBottomLeft
+  - first:
+      213: -2967749334157678170
+    second: PathBottom
+  - first:
+      213: 6762583349905007086
+    second: PathBottom2
+  - first:
+      213: 3089498329686297134
+    second: PathTop
+  - first:
+      213: 1846812469853097543
+    second: GrassDecoGrassLumps
+  - first:
+      213: -4446940686275404989
+    second: GrassDecoGrassLumps2
+  - first:
+      213: 1303779853379141493
+    second: GrassDecoGrassLumps3
+  - first:
+      213: -5135072919376675086
+    second: GrassDecoGrassLumps4
+  - first:
+      213: -3669983451907497360
+    second: GrassDecoGrassLumps5
+  - first:
+      213: 3723436096608724581
+    second: PathRight
+  - first:
+      213: 2380542268717969322
+    second: PathLeft
+  - first:
+      213: -2968002914530656616
+    second: PathTopLeftRight
+  - first:
+      213: 5506590548404355700
+    second: PathTopRightBottom
+  - first:
+      213: 4967316021026527492
+    second: NewOutsideTilesbutmoreREVAMP_27
+  - first:
+      213: -2484352750501996393
+    second: GrassFlowerDeco
+  - first:
+      213: -9142783035896219265
+    second: GrassFlowerDeco2
+  - first:
+      213: -6197704751511967350
+    second: GrassFlowerDeco3
+  - first:
+      213: -538582436184533245
+    second: GrassFlowerDeco4
+  - first:
+      213: 762347088242732879
+    second: GrassFlowerDeco5
+  - first:
+      213: -4297743187476165043
+    second: NewOutsideTilesbutmoreREVAMP_33
+  - first:
+      213: -8128938731892570811
+    second: NewOutsideTilesbutmoreREVAMP_34
+  - first:
+      213: -3764205435427237712
+    second: NewOutsideTilesbutmoreREVAMP_35
+  - first:
+      213: 5419822052530637971
+    second: NewOutsideTilesbutmoreREVAMP_36
+  - first:
+      213: -8411703267280857038
+    second: NewOutsideTilesbutmoreREVAMP_37
+  - first:
+      213: -3372299579370046627
+    second: GrassBump
+  - first:
+      213: 6060286258859967749
+    second: GrassBump2
+  - first:
+      213: -8416217773099624006
+    second: GrassBump3
+  - first:
+      213: 2359980186090071495
+    second: GrassBump4
+  - first:
+      213: 8277391627563433248
+    second: GrassBump5
+  - first:
+      213: 7801524690702411369
+    second: NewOutsideTilesbutmoreREVAMP_43
+  - first:
+      213: 270283669972505095
+    second: NewOutsideTilesbutmoreREVAMP_44
+  - first:
+      213: 7620987953830978327
+    second: NewOutsideTilesbutmoreREVAMP_45
+  - first:
+      213: 8676086511828198395
+    second: NewOutsideTilesbutmoreREVAMP_46
+  - first:
+      213: 7804676009315441799
+    second: NewOutsideTilesbutmoreREVAMP_47
+  - first:
+      213: 4396942868410494963
+    second: NewOutsideTilesbutmoreREVAMP_48
+  - first:
+      213: -7881547656480692031
+    second: NewOutsideTilesbutmoreREVAMP_49
+  - first:
+      213: -8200260093406610317
+    second: NewOutsideTilesbutmoreREVAMP_50
+  - first:
+      213: 3991873028382175971
+    second: NewOutsideTilesbutmoreREVAMP_51
+  - first:
+      213: -6102206335430137217
+    second: NewOutsideTilesbutmoreREVAMP_52
+  - first:
+      213: 2772325483281547119
+    second: NewOutsideTilesbutmoreREVAMP_53
+  - first:
+      213: -5746734098701554379
+    second: NewOutsideTilesbutmoreREVAMP_54
+  - first:
+      213: -1322352919032368561
+    second: NewOutsideTilesbutmoreREVAMP_55
+  - first:
+      213: 2260025480498538204
+    second: NewOutsideTilesbutmoreREVAMP_56
+  - first:
+      213: 7649982486616563727
+    second: NewOutsideTilesbutmoreREVAMP_57
+  - first:
+      213: -8227780674176290462
+    second: NewOutsideTilesbutmoreREVAMP_58
+  - first:
+      213: -1810492079641711633
+    second: NewOutsideTilesbutmoreREVAMP_59
+  - first:
+      213: 3355879174274924627
+    second: NewOutsideTilesbutmoreREVAMP_60
+  - first:
+      213: -7016657330106436880
+    second: NewOutsideTilesbutmoreREVAMP_61
+  - first:
+      213: -601384399258112370
+    second: NewOutsideTilesbutmoreREVAMP_62
+  - first:
+      213: 3017598780951602911
+    second: NewOutsideTilesbutmoreREVAMP_63
+  - first:
+      213: -7748446229190215516
+    second: NewOutsideTilesbutmoreREVAMP_64
+  - first:
+      213: 4926866008590385524
+    second: NewOutsideTilesbutmoreREVAMP_65
+  - first:
+      213: 3264529061202114341
+    second: NewOutsideTilesbutmoreREVAMP_66
+  - first:
+      213: -3457155370551400317
+    second: NewOutsideTilesbutmoreREVAMP_67
+  - first:
+      213: -2662323846166559187
+    second: NewOutsideTilesbutmoreREVAMP_68
+  - first:
+      213: -2516312611503518779
+    second: NewOutsideTilesbutmoreREVAMP_69
+  - first:
+      213: -6790286945325248069
+    second: NewOutsideTilesbutmoreREVAMP_70
+  - first:
+      213: 5062584022134251645
+    second: NewOutsideTilesbutmoreREVAMP_71
+  - first:
+      213: 298210161771500526
+    second: NewOutsideTilesbutmoreREVAMP_72
+  - first:
+      213: 5873807930074202808
+    second: NewOutsideTilesbutmoreREVAMP_73
+  - first:
+      213: 49976557210044898
+    second: NewOutsideTilesbutmoreREVAMP_74
+  - first:
+      213: 2043633844744513769
+    second: NewOutsideTilesbutmoreREVAMP_75
+  - first:
+      213: 8679481232036692106
+    second: NewOutsideTilesbutmoreREVAMP_76
+  - first:
+      213: 7447477642468377398
+    second: NewOutsideTilesbutmoreREVAMP_77
+  - first:
+      213: -1439756079399444456
+    second: NewOutsideTilesbutmoreREVAMP_78
+  - first:
+      213: -3679651077879033114
+    second: NewOutsideTilesbutmoreREVAMP_79
+  - first:
+      213: -8800909682940136256
+    second: NewOutsideTilesbutmoreREVAMP_80
+  - first:
+      213: -979816169501233617
+    second: NewOutsideTilesbutmoreREVAMP_81
+  - first:
+      213: 7022479071800038784
+    second: NewOutsideTilesbutmoreREVAMP_82
+  - first:
+      213: 1056584698196902346
+    second: NewOutsideTilesbutmoreREVAMP_83
+  - first:
+      213: 5479736704928646970
+    second: NewOutsideTilesbutmoreREVAMP_84
+  - first:
+      213: 9042786251384957946
+    second: NewOutsideTilesbutmoreREVAMP_85
+  - first:
+      213: 5090763623275461543
+    second: NewOutsideTilesbutmoreREVAMP_86
+  - first:
+      213: -7993657993475847536
+    second: NewOutsideTilesbutmoreREVAMP_87
+  - first:
+      213: 907274980056021451
+    second: NewOutsideTilesbutmoreREVAMP_88
+  - first:
+      213: 6848427903513983205
+    second: NewOutsideTilesbutmoreREVAMP_89
+  - first:
+      213: 1584724131445903384
+    second: NewOutsideTilesbutmoreREVAMP_90
+  - first:
+      213: -8028774353798530453
+    second: NewOutsideTilesbutmoreREVAMP_91
+  - first:
+      213: -8751947173812461558
+    second: NewOutsideTilesbutmoreREVAMP_92
+  - first:
+      213: -8086303134784184994
+    second: NewOutsideTilesbutmoreREVAMP_93
+  - first:
+      213: -2188347768677968281
+    second: NewOutsideTilesbutmoreREVAMP_94
+  - first:
+      213: 1568993906642086204
+    second: NewOutsideTilesbutmoreREVAMP_95
+  - first:
+      213: 5912801764731897997
+    second: NewOutsideTilesbutmoreREVAMP_96
+  - first:
+      213: 8277896391124347988
+    second: NewOutsideTilesbutmoreREVAMP_97
+  - first:
+      213: 7704728072821994399
+    second: NewOutsideTilesbutmoreREVAMP_98
+  - first:
+      213: -1531846026677823611
+    second: NewOutsideTilesbutmoreREVAMP_99
+  - first:
+      213: -2111874700082559113
+    second: NewOutsideTilesbutmoreREVAMP_100
+  - first:
+      213: 2021892633870204280
+    second: NewOutsideTilesbutmoreREVAMP_101
+  - first:
+      213: -8139919341444921600
+    second: NewOutsideTilesbutmoreREVAMP_102
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 206
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GrassLight
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 2449
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd38eacd1c1431c479eff4e094be5bb0
+      internalID: 3837332062807034243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassDark
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 2449
+        width: 208
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5180f4c25000b2e4f91ff6e8d5167734
+      internalID: 6472891965696809474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtLight
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 2449
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9048f5af6b6bd74d9d57bee3f809288
+      internalID: 1016356474858856443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtLight2
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 2449
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187f6571d2d32534b8d80a69bce0f677
+      internalID: 8739081067925197392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtDark
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 2448
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88192888e6a390a409f92f7090628f66
+      internalID: 2265733724356913235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtRocksDeco
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 2449
+        width: 208
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b130e38326ceaaf40b3b095b48000184
+      internalID: 7738279147722236461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtRocksDeco2
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 2449
+        width: 208
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b8d22cb703a634cb48a80a3ff2722f
+      internalID: 4623843581157933472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirtRocksDeco3
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 2449
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ff2ab51fe9eb943b9bfd128df242bd
+      internalID: 2851992815675650969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassDecoRocks1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 2185
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1a80eaebf90d44384ab79a70f45666
+      internalID: 8886703496670905122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassDecoRocks2
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2185
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5adacebe746fd047bc5845970f96ba0
+      internalID: 4325412275305189850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassDecoRocks3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 2185
+        width: 207
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e515a184e4e741428bb9951035f415e
+      internalID: -1140819496141648227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassDecoRocks4
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 2185
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a421c288b8599ef4d8ec54bfc35d370e
+      internalID: -6657422360537337560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassDecoRocks5
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 2185
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a56130793781be419bd75cb32926e62
+      internalID: 7561442523119594992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PathBottomRight
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 2169
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d042a061ada9f7142af68ea58735ba06
+      internalID: -4484973413977151509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PathBottomLeft
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 2169
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d33268ebda3fcd4ebe34222f3697c6d
+      internalID: -3607467548105179371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PathBottom
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 2169
+        width: 208
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd06bf01aa748014dae8142eca8acbeb
+      internalID: -2967749334157678170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PathBottom2
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 2169
+        width: 208
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c4478873f72e04a99381c71ea17770
+      internalID: 6762583349905007086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PathTop
+      rect:
+        serializedVersion: 2
+        x: 2323
+        y: 2169
+        width: 208
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df72bedf60b19444aeba508cc3e6925
+      internalID: 3089498329686297134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassDecoGrassLumps
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1954
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c0f328c0039de499db53ec7dbf35e3
+      internalID: 1846812469853097543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassDecoGrassLumps2
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1954
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd58086e91afaf04f9459bbc3ce61815
+      internalID: -4446940686275404989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassDecoGrassLumps3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1954
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfd6957861e96b46bded6976e4cfa99
+      internalID: 1303779853379141493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassDecoGrassLumps4
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1954
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520ec04248673d945a0ac352bad1ed15
+      internalID: -5135072919376675086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassDecoGrassLumps5
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1954
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dbebf5c32662e428ec4f6f716369bb
+      internalID: -3669983451907497360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PathRight
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1937
+        width: 208
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb882d016995dd44ca1f15de6b14953e
+      internalID: 3723436096608724581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PathLeft
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 1934
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523ce8fbdbaa30e4da77bc136899c05a
+      internalID: 2380542268717969322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PathTopLeftRight
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 1934
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4715e75922473ee4cb8c82c9fc46158d
+      internalID: -2968002914530656616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PathTopRightBottom
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 1936
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337fa6b22a6fa1945a74f906ea43e3b1
+      internalID: 5506590548404355700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_27
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 1936
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7565ada0d628614fa6e1a809b95ab4b
+      internalID: 4967316021026527492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassFlowerDeco
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1721
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d787b266ac0674348bb0e8564248558c
+      internalID: -2484352750501996393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassFlowerDeco2
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1721
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db2a883032aab84fa6dfd5942760312
+      internalID: -9142783035896219265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassFlowerDeco3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1721
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68be06fa3bd93ea4ca28ff790c8c5d52
+      internalID: -6197704751511967350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassFlowerDeco4
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1721
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5276f2d21273a143adc7d5d42fd2f18
+      internalID: -538582436184533245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassFlowerDeco5
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1721
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203ffbe1192e44b49835994d6f116e21
+      internalID: 762347088242732879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_33
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1706
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7100560643e97348a279b22e5ac2b78
+      internalID: -4297743187476165043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_34
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 1703
+        width: 210
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db62fe43d7a6c6849bc8a6d75df79963
+      internalID: -8128938731892570811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_35
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 1700
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1977057c553d95646b63b1312de7a12a
+      internalID: -3764205435427237712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_36
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 1700
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2b588ae2a2b2848ad87f2d95a2e9db
+      internalID: 5419822052530637971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_37
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 1700
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166918d6c4726194993f30159f75a7b6
+      internalID: -8411703267280857038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassBump
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1486
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7828a4c0750544ea63948be50bd20b
+      internalID: -3372299579370046627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassBump2
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1486
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a2d4eed50b4564cbdc3bef43c823c4
+      internalID: 6060286258859967749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassBump3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1486
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1149665f80409648bf415010cb56dc9
+      internalID: -8416217773099624006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassBump4
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1486
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b75c57fd715def4fa86e1145d9ba7ef
+      internalID: 2359980186090071495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassBump5
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1486
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45e22aad49dd744e950ca14b20036bf
+      internalID: 8277391627563433248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_43
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 1474
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250c2949427782443bf0f3344bbc7c56
+      internalID: 7801524690702411369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_44
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 1474
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a6b3cc74748bf42ae446fa3bac68cd
+      internalID: 270283669972505095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_45
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 1475
+        width: 210
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420e6339507c812449962e3a45493698
+      internalID: 7620987953830978327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_46
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 1475
+        width: 210
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0016e39082421b74f889bddb72863016
+      internalID: 8676086511828198395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_47
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 1475
+        width: 209
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcc63518601aa14fa2969b527bfb748
+      internalID: 7804676009315441799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_48
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1193
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9f27ab8a20a7844bf9f0b9f778b32c
+      internalID: 4396942868410494963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_49
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1192
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5840307a71ccc4ab00d48a906361e7
+      internalID: -7881547656480692031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_50
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1192
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0edbfc4dd936ce4daba6ba6c3080d05
+      internalID: -8200260093406610317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_51
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1192
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f62aa65595119641a8de69bd8508e83
+      internalID: 3991873028382175971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_52
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1192
+        width: 209
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf38560ebd0f09647853bd9588e1d0aa
+      internalID: -6102206335430137217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_53
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1242
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1161f973d5cf3e7479dee7ffca21f5a8
+      internalID: 2772325483281547119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_54
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 1238
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229c6228673e5a44c81a75aebddbeb2d
+      internalID: -5746734098701554379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_55
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 1235
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8196f04e0b1c4964d90355b0ae3234ef
+      internalID: -1322352919032368561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_56
+      rect:
+        serializedVersion: 2
+        x: 2101
+        y: 1239
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a6be8c34f94de419ba3cbdeb529886
+      internalID: 2260025480498538204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_57
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 1239
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddac589993af9047b4d0c5085fb8ae4
+      internalID: 7649982486616563727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_58
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 961
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374db5fd0c1b1a04488f4113ac442b93
+      internalID: -8227780674176290462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_59
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 958
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18af22ae751a18543883b6f1f5abbba1
+      internalID: -1810492079641711633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_60
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 958
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e79b0b47de0484eb28555e5e0c22d0
+      internalID: 3355879174274924627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_61
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 960
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8900295aced0da04f89a2372f2f0e62e
+      internalID: -7016657330106436880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_62
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 960
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892c66aea86f8914b94965670ae1a0f5
+      internalID: -601384399258112370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_63
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 976
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267738c361801a743a73d4b62b961b74
+      internalID: 3017598780951602911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_64
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 975
+        width: 210
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6136f4641bc2754489ec6aa2bd2d7144
+      internalID: -7748446229190215516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_65
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 976
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf29197c9e43d14aad1c3d8dfd4f3d3
+      internalID: 4926866008590385524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_66
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 976
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7082325034c02340a545ec222df877e
+      internalID: 3264529061202114341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_67
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 976
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea37e760f7dce84486685e18e2028e3
+      internalID: -3457155370551400317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_68
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 729
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5768610320668bc4ebbe2fbfdaa207ce
+      internalID: -2662323846166559187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_69
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 727
+        width: 210
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7ae22ab7be645488cb170e86234e96
+      internalID: -2516312611503518779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_70
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 724
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9584f8800e9f54d82e48275973ce4f
+      internalID: -6790286945325248069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_71
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 724
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df099d5f8ed8cc7459c72cf1cccecc4a
+      internalID: 5062584022134251645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_72
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 724
+        width: 209
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f7321b08b967049ba46d71018a71d9
+      internalID: 298210161771500526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_73
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 744
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d12ff7a45667ee42a49f72641ab53cc
+      internalID: 5873807930074202808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_74
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 742
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00236b616d188514cbbd2c8584b3081a
+      internalID: 49976557210044898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_75
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 742
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4669b8581db07754fac7c91a4bf4bde6
+      internalID: 2043633844744513769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_76
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 744
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d80fd5a5ec22ca48ac1a9dc1ad51b82
+      internalID: 8679481232036692106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_77
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 744
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1845abe25ffef741b9b1d23531d2e12
+      internalID: 7447477642468377398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_78
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 498
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8aeab7b5df37c4db9bb0112f36e1c6
+      internalID: -1439756079399444456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_79
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 497
+        width: 208
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c130fda693552745bf69d02d2968349
+      internalID: -3679651077879033114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_80
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 500
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a0aa1642493c5459d05cb7a466b43f
+      internalID: -8800909682940136256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_81
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 500
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17de9de89110fb42a009accee7b8b9e
+      internalID: -979816169501233617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_82
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 500
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd76080397166747973e12ab9c9f481
+      internalID: 7022479071800038784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_83
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 512
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f45832aee88be1458328dc61d7f0b97
+      internalID: 1056584698196902346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_84
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 511
+        width: 210
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3e9158b1d59a64c9b20ddd6970aea2
+      internalID: 5479736704928646970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_85
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 508
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0644b349dbefaf40b8b8537e94140e3
+      internalID: 9042786251384957946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_86
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 508
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca9bb74dc8e94246b504038781f20c3
+      internalID: 5090763623275461543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_87
+      rect:
+        serializedVersion: 2
+        x: 2347
+        y: 508
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8b0cc8c1762364888c5491282adc91
+      internalID: -7993657993475847536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_88
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 266
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1dabe84730d26c438e5afb2ad19f01d
+      internalID: 907274980056021451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_89
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 262
+        width: 208
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52766ee4483f641439b4b93e3d369e58
+      internalID: 6848427903513983205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_90
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 260
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebafa247290ccb9468bd4bd23d2b89a1
+      internalID: 1584724131445903384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_91
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 263
+        width: 208
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4209fe94f8ed904ba825094b4fb7e08
+      internalID: -8028774353798530453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_92
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 263
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f717f76ada0e648b96613cc80879c8
+      internalID: -8751947173812461558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_93
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 280
+        width: 209
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efce01d401244b04ab085f349b9e2491
+      internalID: -8086303134784184994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_94
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 280
+        width: 210
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd34a912f76380438e5efdab90ba574
+      internalID: -2188347768677968281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_95
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 283
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3bb25b40e1baed438bfa56dfa403e44
+      internalID: 1568993906642086204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_96
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 283
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725d59fd889697d4abc30f9892f2a5f6
+      internalID: 5912801764731897997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_97
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 283
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b3737d1b5426244a7afd8f7abc64ba
+      internalID: 8277896391124347988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_98
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 49
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37285275b1f9cb41b556361b52f81fe
+      internalID: 7704728072821994399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_99
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 45
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6597cbcd78c2a488a479558c1b17aa
+      internalID: -1531846026677823611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_100
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 43
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33c6af3728e13b4d8d9cb4c9066800a
+      internalID: -2111874700082559113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_101
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 46
+        width: 210
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd7355c75de8e5458f593e2a3b20fb8
+      internalID: 2021892633870204280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOutsideTilesbutmoreREVAMP_102
+      rect:
+        serializedVersion: 2
+        x: 2358
+        y: 46
+        width: 209
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d16140fdebe7ed44b05ad88c24af48e
+      internalID: -8139919341444921600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: dee113220d48cd546babfbed19417272
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
