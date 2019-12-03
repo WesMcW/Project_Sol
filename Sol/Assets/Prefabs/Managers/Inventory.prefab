@@ -7238,6 +7238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryKey: 105
   quickSwitchKey: 304
+  singleItemKey: 0
   CI: {fileID: 1280863525}
   inventoryMenu: {fileID: 1358110731}
   slots:
