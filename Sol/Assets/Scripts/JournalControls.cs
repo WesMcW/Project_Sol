@@ -9,9 +9,9 @@ public class JournalControls : MonoBehaviour
     Journal j;
 
     [SerializeField]
-    private GameObject questingInfo, skillTree;
+    private GameObject questingInfo, skillTree, inv;
 
-    int pageNum;
+    int pageNum = 0;
 
     void Start()
     {
@@ -21,24 +21,40 @@ public class JournalControls : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftBracket) && j.open)
+        if(Input.GetKeyDown(KeyCode.RightBracket) && j.open)
         {
-            anim.SetTrigger("flipL");
-
+            //anim.SetTrigger("flipL");
+            if(pageNum != 2)
+            {
+                anim.SetTrigger("flipL");
+                pageNum++;
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.RightBracket) && j.open)
+        else if (Input.GetKeyDown(KeyCode.LeftBracket) && j.open)
         {
-            anim.SetTrigger("flipR");
+            //anim.SetTrigger("flipR");
+            if(pageNum != 0)
+            {
+                anim.SetTrigger("flipR");
+                pageNum--;
+            }
         }
     }
 
-    public void hideQuesting()
+    public void hideStuff()
     {
         questingInfo.SetActive(false);
+        skillTree.SetActive(false);
+        inv.SetActive(false);
     }
 
-    public void showQuesting()
+    public void showStuff()
     {
-        questingInfo.SetActive(true);
+        if (pageNum == 0)
+            questingInfo.SetActive(true);
+        else if (pageNum == 1)
+            skillTree.SetActive(true);
+        else if (pageNum == 2)
+            inv.SetActive(true);
     }
 }
