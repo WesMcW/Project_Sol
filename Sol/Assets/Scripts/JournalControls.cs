@@ -23,7 +23,6 @@ public class JournalControls : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.RightBracket) && j.open)
         {
-            //anim.SetTrigger("flipL");
             if(pageNum != 2)
             {
                 anim.SetTrigger("flipL");
@@ -32,7 +31,6 @@ public class JournalControls : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.LeftBracket) && j.open)
         {
-            //anim.SetTrigger("flipR");
             if(pageNum != 0)
             {
                 anim.SetTrigger("flipR");
@@ -41,6 +39,7 @@ public class JournalControls : MonoBehaviour
         }
     }
 
+    //Hides the journal UI during animation
     public void hideStuff()
     {
         questingInfo.SetActive(false);
@@ -48,6 +47,7 @@ public class JournalControls : MonoBehaviour
         inv.SetActive(false);
     }
 
+    //Shows the UI for current page
     public void showStuff()
     {
         if (pageNum == 0)
@@ -56,5 +56,19 @@ public class JournalControls : MonoBehaviour
             skillTree.SetActive(true);
         else if (pageNum == 2)
             inv.SetActive(true);
+    }
+
+    //Bookmarks to specific pages in the journal
+    public void questMark()
+    {
+
+    }
+    public void skillMark()
+    {
+
+    }
+    public void invMark()
+    {
+
     }
 }
