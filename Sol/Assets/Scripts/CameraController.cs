@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour
 
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         mousePos = CaptureMousePosition();
         UpdateCameraPosition();
