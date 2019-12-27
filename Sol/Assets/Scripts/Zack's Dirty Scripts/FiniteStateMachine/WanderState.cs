@@ -26,7 +26,7 @@ public class WanderAction : FSMAction
     }
     public override void OnEnter()
     {
-        Debug.Log("ToPatrol");
+        //Debug.Log("ToPatrol");
         if(target != null)
             if (TimeInDir <= 0 || Vector2.Distance(target.position, theMachine.transform.position) < 1)
             {
@@ -52,7 +52,7 @@ public class WanderAction : FSMAction
     {
         polledTime += Time.deltaTime;
         TimeInDir -= Time.deltaTime;
-        Debug.Log("OnPatrol");
+       // Debug.Log("OnPatrol");
             if (TimeInDir <= 0 || Vector2.Distance(target.position, theMachine.transform.position) < 1)
             {
                 Finish();

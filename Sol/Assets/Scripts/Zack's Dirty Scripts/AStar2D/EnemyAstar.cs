@@ -20,6 +20,7 @@ public class EnemyAstar : MonoBehaviour
 	[SerializeField]
 	GameObject sight;
 	float reactionTime = 3;
+    bool lookingRight = true;
 	private void Start()
 	{
 		lastPosition = transform.position;
@@ -28,9 +29,22 @@ public class EnemyAstar : MonoBehaviour
 	}
 	private void Update()
 	{
-        if(followTargetGo)
-		    PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
-        else if(!followTargetGo && !stopWandering)
+        if (followTargetGo)
+        {
+            PathRequestManager.RequestPath(new PathRequest(transform.position, target.position, OnPathFound));
+            
+            if(!lookingRight && target.transform.position.x - gameObject.transform.position.x > 0)
+            {
+                print("go right");
+                flip();
+            }
+            if (lookingRight && target.transform.position.x - gameObject.transform.position.x < 0)
+            {
+                print("go left");
+                flip();
+            }
+        }
+        else if (!followTargetGo && !stopWandering)
         {
             stopWandering = true;
             StopCoroutine("FollowPath");
@@ -49,6 +63,13 @@ public class EnemyAstar : MonoBehaviour
     public Animator GetAnim()
     {
         return anim;
+    }
+    void flip()
+    {
+        lookingRight = !lookingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 	//This needs to ne reworked, I have some ideas
 	IEnumerator FollowPath()

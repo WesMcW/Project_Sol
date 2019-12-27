@@ -25,7 +25,7 @@ public class IdleAction : FSMAction
     public override void OnEnter()
     {
         
-        Debug.Log("ToIdle");
+        //Debug.Log("ToIdle");
         if(theEnemy != null)
             theEnemy.GetAnim().SetFloat("speed", 0);
     }
@@ -43,7 +43,7 @@ public class IdleAction : FSMAction
                 return;
             }
         }
-        Debug.Log(textToShow);
+       // Debug.Log(textToShow);
     }
 
     public override void OnExit()
