@@ -6,6 +6,7 @@ using System.IO;
 
 public static class SaveLoadManager
 {
+
     public static void SavePlayer(Player player)
     {
         BinaryFormatter bf = new BinaryFormatter();
