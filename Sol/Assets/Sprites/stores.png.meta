@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 0cf279fced72e4d82bd2b3fd5e14e0b2
+guid: 5fb8c9faa27d34edead153a203f7ffaa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3054446633583841889
-    second: FoliageRemastered_0
+      213: 8639339933803391326
+    second: stores_0
   - first:
-      213: -6780683171275072110
-    second: FoliageRemastered_1
+      213: -1551355472456555276
+    second: stores_1
   - first:
-      213: 9036724781511101403
-    second: FoliageRemastered_2
+      213: -7789168060983744715
+    second: stores_2
   - first:
-      213: -2546070337870193328
-    second: FoliageRemastered_3
+      213: 3683187478241771070
+    second: stores_3
+  - first:
+      213: 8710061351704284561
+    second: stores_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -146,76 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FoliageRemastered_0
+      name: stores_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 95
-        width: 498
-        height: 544
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5af2696004ccb4f17959254987786772
-      internalID: 3054446633583841889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FoliageRemastered_1
-      rect:
-        serializedVersion: 2
-        x: 651
-        y: 91
-        width: 494
-        height: 519
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 901e81061af5a494da9ce162b570521c
-      internalID: -6780683171275072110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FoliageRemastered_2
-      rect:
-        serializedVersion: 2
-        x: 1267
-        y: 95
-        width: 541
-        height: 574
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29e370de79c2e4353a01bdc9c81b0528
-      internalID: 9036724781511101403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FoliageRemastered_3
-      rect:
-        serializedVersion: 2
-        x: 2012
         y: 0
-        width: 579
-        height: 549
+        width: 2360
+        height: 2652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +163,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3f7b538af0fc4929b87efa8fd7ae32d
-      internalID: -2546070337870193328
+      spriteID: 1e8f8fc3be5d144c895be569f6dad22b
+      internalID: 8639339933803391326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stores_1
+      rect:
+        serializedVersion: 2
+        x: 2881
+        y: 162
+        width: 2362
+        height: 2393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c869e7f7e864d08adbc38cd17937f7
+      internalID: -1551355472456555276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stores_2
+      rect:
+        serializedVersion: 2
+        x: 5696
+        y: 195
+        width: 2365
+        height: 2393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7275bf28e982f44a6a08b6842e3a7755
+      internalID: -7789168060983744715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stores_3
+      rect:
+        serializedVersion: 2
+        x: 8662
+        y: 0
+        width: 2362
+        height: 2652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c66fb1a9b0141828da8637a818d27e
+      internalID: 3683187478241771070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stores_4
+      rect:
+        serializedVersion: 2
+        x: 11355
+        y: 0
+        width: 2952
+        height: 2652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f393c604137a42e9a3c70c0128c0979
+      internalID: 8710061351704284561
       vertices: []
       indices: 
       edges: []
@@ -232,7 +256,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 376c2e737aa674587bdbd27e2aeb28e1
+    spriteID: 6b39cb1b652b64ea9a98f01f4950b666
     internalID: 0
     vertices: []
     indices: 
