@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 2116141564}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.283578, y: -2.8009446, z: -5.358666}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 8514833015028824330}
   m_RootOrder: 0
@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 8514833015028824330}
   - component: {fileID: 8514833015028824331}
   - component: {fileID: 8514833015028824335}
+  - component: {fileID: 7784538015353246343}
   - component: {fileID: 8514833015028824332}
   - component: {fileID: 8514833015028824333}
   - component: {fileID: 8514833015028824334}
@@ -176,6 +177,7 @@ GameObject:
   - component: {fileID: 688197385}
   - component: {fileID: 688197386}
   - component: {fileID: 688197377}
+  - component: {fileID: 745380204}
   m_Layer: 0
   m_Name: character
   m_TagString: Player
@@ -264,13 +266,26 @@ MonoBehaviour:
   myHitBox: {fileID: 8514833015028824334}
   anim: {fileID: 688197386}
   canDodge: 0
-  sword: {fileID: 2116141564}
-  weaponRotatePoint: {fileID: 8514833015028824330}
   moveSpeed: 10
   rollSpeed: 15
-  attackMoveSpeed: 10
-  attackRange: 2
-  attackDuration: 0.5
+  doingSpecialAction: 0
+--- !u!114 &7784538015353246343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514833015028824328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a908f9a284f79849b6228aa75aa3de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sword: {fileID: 2116141564}
+  weaponRotatePoint: {fileID: 8514833015028824330}
+  attackMoveSpeed: 0
+  attackRange: 3
+  attackDuration: 0.2
 --- !u!50 &8514833015028824332
 Rigidbody2D:
   serializedVersion: 4
@@ -419,3 +434,24 @@ MonoBehaviour:
   level: 1
   xpRef: 0
   xpToLevel: 100
+--- !u!114 &745380204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514833015028824328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75a242b5332ab54ba95f59a90a4d473, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeBools: 000000
+  activeSkill: -1
+  charged: 0
+  isCharging: 0
+  isAttacking: 0
+  chargeTime: 0
+  timeToCharge: 0
+  colorTesting: 0
+  sonicPref: {fileID: 0}
