@@ -9,17 +9,7 @@ public class ItemIDManager : MonoBehaviour
 
     public static ItemIDManager instance;
 
-    void Awake(){
-        if (instance != null){
-            Debug.LogWarning("More than one instance of ItemIDManager found");
-            Destroy(gameObject);
-            return;
-        }
-        instance = this;
 
-    }
-
-    #endregion
 
     [Header("Weapons: 1")]
     [SerializeField]
@@ -42,13 +32,26 @@ public class ItemIDManager : MonoBehaviour
     //Jagged Hash Array
     GameObject[][] array;
 
-    void Start() {
+
+    void Awake(){
+        if (instance != null){
+            Debug.LogWarning("More than one instance of ItemIDManager found");
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
         array = new GameObject[][] {
             weapons,
             armor,
             ingredients,
             food
         };
+    }
+
+    #endregion
+
+    void Start() {
+       
 
     }
 
