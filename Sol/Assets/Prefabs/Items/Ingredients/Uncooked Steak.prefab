@@ -165,7 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Uncooked Steak
   description: 'Raw Meat. Find a stove! '
-  sprite: {fileID: 4034873625481168834, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
+  sprite: {fileID: 3946027004081632563, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
   ItemID: 37
   amountLimit: 3
   canBePickedUp: 1
