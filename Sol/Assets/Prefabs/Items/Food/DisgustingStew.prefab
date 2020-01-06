@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Disgusting Stew
   description: Oh no.. What have you done?
-  sprite: {fileID: -4169399362338533420, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
+  sprite: {fileID: 4282315377695017999, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
   ItemID: 41
   amountLimit: 3
   canBePickedUp: 1

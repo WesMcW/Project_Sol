@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Cooked Steak
   description: Very filling!
-  sprite: {fileID: 3983405018662690971, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
+  sprite: {fileID: -8014275530069408155, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
   ItemID: 43
   amountLimit: 3
   canBePickedUp: 1
