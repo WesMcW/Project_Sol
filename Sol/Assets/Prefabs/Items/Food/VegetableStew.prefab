@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Vegetable Stew
   description: Yummy!
-  sprite: {fileID: -8014275530069408155, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
+  sprite: {fileID: 7908558994367449539, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
   ItemID: 40
   amountLimit: 3
   canBePickedUp: 1

@@ -64,7 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Rock Stew
   description: Umm. What?
-  sprite: {fileID: 3946027004081632563, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
+  sprite: {fileID: 4820688438788214557, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
   ItemID: 45
   amountLimit: 3
   canBePickedUp: 1

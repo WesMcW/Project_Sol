@@ -165,7 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Tomato Soup
   description: Juicy!
-  sprite: {fileID: -6814677020220324006, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
+  sprite: {fileID: 3981566668312230139, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
   ItemID: 46
   amountLimit: 3
   canBePickedUp: 1

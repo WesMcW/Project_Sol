@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Mushroom
   description: An edible Fungus. Nice!
-  sprite: {fileID: -3670924675031685130, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
+  sprite: {fileID: -7937607877750570363, guid: 44592ce4e551e44eda8d14591a5b7198, type: 3}
   ItemID: 35
   amountLimit: 3
   canBePickedUp: 1
