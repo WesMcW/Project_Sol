@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
     void Update(){
         if (doingSpecialAction)
         {
-            spriteRenderer.color = Color.blue;
+            //spriteRenderer.color = Color.blue;
         }
         else if (dead || ca.isCharging /* || PauseMenu.GameIsPaused*/)
         {
@@ -124,6 +124,7 @@ public class Player : MonoBehaviour
         if (!doingSpecialAction && Input.GetMouseButtonDown(1))
         {
             doingSpecialAction = true;
+            spriteRenderer.color = Color.blue;
             StartCoroutine(Roll());
         }
     }
@@ -184,7 +185,7 @@ public class Player : MonoBehaviour
             }
             */
 
-            yield return new WaitForSeconds(.25f);
+            yield return new WaitForSeconds(.15f);
         }
 
         //yield return new WaitForSeconds(.75f);

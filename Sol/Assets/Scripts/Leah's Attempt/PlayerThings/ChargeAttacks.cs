@@ -51,10 +51,11 @@ public class ChargeAttacks : MonoBehaviour
         }
         else
         {
-            gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+            //gameObject.GetComponent<SpriteRenderer>().color = Color.white;
             if (chargeTime != 0) chargeTime = 0;
             if (colorTesting != 0) colorTesting = 0;
         }
+        if (Input.GetKeyUp(KeyCode.R)) gameObject.GetComponent<SpriteRenderer>().color = Color.white;
     }
 
     void DoAttack(int aSkill)
