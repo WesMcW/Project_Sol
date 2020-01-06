@@ -38,12 +38,12 @@ public class Journal : MonoBehaviour
 
     public void openJ()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !open)
+        if (Input.GetKeyDown(KeyCode.I) && !open)
         {
             journal.SetActive(true);
             open = true;
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && open)
+        else if (Input.GetKeyDown(KeyCode.I) && open)
         {
             journal.SetActive(false);
             open = false;
