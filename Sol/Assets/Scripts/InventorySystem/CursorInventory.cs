@@ -37,17 +37,21 @@ public class CursorInventory : MonoBehaviour
 
     private void OnDisable()
     {
-        //When the inventory menu is disabled, dumb the item held.
-        if(currentItem != null)
+        if (this.enabled)
         {
-           GameObject tmp = Instantiate(ItemIDManager.instance.GetItem(currentItem.ItemID), playerTransform.position, Quaternion.identity);
-            tmp.GetComponent<ItemInfo>().amount = amount;
-            tmp.GetComponent<ItemInfo>().canBePickedUp = false;
-            RemoveItem();
+            //When the inventory menu is disabled, dumb the item held.
+            if (currentItem != null)
+            {
+                GameObject tmp = Instantiate(ItemIDManager.instance.GetItem(currentItem.ItemID), playerTransform.position, Quaternion.identity);
+                tmp.GetComponent<ItemInfo>().amount = amount;
+                tmp.GetComponent<ItemInfo>().canBePickedUp = false;
+                RemoveItem();
+            }
         }
        
+       
     }
-
+   
     private void Update()
     {
         Vector3 pos = Input.mousePosition + offset;
@@ -61,7 +65,6 @@ public class CursorInventory : MonoBehaviour
             tmp.GetComponent<ItemInfo>().canBePickedUp = false;
             RemoveItem();
         }
-
     }
 
 
