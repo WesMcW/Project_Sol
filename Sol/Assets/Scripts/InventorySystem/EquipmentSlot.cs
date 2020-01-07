@@ -84,7 +84,7 @@ public class EquipmentSlot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPo
         {
             //Pick up an item
             //Only if the slot is not empty, pick up the item in here.
-            if (itemID != 0)
+            if (itemID != 0 && inventoryManager.CI.GetCurrentItem() == 0)
             {
                 inventoryManager.CI.AddItem(itemID, amount);
                 RemoveItem();

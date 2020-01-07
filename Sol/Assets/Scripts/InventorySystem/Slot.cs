@@ -57,7 +57,7 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
         {
             //Pick up an item
             //Only if the slot is not empty, pick up the item in here.
-            if (itemID != 0)
+            if (itemID != 0 && inventoryManager.CI.GetCurrentItem() == 0)
             {
                 inventoryManager.CI.AddItem(itemID, amount);
                 RemoveItem();
@@ -127,13 +127,7 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
                 inventoryManager.CI.RemoveItem();
             }
         }
-        else
-        {
-            //Swap 
-            inventoryManager.AddItemToInventory(itemID, amount);
-            AddItem(inventoryManager.CI.GetCurrentItem(), inventoryManager.CI.GetCurrentAmount());
-            inventoryManager.CI.RemoveItem();
-        }
+       
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -215,7 +209,19 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
                 inventoryManager.AddItemToEquipment(savedID, savedAmount);
             } else if (eventData.button == PointerEventData.InputButton.Right)
             {
-                Debug.Log("Right Mouse Button Clicked on: " + name);
+               //Drop single item
+               //only if the slot is empty or the id's match
+               if(itemID == 0)
+                {
+                    //empty slot, put in 1 item
+                    AddItem(inventoryManager.CI.GetCurrentItem(), 1);
+                    inventoryManager.CI.DecreaseCurrentAmount(1);
+
+                } else if(itemID == inventoryManager.CI.GetCurrentItem() && amount + 1 <= ItemIDManager.instance.GetItem(inventoryManager.CI.GetCurrentItem()).GetComponent<ItemInfo>().amountLimit)
+                {
+                    //Same item and can add
+                    IncreaseAmount(1);
+                }
             }
         }
     }
