@@ -4,19 +4,19 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 8639339933803391326
-    second: stores_0
+    second: EmptyStore
   - first:
       213: -1551355472456555276
-    second: stores_1
+    second: MeatStore
   - first:
       213: -7789168060983744715
-    second: stores_2
+    second: VeggieStore
   - first:
       213: 3683187478241771070
-    second: stores_3
+    second: FishStore
   - first:
       213: 8710061351704284561
-    second: stores_4
+    second: QuestWall
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -149,7 +149,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stores_0
+      name: EmptyStore
       rect:
         serializedVersion: 2
         x: 0
@@ -157,7 +157,7 @@ TextureImporter:
         width: 2360
         height: 2652
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,7 +170,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stores_1
+      name: MeatStore
       rect:
         serializedVersion: 2
         x: 2881
@@ -178,7 +178,7 @@ TextureImporter:
         width: 2362
         height: 2393
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,7 +191,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stores_2
+      name: VeggieStore
       rect:
         serializedVersion: 2
         x: 5696
@@ -199,7 +199,7 @@ TextureImporter:
         width: 2365
         height: 2393
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,7 +212,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stores_3
+      name: FishStore
       rect:
         serializedVersion: 2
         x: 8662
@@ -220,7 +220,7 @@ TextureImporter:
         width: 2362
         height: 2652
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,7 +233,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stores_4
+      name: QuestWall
       rect:
         serializedVersion: 2
         x: 11355
@@ -241,7 +241,7 @@ TextureImporter:
         width: 2952
         height: 2652
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
