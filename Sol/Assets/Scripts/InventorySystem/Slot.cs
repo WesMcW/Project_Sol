@@ -221,6 +221,7 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
                 {
                     //Same item and can add
                     IncreaseAmount(1);
+                    inventoryManager.CI.DecreaseCurrentAmount(1);
                 }
             }
         }
