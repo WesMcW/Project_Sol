@@ -94,11 +94,21 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
                 } else if(inventoryManager.CI.GetCurrentAmount() + amount > amountLimit)
                 {
                     //Add what you can
-                    inventoryManager.CI.DecreaseCurrentAmount(amountLimit - amount);
-                    IncreaseAmount(amountLimit - amount);
-                    inventoryManager.AddItemToInventory(itemID, inventoryManager.CI.GetCurrentAmount());
-                    inventoryManager.CI.RemoveItem();
-                }
+                    int amt = amountLimit - amount;
+                    if (amt == 0)
+                    {
+                        //Then swap the items
+                        int id = itemID;
+                        int amt2 = amount;
+                        AddItem(inventoryManager.CI.GetCurrentItem(), inventoryManager.CI.GetCurrentAmount());
+                        inventoryManager.CI.AddItem(id, amt2);
+                    }
+                    else
+                    {
+                        inventoryManager.CI.DecreaseCurrentAmount(amt);
+                        IncreaseAmount(amt);
+                    }
+                } 
                 
             } else if(itemID != inventoryManager.CI.GetCurrentItem())
             {
@@ -153,10 +163,22 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
                 else if (inventoryManager.CI.GetCurrentAmount() + amount > amountLimit)
                 {
                     //Add what you can
-                    inventoryManager.CI.DecreaseCurrentAmount(amountLimit - amount);
-                    IncreaseAmount(amountLimit - amount);
-                    inventoryManager.AddItemToInventory(itemID, inventoryManager.CI.GetCurrentAmount());
-                    inventoryManager.CI.RemoveItem();
+                    int amt = amountLimit - amount;
+                    if(amt == 0)
+                    {
+                        //Then swap the items
+                        int id = itemID;
+                        int amt2 = amount;
+                        AddItem(inventoryManager.CI.GetCurrentItem(), inventoryManager.CI.GetCurrentAmount());
+                        inventoryManager.CI.AddItem(id, amt2);
+                    } else
+                    {
+                        inventoryManager.CI.DecreaseCurrentAmount(amt);
+                        IncreaseAmount(amt);
+                    }
+                   
+                   
+                    
                 }
 
             }
