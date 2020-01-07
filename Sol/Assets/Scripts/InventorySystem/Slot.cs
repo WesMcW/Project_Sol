@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
-public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClickHandler
+public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClickHandler, IPointerDownHandler
 {
     public bool empty;
     public int itemID;
@@ -53,7 +53,7 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
     public void OnBeginDrag(PointerEventData eventData)
     {
        // Debug.Log("Mouse Down: " + eventData.pointerCurrentRaycast.gameObject.name);
-        if (eventData.pointerCurrentRaycast.gameObject == this.gameObject || eventData.pointerCurrentRaycast.gameObject == this.transform.GetChild(0).gameObject)
+        if (eventData.pointerCurrentRaycast.gameObject == this.gameObject || eventData.pointerCurrentRaycast.gameObject == this.transform.GetChild(0).gameObject && eventData.button == PointerEventData.InputButton.Left)
         {
             //Pick up an item
             //Only if the slot is not empty, pick up the item in here.
@@ -61,7 +61,7 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
             {
                 inventoryManager.CI.AddItem(itemID, amount);
                 RemoveItem();
-                print("Picked up: " + inventoryManager.CI.GetCurrentItem());
+               // print("Picked up: " + inventoryManager.CI.GetCurrentItem());
             }
         }
     }
@@ -70,7 +70,7 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
     {
        
        // Debug.Log("Mouse Up: " + eventData.pointerCurrentRaycast.gameObject.name);
-        if (eventData.pointerCurrentRaycast.gameObject == this.gameObject || eventData.pointerCurrentRaycast.gameObject == this.transform.GetChild(0).gameObject)
+        if ((eventData.pointerCurrentRaycast.gameObject == this.gameObject || eventData.pointerCurrentRaycast.gameObject == this.transform.GetChild(0).gameObject) && inventoryManager.CI.GetCurrentItem() != 0 && eventData.button == PointerEventData.InputButton.Left)
         {
             int amountLimit = ItemIDManager.instance.GetItem(inventoryManager.CI.GetCurrentItem()).GetComponent<ItemInfo>().amountLimit;
             //Place an Item
@@ -138,7 +138,7 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if ((eventData.pointerCurrentRaycast.gameObject == this.gameObject || eventData.pointerCurrentRaycast.gameObject == this.transform.GetChild(0).gameObject) && inventoryManager.CI.GetCurrentItem() != 0)
+        if ((eventData.pointerCurrentRaycast.gameObject == this.gameObject || eventData.pointerCurrentRaycast.gameObject == this.transform.GetChild(0).gameObject) && inventoryManager.CI.GetCurrentItem() != 0 && eventData.button == PointerEventData.InputButton.Left)
         {
             int amountLimit = ItemIDManager.instance.GetItem(inventoryManager.CI.GetCurrentItem()).GetComponent<ItemInfo>().amountLimit;
             //Place an Item
@@ -200,6 +200,24 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
             }
         }
         
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if ((eventData.pointerCurrentRaycast.gameObject == this.gameObject || eventData.pointerCurrentRaycast.gameObject == this.transform.GetChild(0).gameObject))
+        {
+            if (Input.GetKey(switchKey) && inventoryManager.CategoryIDCheck(itemID))
+            {
+                //Send the item here into an empty slot. Save the current information.
+                int savedID = itemID;
+                int savedAmount = amount;
+                RemoveItem();
+                inventoryManager.AddItemToEquipment(savedID, savedAmount);
+            } else if (eventData.button == PointerEventData.InputButton.Right)
+            {
+                Debug.Log("Right Mouse Button Clicked on: " + name);
+            }
+        }
     }
     
     /*

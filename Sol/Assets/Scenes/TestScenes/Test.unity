@@ -678,6 +678,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates: []
+--- !u!1 &798290385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7938077294432484152, guid: 2fcd0999a4262304390979a827a358e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1682401183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &798290388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798290385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &803634159 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7938077293283092445, guid: 2fcd0999a4262304390979a827a358e9,
@@ -1071,6 +1090,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe14062baa200ed4791e94f88edfd626, type: 3}
+--- !u!1 &1357323245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7938077293928350796, guid: 2fcd0999a4262304390979a827a358e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1682401183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1357323248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357323245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1001 &1467249480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1927,6 +1965,9 @@ PrefabInstance:
     - {fileID: 7938077293896674715, guid: 2fcd0999a4262304390979a827a358e9, type: 3}
     - {fileID: 7938077294418856171, guid: 2fcd0999a4262304390979a827a358e9, type: 3}
     - {fileID: 7938077293645492566, guid: 2fcd0999a4262304390979a827a358e9, type: 3}
+    - {fileID: 7938077294432484154, guid: 2fcd0999a4262304390979a827a358e9, type: 3}
+    - {fileID: 7938077294366788450, guid: 2fcd0999a4262304390979a827a358e9, type: 3}
+    - {fileID: 7938077293928350799, guid: 2fcd0999a4262304390979a827a358e9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2fcd0999a4262304390979a827a358e9, type: 3}
 --- !u!1 &1712544825 stripped
 GameObject:
@@ -1947,6 +1988,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates: []
+--- !u!1001 &1714112006
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8345136268226878957, guid: fbb924472b93fb54b9f3a8c98d2ca690,
+        type: 3}
+      propertyPath: m_Name
+      value: DisgustingStew
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600055268622142552, guid: fbb924472b93fb54b9f3a8c98d2ca690,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2519257
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600055268622142552, guid: fbb924472b93fb54b9f3a8c98d2ca690,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.0375457
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600055268622142552, guid: fbb924472b93fb54b9f3a8c98d2ca690,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600055268622142552, guid: fbb924472b93fb54b9f3a8c98d2ca690,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600055268622142552, guid: fbb924472b93fb54b9f3a8c98d2ca690,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600055268622142552, guid: fbb924472b93fb54b9f3a8c98d2ca690,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600055268622142552, guid: fbb924472b93fb54b9f3a8c98d2ca690,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600055268622142552, guid: fbb924472b93fb54b9f3a8c98d2ca690,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600055268622142552, guid: fbb924472b93fb54b9f3a8c98d2ca690,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600055268622142552, guid: fbb924472b93fb54b9f3a8c98d2ca690,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600055268622142552, guid: fbb924472b93fb54b9f3a8c98d2ca690,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fbb924472b93fb54b9f3a8c98d2ca690, type: 3}
 --- !u!1 &1790463124 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7938077293444090139, guid: 2fcd0999a4262304390979a827a358e9,
@@ -2422,6 +2532,25 @@ MonoBehaviour:
   name: Billy
   anim: {fileID: 1937131861}
   acceptableIDs: 0100000002000000
+--- !u!1 &1972680626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7938077294366788448, guid: 2fcd0999a4262304390979a827a358e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1682401183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1972680629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972680626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!4 &2029571164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8514833015028824330, guid: af1dff02406975d4ebbe38c7f83ce5fc,
