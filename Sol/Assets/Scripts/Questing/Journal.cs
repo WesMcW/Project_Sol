@@ -34,6 +34,18 @@ public class Journal : MonoBehaviour
     void Update()
     {
         openJ();
+
+        for(int i = 0; i < PQ.activeQuests; i++)
+        {
+            if(PQ.quest[i].finished)
+            {
+                activeButtons[i].GetComponent<Image>().color = new Color(0f, 250f, 0f);
+            }
+            else
+            {
+                activeButtons[i].GetComponent<Image>().color = new Color(250f, 0f, 0f);
+            }
+        }
     }
 
     public void openJ()
