@@ -34,12 +34,12 @@ public class QuestCheck : StateMachineBehaviour
                                 player.quest[i].resetQuests();
                             }
                             //Adds quest to completed list
+                            player.quest[i].resetQuests();
                             player.CurrentExperience += player.quest[i].experienceReward;
                             player.activeQuests--;
                             player.finishedQuests.Add(player.quest[i]);
                             player.gameObject.GetComponent<Journal>().removeButton(player.quest[i]);
                             player.quest.Remove(player.quest[i]);
-
                             animator.SetInteger("Progress", animator.GetInteger("Progress") + 1);
                             animator.SetTrigger("Qcomplete");
                             break;
