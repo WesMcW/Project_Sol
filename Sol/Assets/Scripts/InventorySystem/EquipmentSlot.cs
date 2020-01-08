@@ -4,8 +4,10 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-public class EquipmentSlot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClickHandler, IPointerDownHandler
+public class EquipmentSlot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClickHandler, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
+    [SerializeField]
+    private TextMeshProUGUI descriptionText, nameText;
     public bool empty;
     [HideInInspector]
     public int itemID;
@@ -75,6 +77,23 @@ public class EquipmentSlot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPo
         {
             RemoveItem();
         }
+    }
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        //Display information
+        if (itemID != 0)
+        {
+            descriptionText.text = ItemIDManager.instance.GetItem(itemID).GetComponent<ItemInfo>().description;
+            nameText.text = ItemIDManager.instance.GetItem(itemID).GetComponent<ItemInfo>().name;
+        }
+
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        //Delete Information
+        descriptionText.text = null;
+        nameText.text = null;
     }
 
     public void OnBeginDrag(PointerEventData eventData)

@@ -4,8 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
-public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClickHandler, IPointerDownHandler
+public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClickHandler, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
+    [SerializeField]
+    private TextMeshProUGUI descriptionText, nameText;
+
     public bool empty;
     public int itemID;
     public Sprite defaultImage;
@@ -49,7 +52,26 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
 
     }
 
-    
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        //Display information
+        if(itemID != 0)
+        {
+            descriptionText.text = ItemIDManager.instance.GetItem(itemID).GetComponent<ItemInfo>().description;
+            nameText.text = ItemIDManager.instance.GetItem(itemID).GetComponent<ItemInfo>().name;
+        }
+       
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        //Delete Information
+        descriptionText.text = null;
+        nameText.text = null;
+    }
+
+
+
     public void OnBeginDrag(PointerEventData eventData)
     {
        // Debug.Log("Mouse Down: " + eventData.pointerCurrentRaycast.gameObject.name);
