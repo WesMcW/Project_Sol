@@ -12,6 +12,8 @@ public class AlertInteraction : MonoBehaviour
      * (interactable objects must have a class which DERIVES from Interactable)
      * 
      */
+
+        //Make it so on disable the time resets. Also, when the interaction button key is UP, reset the time as well.
     private void Start()
     {
         time = InteractionManager.IM.timeDelay;

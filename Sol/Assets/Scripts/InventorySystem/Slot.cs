@@ -52,6 +52,10 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
 
     }
 
+    /// <summary>
+    /// When the player hovers over an inventory item, display the correct information.
+    /// </summary>
+    /// <param name="eventData"></param>
     public void OnPointerEnter(PointerEventData eventData)
     {
         //Display information
@@ -63,6 +67,10 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
        
     }
 
+    /// <summary>
+    /// When the player stops hovering over an item, remove the information being displayed.
+    /// </summary>
+    /// <param name="eventData"></param>
     public void OnPointerExit(PointerEventData eventData)
     {
         //Delete Information
@@ -71,7 +79,10 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
     }
 
 
-
+    /// <summary>
+    /// For when the player wants to pick up an item in a slot.
+    /// </summary>
+    /// <param name="eventData"></param>
     public void OnBeginDrag(PointerEventData eventData)
     {
        // Debug.Log("Mouse Down: " + eventData.pointerCurrentRaycast.gameObject.name);
@@ -88,6 +99,10 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
         }
     }
 
+    /// <summary>
+    /// For when the player wants to drop an item into a slot
+    /// </summary>
+    /// <param name="eventData"></param>
     public void OnDrop(PointerEventData eventData)
     {
        
@@ -151,7 +166,10 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
         }
        
     }
-
+    /// <summary>
+    /// For when the player needs to click drop an item into a slot.
+    /// </summary>
+    /// <param name="eventData"></param>
     public void OnPointerClick(PointerEventData eventData)
     {
         if ((eventData.pointerCurrentRaycast.gameObject == this.gameObject || eventData.pointerCurrentRaycast.gameObject == this.transform.GetChild(0).gameObject) && inventoryManager.CI.GetCurrentItem() != 0 && eventData.button == PointerEventData.InputButton.Left)
@@ -218,6 +236,10 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
         
     }
 
+    /// <summary>
+    /// This is for the Quick Switch and Single Item placement
+    /// </summary>
+    /// <param name="eventData"></param>
     public void OnPointerDown(PointerEventData eventData)
     {
         if ((eventData.pointerCurrentRaycast.gameObject == this.gameObject || eventData.pointerCurrentRaycast.gameObject == this.transform.GetChild(0).gameObject))
@@ -249,6 +271,11 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
         }
     }
     
+    /// <summary>
+    /// Add the given item to the slot and the amount of that item.
+    /// </summary>
+    /// <param name="id">The Item ID</param>
+    /// <param name="theAmount">The amount of the item</param>
     public void AddItem(int id, int theAmount)
     {
         //if the item being fed is null. Default to blank
@@ -270,17 +297,28 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
         amountText.text = amount.ToString();
     }
 
+    /// <summary>
+    /// Returns the amount in the slot.
+    /// </summary>
+    /// <returns></returns>
     public int GetAmount()
     {
         return amount;
     }
 
+    /// <summary>
+    /// Increases the amount in the slot by the given number.
+    /// </summary>
+    /// <param name="amt">The amount to place into the slot.</param>
     public void IncreaseAmount(int amt)
     {
         amount += amt;
         amountText.text = amount.ToString();
     }
 
+    /// <summary>
+    /// Remove the item from the slot.
+    /// </summary>
     public void RemoveItem()
     {
         amount = 0;
@@ -290,6 +328,10 @@ public class Slot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPointerClic
         amountText.text = amount.ToString();
     }
 
+    /// <summary>
+    /// Decrease the amount in the slot by the given amount.
+    /// </summary>
+    /// <param name="amt">The amount removed from the slot.</param>
     public void DecreaseAmount(int amt)
     {
         amount -= amt;

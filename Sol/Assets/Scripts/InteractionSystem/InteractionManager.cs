@@ -86,7 +86,7 @@ public class InteractionManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Start the Interaction
+    /// Start the Interaction. MAKE SURE TO CALL THE StopInteraction() WHEN DONE INTERACTING!!!
     /// </summary>
     public void StartInteracting()
     {
@@ -96,7 +96,7 @@ public class InteractionManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Returns if the Player is currently in an Interaction
+    /// Returns true if the Player is currently in an Interaction
     /// </summary>
     /// <returns></returns>
     public bool IsInteracting()
