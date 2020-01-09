@@ -9,6 +9,9 @@ public class DummyHealth : MonoBehaviour, IEnemy
 
     public int maxHealth;
 
+    //maybe want to add this to IEnemy?
+    public DamageNumber dn;
+
     [SerializeField]
     private int currentHealth;
 
@@ -21,6 +24,14 @@ public class DummyHealth : MonoBehaviour, IEnemy
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
+
+        //The Damage number part////
+        if (dn != null) {
+            DamageNumber newDN = Instantiate(dn, transform.position, Quaternion.identity);
+            newDN.SetValues(amount, currentHealth / (float)maxHealth, false); //need to find a way to tell this we're criting or not
+        }
+        ////
+
         if (currentHealth <= 0)
         {
             Die();
