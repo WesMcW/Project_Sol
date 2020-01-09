@@ -523,6 +523,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7938077293496894012, guid: 2fcd0999a4262304390979a827a358e9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7938077293496894008, guid: 2fcd0999a4262304390979a827a358e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3435,7 +3440,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2145463032}
   - component: {fileID: 2145463031}
-  m_Layer: 0
+  - component: {fileID: 2145463033}
+  - component: {fileID: 2145463034}
+  m_Layer: 12
   m_Name: TrainingDummy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3506,6 +3513,47 @@ Transform:
   m_Father: {fileID: 1180609905}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2145463033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145463030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf01d9966d6ca849bcdd8a68535286d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 9999
+  dn: {fileID: 1860221843634362205, guid: dced42789011b6b41ad27926de676f6e, type: 3}
+  currentHealth: 0
+--- !u!61 &2145463034
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145463030}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.2682927}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.7012196, y: 2.5365853}
+    newSize: {x: 1.7012196, y: 3.152439}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7012196, y: 2.5365853}
+  m_EdgeRadius: 0
 --- !u!1 &263524220844719988
 GameObject:
   m_ObjectHideFlags: 0
