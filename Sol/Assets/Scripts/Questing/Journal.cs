@@ -8,7 +8,7 @@ public class Journal : MonoBehaviour
     public static Journal inst;
 
     public GameObject journal, active, complete;
-    public Text buttDesc;
+    public Text buttDesc, reqAmount, currAmount;
     public bool open;
     public Button buttonPrefab;
 
@@ -74,6 +74,12 @@ public class Journal : MonoBehaviour
         temp.GetComponent<jButton>().title = q.title;
         temp.GetComponent<jButton>().desc = q.description;
         temp.GetComponent<jButton>().descriptionText = buttDesc;
+
+        temp.GetComponent<jButton>().reqAmt = q.goal.requiredAmount;
+        temp.GetComponent<jButton>().reqAmtText = reqAmount;
+
+        temp.GetComponent<jButton>().currAmt = q.goal.currentAmount;
+        temp.GetComponent<jButton>().currAmtText = currAmount;
 
         q.button = temp;
     }
