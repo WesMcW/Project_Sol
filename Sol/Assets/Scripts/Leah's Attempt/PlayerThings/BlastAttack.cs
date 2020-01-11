@@ -16,6 +16,11 @@ public class BlastAttack : MonoBehaviour
         
     }
 
+    public void setValues(GameObject player)
+    {
+
+    }
+
     void goAway()
     {
         Destroy(gameObject);

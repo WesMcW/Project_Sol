@@ -63,7 +63,7 @@ public class ChargeAttacks : MonoBehaviour
         if (Inventory.inventory.equipSlots[1].itemID != 0)
         {
             isAttacking = true;
-            if (aSkill == 0) StartCoroutine(SonicBlastAttack());
+            if (aSkill == 0) SonicBlastAttack();
             else if (aSkill == 1) BoomerangThrowAttack();
             else if (aSkill == 2) numThree();
             else
@@ -79,7 +79,7 @@ public class ChargeAttacks : MonoBehaviour
         }
     }
 
-    IEnumerator SonicBlastAttack()
+    void SonicBlastAttack()
     {
         Debug.Log("BOOOM sonic blast attack!");
 
@@ -87,9 +87,10 @@ public class ChargeAttacks : MonoBehaviour
         //instansiate blast object
         //give blast attack values
 
-        WaitUntil wait = new WaitUntil(() => isAttacking = false);
-        yield return wait;
+        GameObject temp = Instantiate(sonicPref, new Vector3(transform.position.x, transform.position.y - 1, 0), Quaternion.identity);
+        temp.GetComponent<BlastAttack>().setValues(gameObject);
 
+        charged = false;
     }
 
     void BoomerangThrowAttack()
