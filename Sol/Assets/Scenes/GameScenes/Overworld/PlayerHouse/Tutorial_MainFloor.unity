@@ -3882,6 +3882,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 343852755772824494, guid: 2fcd0999a4262304390979a827a358e9,
+        type: 3}
+      propertyPath: m_fontSizeMin
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7938077293496894008, guid: 2fcd0999a4262304390979a827a358e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4527,11 +4532,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 343852755772824494, guid: 2fcd0999a4262304390979a827a358e9,
-        type: 3}
-      propertyPath: m_fontSizeMin
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 343852754599368473, guid: 2fcd0999a4262304390979a827a358e9,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4542,6 +4542,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.059936523
       objectReference: {fileID: 0}
+    - target: {fileID: 7938077294698873125, guid: 2fcd0999a4262304390979a827a358e9,
+        type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1230726843}
     - target: {fileID: 7432606932683833756, guid: 2fcd0999a4262304390979a827a358e9,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -9898,11 +9903,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
-    - target: {fileID: 8514833015028824328, guid: af1dff02406975d4ebbe38c7f83ce5fc,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8514833015028824330, guid: af1dff02406975d4ebbe38c7f83ce5fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9974,11 +9974,6 @@ PrefabInstance:
       propertyPath: buttDesc
       value: 
       objectReference: {fileID: 939650691}
-    - target: {fileID: 8514833015028824335, guid: af1dff02406975d4ebbe38c7f83ce5fc,
-        type: 3}
-      propertyPath: canDodge
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af1dff02406975d4ebbe38c7f83ce5fc, type: 3}
 --- !u!1 &1910491499
