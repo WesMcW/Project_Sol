@@ -19,7 +19,7 @@ MonoBehaviour:
   title: Pick Up Your Weapon
   description: Take up arms!
   experienceReward: 10
-  questID: 3
+  questID: 11
   goal:
     goalType: 1
     requiredAmount: 1

@@ -19,7 +19,7 @@ MonoBehaviour:
   title: Clear the garden!
   description: Kill the slimes in your mothers garden.
   experienceReward: 100
-  questID: 4
+  questID: 12
   goal:
     goalType: 0
     requiredAmount: 3
