@@ -31,6 +31,7 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
+
        //For some reason the inventory works like this 
         inventoryMenu.SetActive(false);
        
@@ -43,8 +44,6 @@ public class Inventory : MonoBehaviour
             inventoryMenu.SetActive(!inventoryMenu.activeSelf);
         }
     }
-
-
 
 
     /// <summary>

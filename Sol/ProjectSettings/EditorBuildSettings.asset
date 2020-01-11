@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestScenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/Scenes/GameScenes/Overworld/PlayerHouse/Tutorial_Basement.unity
+    guid: 07c1dff099332644682b21d2cb05dacc
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Overworld/Tutorial_Overworld.unity
+    guid: 902ef6054f220ba47ac5d00b3ae73be2
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Overworld/PlayerHouse/Tutorial_MainFloor.unity
+    guid: aedaee789762df74dae22ea4cbb9b8f6
   m_configObjects: {}
