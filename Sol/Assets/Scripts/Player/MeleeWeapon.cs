@@ -70,5 +70,10 @@ public class MeleeWeapon : MonoBehaviour{
         }
     }
 
-
+    public float[] pullStats()
+    {
+        // returns array of damage, critChance, critMultiplier
+        float[] temp = new float[3] { damage, critChance, critMultiplier };
+        return temp;
+    }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class ChargeAttacks : MonoBehaviour
 {
     public bool[] activeBools;
+    public MeleeWeapon meleeWeapon;
 
     [Header("Reset Stuff")]
     public int activeSkill = -1;
@@ -88,18 +89,22 @@ public class ChargeAttacks : MonoBehaviour
         //give blast attack values
 
         GameObject temp = Instantiate(sonicPref, new Vector3(transform.position.x, transform.position.y - 1, 0), Quaternion.identity);
-        temp.GetComponent<BlastAttack>().setValues(gameObject);
+        temp.GetComponent<BlastAttack>().setValues(gameObject, meleeWeapon.pullStats());
 
-        charged = false;
+        charged = isAttacking = false;
     }
 
     void BoomerangThrowAttack()
     {
         Debug.Log("WHOOSH boooomerang throwwww");
+
+        charged = isAttacking = false;
     }
 
     void numThree()
     {
         Debug.Log("idk what this is still");
+
+        charged = isAttacking = false;
     }
 }
