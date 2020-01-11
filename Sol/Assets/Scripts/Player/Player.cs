@@ -185,7 +185,7 @@ public class Player : MonoBehaviour
             }
             */
 
-            yield return new WaitForSeconds(.15f);
+            yield return new WaitForSeconds(.1f);
         }
 
         //yield return new WaitForSeconds(.75f);
