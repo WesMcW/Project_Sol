@@ -265,9 +265,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myHitBox: {fileID: 8514833015028824334}
   anim: {fileID: 688197386}
-  canDodge: 0
+  canDodge: 1
   moveSpeed: 10
   rollSpeed: 15
+  attackingMoveSpeed: 0.5
   doingSpecialAction: 0
 --- !u!114 &7784538015353246343
 MonoBehaviour:
@@ -285,7 +286,7 @@ MonoBehaviour:
   weaponRotatePoint: {fileID: 8514833015028824330}
   attackMoveSpeed: 0
   attackRange: 3
-  attackDuration: 0.2
+  attackDuration: 0.39
 --- !u!50 &8514833015028824332
 Rigidbody2D:
   serializedVersion: 4
@@ -367,6 +368,8 @@ MonoBehaviour:
   active: {fileID: 0}
   complete: {fileID: 0}
   buttDesc: {fileID: 0}
+  reqAmount: {fileID: 0}
+  currAmount: {fileID: 0}
   open: 0
   buttonPrefab: {fileID: 1121877179748797938, guid: 8f38716a88331054f9259f68dbe9f413,
     type: 3}
@@ -447,11 +450,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeBools: 000000
+  meleeWeapon: {fileID: 2116141566}
   activeSkill: -1
   charged: 0
   isCharging: 0
   isAttacking: 0
   chargeTime: 0
-  timeToCharge: 0
+  timeToCharge: 1
   colorTesting: 0
-  sonicPref: {fileID: 0}
+  sonicPref: {fileID: 4761596373455210090, guid: a6bfe37c14f25e44591f7a7564f2ec30,
+    type: 3}
