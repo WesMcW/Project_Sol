@@ -35,8 +35,13 @@ public class IdleAction : FSMAction
         duration -= Time.deltaTime;
         if (theEnemy != null)
         {
-            
-            
+            //Sends creature to its death state
+            if (theEnemy.gameObject.GetComponent<NpcStats>().GetHealth() <= 0)
+            {
+                finishEvent = "Death";
+                Finish();
+            }
+
             if (duration <= 0 && Vector2.Distance(theEnemy.gameObject.transform.position, target.position) > 1)
             {
                 Finish();
