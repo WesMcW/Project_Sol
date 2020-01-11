@@ -50,6 +50,13 @@ public class WanderAction : FSMAction
     }
     public override void OnUpdate()
     {
+        //Sends creature to its death state
+        if (theMachine.gameObject.GetComponent<NpcStats>().GetHealth() <= 0)
+        {
+            finishEvent = "Death";
+            Finish();
+        }
+
         polledTime += Time.deltaTime;
         TimeInDir -= Time.deltaTime;
        // Debug.Log("OnPatrol");
@@ -63,7 +70,6 @@ public class WanderAction : FSMAction
    
     private void Finish()
     {
-        theMachine.GetAnim().SetFloat("speed", 0);
         if (!string.IsNullOrEmpty(finishEvent))
         {
             GetOwner().SendEvent(finishEvent);

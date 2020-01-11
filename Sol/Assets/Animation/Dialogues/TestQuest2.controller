@@ -554,7 +554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPC_text: Oke
-  response1: :)
+  response1: yeh
   response2: 
   response3: 
 --- !u!1101 &-1146872967007687985
@@ -921,7 +921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPC_text: Wow. Really? YOU'RE GONNA CALL ME THE RETARD!?
-  response1: 
+  response1: yeh I am
   response2: 
   response3: 
 --- !u!1101 &2999699650681755510
@@ -957,7 +957,7 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions: []
-  m_DstStateMachine: {fileID: 2639007287603893439}
+  m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPC_text: Also, Meme
-  response1: 
+  response1: nice
   response2: 
   response3: 
 --- !u!114 &5968241368475740881
