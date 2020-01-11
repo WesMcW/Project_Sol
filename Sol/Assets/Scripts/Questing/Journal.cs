@@ -20,7 +20,11 @@ public class Journal : MonoBehaviour
     private void Awake()
     {
         if (inst != null) Destroy(this);
-        else inst = this;
+        else
+        {
+            inst = this;
+            DontDestroyOnLoad(this);
+        }
     }
 
     void Start()
