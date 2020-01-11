@@ -28,6 +28,8 @@ public class PlayerAttack : MonoBehaviour
 
     IEnumerator AttackCo()
     {
+        //attackMoveSpeed = player.moveSpeed * 0.5F;
+
         //Debug.Log("Attacking");
         controller.Move(new Vector2(0f, 0f));
         player.myHitBox.enabled = false;

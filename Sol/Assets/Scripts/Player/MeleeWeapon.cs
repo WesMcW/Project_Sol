@@ -36,7 +36,7 @@ public class MeleeWeapon : MonoBehaviour{
         sr.sprite = info.sprite;
 
         damage = info.damage;
-        attackSpeed = info.attackSpeed * skills.attackSpeed;        // are we multiplying these?
+        attackSpeed = info.attackSpeed + skills.attackSpeed;
         critChance = info.critChance + skills.critChance;
         critMultiplier = info.critMultiplier + skills.critDmg;
         //blockChance

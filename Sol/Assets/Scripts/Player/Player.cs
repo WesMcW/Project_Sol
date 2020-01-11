@@ -13,12 +13,13 @@ public class Player : MonoBehaviour
     [SerializeField] Animator anim;
 
     public bool canDodge = false;
-
+    bool dodging = false;
     
     
     public float moveSpeed;
     public float rollSpeed;
-    
+
+    public float attackingMoveSpeed;    // how fast player moves while swinging sword
 
     public bool doingSpecialAction = false;
     bool isMoving;
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour
         if (doingSpecialAction)
         {
             //spriteRenderer.color = Color.blue;
+            if (!dodging) MoveUpdate(attackingMoveSpeed);
         }
         else if (dead || ca.isCharging /* || PauseMenu.GameIsPaused*/)
         {
@@ -53,7 +55,7 @@ public class Player : MonoBehaviour
         else
         {
             GetComponent<SpriteRenderer>().color = Color.white;
-            MoveUpdate();
+            MoveUpdate(1);
             if(!ca.isAttacking) AttackUpdate();
             if (canDodge && !ca.isAttacking) RollUpdate();
             else if (canDodge && ca.isAttacking && ca.activeSkill == 1) RollUpdate();
@@ -85,12 +87,12 @@ public class Player : MonoBehaviour
         }
     }
 
-    void MoveUpdate()
+    void MoveUpdate(float modify)
     {
         //MOVE CHARACTER
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         Vector2 moveVelocity = moveInput.normalized * moveSpeed;
-        controller.Move(moveVelocity);
+        controller.Move(moveVelocity * modify);
 
         if (moveVelocity.magnitude > 0)
         {
@@ -123,7 +125,7 @@ public class Player : MonoBehaviour
     {
         if (!doingSpecialAction && Input.GetMouseButtonDown(1))
         {
-            doingSpecialAction = true;
+            doingSpecialAction = dodging = true;
             spriteRenderer.color = Color.blue;
             StartCoroutine(Roll());
         }
@@ -191,7 +193,7 @@ public class Player : MonoBehaviour
         //yield return new WaitForSeconds(.75f);
 
         myHitBox.enabled = true;
-        doingSpecialAction = false;
+        doingSpecialAction = dodging = false;
 
     }
    
