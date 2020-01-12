@@ -81,7 +81,8 @@ public class EquipmentSlot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPo
     public void OnPointerEnter(PointerEventData eventData)
     {
         //Display information
-        if (itemID != 0)
+        //Also check to make sure there is text to update
+        if (itemID != 0 && descriptionText != null)
         {
             descriptionText.text = ItemIDManager.instance.GetItem(itemID).GetComponent<ItemInfo>().description;
             nameText.text = ItemIDManager.instance.GetItem(itemID).GetComponent<ItemInfo>().name;
@@ -91,9 +92,13 @@ public class EquipmentSlot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPo
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        //Delete Information
-        descriptionText.text = null;
-        nameText.text = null;
+        //Checks to make sure there is text to update
+        if (descriptionText != null)
+        {
+            //Delete Information
+            descriptionText.text = null;
+            nameText.text = null;
+        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -262,6 +267,24 @@ public class EquipmentSlot : MonoBehaviour, IBeginDragHandler, IDropHandler, IPo
                 int savedAmount = amount;
                 RemoveItem();
                 inventoryManager.AddItemToInventory(savedID, savedAmount);
+            }
+            else if (eventData.button == PointerEventData.InputButton.Right)
+            {
+                //Drop single item
+                //only if the slot is empty or the id's match
+                if (itemID == 0)
+                {
+                    //empty slot, put in 1 item
+                    AddItem(inventoryManager.CI.GetCurrentItem(), 1);
+                    inventoryManager.CI.DecreaseCurrentAmount(1);
+
+                }
+                else if (itemID == inventoryManager.CI.GetCurrentItem() && amount + 1 <= ItemIDManager.instance.GetItem(inventoryManager.CI.GetCurrentItem()).GetComponent<ItemInfo>().amountLimit)
+                {
+                    //Same item and can add
+                    IncreaseAmount(1);
+                    inventoryManager.CI.DecreaseCurrentAmount(1);
+                }
             }
         }
     }
