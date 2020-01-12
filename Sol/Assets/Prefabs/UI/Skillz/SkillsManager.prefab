@@ -49,6 +49,9 @@ MonoBehaviour:
   nameTxt: {fileID: 0}
   descTxt: {fileID: 0}
   costTxt: {fileID: 0}
+  skillImg: {fileID: 0}
+  buttonColors: []
+  allSkills: []
   allButtons:
   - {fileID: 0}
   - {fileID: 0}
@@ -87,9 +90,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  speedUp: 0
+  rollSpdUp: 20
   critChance: 0
+  critChanceUp: 0.1
   attackSpeed: 0
+  attackSpeedUp: 0.5
   critDmg: 0
+  critDmgUp: 1
   blockChance: 0
+  blockChanceUp: 1
   stunChance: 0
+  stunChanceUp: 0.05

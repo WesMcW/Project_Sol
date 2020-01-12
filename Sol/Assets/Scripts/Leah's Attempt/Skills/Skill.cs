@@ -30,7 +30,7 @@ public abstract class Skill : ScriptableObject
             enabled = true;
             setBought();
             button.GetComponent<Animator>().SetBool("bought", true);
-            Debug.Log("Successfully bought: " + name);
+            //Debug.Log("Successfully bought: " + name);
             return true;
         }
         else Debug.Log("Need more skill points");

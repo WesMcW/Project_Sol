@@ -117,7 +117,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 164
+  spritePixelsToUnits: 173
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -264,27 +264,6 @@ TextureImporter:
       bones: []
       spriteID: 39a6c41702996409894c41fc4211bbfa
       internalID: -7052095361692656591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basementiles_3
-      rect:
-        serializedVersion: 2
-        x: 973
-        y: 1421
-        width: 350
-        height: 524
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ad281b1a2ed34b47b8c8d3389bf0860
-      internalID: 8660688312532952080
       vertices: []
       indices: 
       edges: []

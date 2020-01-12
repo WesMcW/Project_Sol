@@ -51,7 +51,7 @@ public class SkillsManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Keypad0))
         {
-            Debug.Log("Manually added skill point");
+            //Debug.Log("Manually added skill point");
             skillPoints++;
         }
         if (Input.GetKeyDown(KeyCode.P)) showSkills();
@@ -135,7 +135,7 @@ public class SkillsManager : MonoBehaviour
 
     public void checkPrices()
     {
-        Debug.Log("checking prices...");
+        //Debug.Log("checking prices...");
         for(int i = 0; i < allSkills.Length; i++)
         {
             if (allSkills[i].on && !allSkills[i].enabled)
@@ -233,7 +233,7 @@ public class SkillsManager : MonoBehaviour
 
     public void resetButton()
     {
-        Debug.Log("Reseting scriptable objects.");
+        //Debug.Log("Reseting scriptable objects.");
 
         dodgeRoll[0].enabled = false;
         dodgeRoll[0].on = false;
