@@ -108,7 +108,7 @@ public class CookingManager : MonoBehaviour
     {
         //This is where the difficulty would be calculated and ingredients inputted.
         zoneGame.percentDifficulty = 20;
-        zoneGame.speed = 200;
+        zoneGame.speed = 150;
 
         cookingGame.SetActive(true);
     }
