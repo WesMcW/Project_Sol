@@ -348,6 +348,11 @@ PrefabInstance:
       propertyPath: buttDesc
       value: 
       objectReference: {fileID: 314879814}
+    - target: {fileID: 8514833015028824335, guid: af1dff02406975d4ebbe38c7f83ce5fc,
+        type: 3}
+      propertyPath: canDodge
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af1dff02406975d4ebbe38c7f83ce5fc, type: 3}
 --- !u!114 &371895454 stripped

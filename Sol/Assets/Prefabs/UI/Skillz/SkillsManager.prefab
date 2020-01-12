@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  rollSpdUp: 0
+  rollSpdUp: 20
   critChance: 0
   critChanceUp: 0.1
   attackSpeed: 0
