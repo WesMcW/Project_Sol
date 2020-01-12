@@ -11,15 +11,17 @@ public class NpcStats : MonoBehaviour
     int dexterity;
     float damageCoolDown;
     [SerializeField]
-    float maxDamageTimer;
+    float maxDamageTimer = 0.1f;
+    float healCoolDown;
+    [SerializeField]
+    float maxHealTimer = 0.1f;
     float baseHeal;
     // Start is called before the first frame update
     void Start()
     {
         health = 100;
         baseHeal = 1;
-        maxDamageTimer = 0.1f;
-        baseHeal = 0.5f;
+        damageCoolDown =maxDamageTimer;
     }
 
     // Update is called once per frame
@@ -33,11 +35,20 @@ public class NpcStats : MonoBehaviour
     }
     public void DoDamage(float damage)
     {
-        health -= damage;
+        if (damageCoolDown <= 0)
+        {
+            health -= damage;
+            damageCoolDown = maxDamageTimer;
+        }
+        else
+        {
+            damageCoolDown -= Time.deltaTime;
+        }
     }
     public void healDamage(float amountHeal= 0)
     {
-        if(amountHeal != 0)
+
+        if (amountHeal != 0)
             health += amountHeal;
         else
         {
