@@ -23,6 +23,13 @@ public class SceneManagement : MonoBehaviour
     /// <param name="sceneName">the next scenes name!</param>
     public void LoadScene(string sceneName)
     {
+        //save current scene
+        GameManager.instance.SaveScene(SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene(sceneName);
+    }
+
+    public int SceneAmount()
+    {
+        return SceneManager.sceneCountInBuildSettings;
     }
 }

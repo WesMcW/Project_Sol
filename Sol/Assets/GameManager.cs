@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     private Slot[] savedSlots;
     private EquipmentSlot[] savedEquipSlots;
+   // public SavedScene[] savedScenes;
     /*
      * The Game Manager's goal is to keep track of the players progress.
      * This includes saving between scenes, keeping track of quest progression etc.
@@ -24,12 +25,46 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+       
     }
-    // Start is called before the first frame update
-    void Start()
+
+    /*
+    private void Start()
     {
-        
+        savedScenes = new SavedScene[SceneManagement.instance.SceneAmount()];
     }
+    public void SaveScene(int sceneIndex)
+    {
+        bool running = true;
+        int i = 0;
+        
+        print(scene);
+        savedScenes[sceneIndex] = scene;
+        //savedScenes[sceneIndex] = new SavedScene();
+        //Save the scene
+        do
+        {
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                running = false;
+            }
+            if(GameObject.FindObjectOfType<SaveObject>() != null)
+            {
+                GameObject obj = GameObject.FindObjectOfType<SaveObject>().gameObject;
+                savedScenes[sceneIndex].savedItems.Add(obj);
+                print("Saved: " + obj.name);
+                Destroy(obj);
+                i++;
+            } else
+            {
+                //finished
+                running = false;
+                print("save complete");
+            }
+           
+        } while (running);
+    }
+    */
 
     /// <summary>
     ///  Save the current inventory
@@ -72,4 +107,14 @@ public class GameManager : MonoBehaviour
     }
 
    
+}
+
+public class SavedScene : MonoBehaviour
+{
+    public List<GameObject> savedItems;
+
+    public SavedScene()
+    {
+        savedItems = new List<GameObject>();
+    }
 }
