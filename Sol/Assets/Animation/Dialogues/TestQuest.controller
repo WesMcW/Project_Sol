@@ -207,7 +207,7 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours:
-  - {fileID: 601910375750005132}
+  - {fileID: -3413805382486422138}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -438,6 +438,18 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-3413805382486422138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1384de607a17c4aa0228242a780839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1107 &-3329345819509681083
 AnimatorStateMachine:
   serializedVersion: 5
@@ -1033,18 +1045,6 @@ MonoBehaviour:
   response1: Gud
   response2: 
   response3: 
---- !u!114 &601910375750005132
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1384de607a17c4aa0228242a780839, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1101 &890374311902026550
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1198,7 +1198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9aaea05ac9204245ab719437fe30ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPC_text: Thats all I got for now.
+  NPC_text: Go chat with billy 3
   response1: Oke
   response2: 
   response3: 
@@ -1329,7 +1329,7 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions: []
-  m_DstStateMachine: {fileID: 2639007287603893439}
+  m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
@@ -1506,6 +1506,7 @@ AnimatorState:
   - {fileID: -3443468823998260571}
   m_StateMachineBehaviours:
   - {fileID: 2504720817999897043}
+  - {fileID: 5667009954135046586}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -1548,6 +1549,19 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &5667009954135046586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd5eb69a2b7595b45938dfda10265b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 0b7cbcdf549c7ec408e16900f2601480, type: 2}
 --- !u!1101 &5815697145809215045
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
