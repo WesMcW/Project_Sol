@@ -4,55 +4,85 @@ using UnityEngine;
 
 public class PursueState : FSMAction
 {
-    private string textToShow;
-    private float duration;
-    private float cachedDuration;
+    private float maxTimeInDir;
+    private float TimeInDir;
+    private Transform target;
     private string finishEvent;
+    private float polledTime;
+    private EnemyAstar theMachine;
+
 
     public PursueState(FSMState owner) : base(owner)
     {
     }
 
-    public void Init(string textToShow, float duration, string finishEvent)
+    public void Init(Transform target, float duration, EnemyAstar t, string finishEvent = null)
     {
-        this.textToShow = textToShow;
-        this.duration = duration;
-        this.cachedDuration = duration;
+        this.target = target;
+        this.TimeInDir = Random.Range(0, duration);
+        this.maxTimeInDir = duration;
         this.finishEvent = finishEvent;
+        this.polledTime = 0;
+        theMachine = t;
     }
     public override void OnEnter()
     {
-        if (duration <= 0)
+        //Debug.Log("ToPatrol");
+        if (target != null)
+            if (TimeInDir <= 0 || Vector2.Distance(target.position, theMachine.transform.position) < 1)
+            {
+                Finish();
+                return;
+            }
+        /***
+        if (theMachine != null)
         {
-            Finish();
-            return;
-        }
-    }
+            //if (Vector2.Distance(theMachine.gameObject.transform.position, target.position) > 1)
+            //{
 
+                //Debug.Log(theMachine.testNum.ToString());
+                theMachine.stopWandering = false;
+                theMachine.followTargetGo = true;
+                theMachine.target = target;
+                theMachine.GetAnim().SetFloat("speed", 1);
+           // }
+        }
+        ***/
+    }
     public override void OnUpdate()
     {
-        duration -= Time.deltaTime;
+        //Sends creature to its death state
+        if (theMachine.gameObject.GetComponent<NpcStats>().GetHealth() <= 0)
+        {
+            finishEvent = "DeathState";
+            Finish();
+        }
 
-        if (duration <= 0)
+        polledTime += Time.deltaTime;
+        TimeInDir -= Time.deltaTime;
+        // Debug.Log("OnPatrol");
+        if (TimeInDir <= 0 || Vector2.Distance(target.position, theMachine.transform.position) < 1)
         {
             Finish();
             return;
         }
 
-        Debug.Log(textToShow);
     }
 
-    public override void OnExit()
-    {
-
-    }
-
-    public void Finish()
+    private void Finish()
     {
         if (!string.IsNullOrEmpty(finishEvent))
         {
             GetOwner().SendEvent(finishEvent);
         }
-        duration = cachedDuration;
+        if (theMachine != null)
+        {
+            theMachine.target = null;
+            theMachine.followTargetGo = false;
+        }
+        this.polledTime = 0;
+        TimeInDir = Random.Range(0, maxTimeInDir);
+
     }
+
 }

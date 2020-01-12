@@ -55,4 +55,8 @@ public class NpcStats : MonoBehaviour
             health += baseHeal;
         }
     }
+    public void DestroyMe()
+    {
+        Destroy(gameObject);
+    }
 }

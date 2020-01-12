@@ -14,9 +14,8 @@ public class DeathState : FSMAction
     {
     }
 
-    public void Init(Transform target, string textToShow, float duration, EnemyAstar tE, string finishEvent = null)
+    public void Init(float duration, EnemyAstar tE, string finishEvent = null)
     {
-        this.textToShow = textToShow;
         this.duration = duration;
         this.cachedDuration = duration;
         this.finishEvent = finishEvent;
@@ -38,7 +37,8 @@ public class DeathState : FSMAction
 
         if (duration <= 0)
         {
-            Finish();
+            
+            theEnemy.gameObject.GetComponent<NpcStats>().DestroyMe();
             return;
         }
 
