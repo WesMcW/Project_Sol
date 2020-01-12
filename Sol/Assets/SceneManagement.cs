@@ -24,7 +24,7 @@ public class SceneManagement : MonoBehaviour
     public void LoadScene(string sceneName)
     {
         //save current scene
-        GameManager.instance.SaveScene(SceneManager.GetActiveScene().buildIndex);
+       // GameManager.instance.SaveScene(SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene(sceneName);
     }
 
