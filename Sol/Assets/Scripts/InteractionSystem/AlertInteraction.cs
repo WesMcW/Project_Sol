@@ -34,6 +34,9 @@ public class AlertInteraction : MonoBehaviour
                 }
                 time = timeReset;
             }
+        } else if (Input.GetKeyUp(interactionButton))
+        {
+            time = timeReset;
         }
     }
 

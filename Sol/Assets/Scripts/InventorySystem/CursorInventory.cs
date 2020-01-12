@@ -35,6 +35,7 @@ public class CursorInventory : MonoBehaviour
         img.sprite = null;
     }
 
+    /*
     private void OnDisable()
     {
         if (this.enabled)
@@ -51,6 +52,7 @@ public class CursorInventory : MonoBehaviour
        
        
     }
+    */
    
     private void Update()
     {
@@ -60,9 +62,9 @@ public class CursorInventory : MonoBehaviour
         //Check for the click of an item NOT in the UI. 
         if(Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject() && currentItem != null)
         {
-            GameObject tmp = Instantiate(ItemIDManager.instance.GetItem(currentItem.ItemID), playerTransform.position, Quaternion.identity);
+            GameObject tmp = Instantiate(ItemIDManager.instance.GetItem(currentItem.ItemID), new Vector3(Camera.main.ScreenToWorldPoint(pos - offset).x, Camera.main.ScreenToWorldPoint(pos - offset).y, 0), Quaternion.identity);
             tmp.GetComponent<ItemInfo>().amount = amount;
-            tmp.GetComponent<ItemInfo>().canBePickedUp = false;
+            tmp.GetComponent<ItemInfo>().canBePickedUp = true;
             RemoveItem();
         }
     }
