@@ -21,7 +21,8 @@ public class NpcStats : MonoBehaviour
     {
         health = 100;
         baseHeal = 1;
-        damageCoolDown =maxDamageTimer;
+        damageCoolDown = maxDamageTimer;
+        healCoolDown = maxHealTimer;
     }
 
     // Update is called once per frame
@@ -47,7 +48,6 @@ public class NpcStats : MonoBehaviour
     }
     public void healDamage(float amountHeal= 0)
     {
-
         if (amountHeal != 0)
             health += amountHeal;
         else
