@@ -38,7 +38,7 @@ public class IdleAction : FSMAction
             //Sends creature to its death state
             if (theEnemy.gameObject.GetComponent<NpcStats>().GetHealth() <= 0)
             {
-                finishEvent = "Death";
+                finishEvent = "DeathState";
                 Finish();
             }
 

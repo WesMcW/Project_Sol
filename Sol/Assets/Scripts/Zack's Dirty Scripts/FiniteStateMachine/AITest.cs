@@ -11,6 +11,8 @@ public class AITest : MonoBehaviour
     private WanderAction PatrolAction;
     private IdleAction IdleAction;
     private ScanningAction ScanAction;
+    private FSMState deathState;
+    private DeathState DeathAction;
     [SerializeField]
     Transform target;
     EnemyAstar thelocation;
@@ -23,6 +25,8 @@ public class AITest : MonoBehaviour
         PatrolAction = new WanderAction(PatrolState);
         IdleAction = new IdleAction(IdleState);
         ScanAction = new ScanningAction(ScanState);
+        deathState = fsm.AddState("DeathState");
+        DeathAction = new DeathState(deathState);
         //This adds the actions to the state and add state to it's transition map
         PatrolState.AddAction(PatrolAction);
         IdleState.AddAction(IdleAction);

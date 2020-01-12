@@ -53,7 +53,7 @@ public class WanderAction : FSMAction
         //Sends creature to its death state
         if (theMachine.gameObject.GetComponent<NpcStats>().GetHealth() <= 0)
         {
-            finishEvent = "Death";
+            finishEvent = "DeathState";
             Finish();
         }
 
