@@ -136,13 +136,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 31103862}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -249,6 +249,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -446,13 +448,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 148376153}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -605,13 +607,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 214708070}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -718,6 +720,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -915,13 +919,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 226774215}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -1028,6 +1032,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -1225,13 +1231,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 299643366}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -1394,6 +1400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8df1ff79d2db1b4c97e59cdd39f5dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   requiredID: 50
@@ -1534,13 +1542,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 397007620}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -1693,13 +1701,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 446255220}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -1806,6 +1814,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -2003,13 +2013,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 531893213}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -2162,13 +2172,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 666557748}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -2319,13 +2329,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0.000054192456, w: 0}
   m_textInfo:
     textComponent: {fileID: 667990623}
-    characterCount: 6
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -2432,6 +2442,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -2729,6 +2741,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -2880,6 +2894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -3031,6 +3047,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -3304,13 +3322,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 907513011}
-    characterCount: 1
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -3461,13 +3479,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 994477431}
-    characterCount: 4
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -3574,6 +3592,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -3725,6 +3745,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -3922,13 +3944,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1111674745}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -4081,13 +4103,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1211702422}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -4194,6 +4216,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -4255,97 +4279,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &1280863522
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1280863524}
-  - component: {fileID: 1280863525}
-  - component: {fileID: 1280863526}
-  - component: {fileID: 1280863523}
-  m_Layer: 0
-  m_Name: cursorFollower
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1280863524
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1280863522}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1358110732}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -366.40002, y: 2.9606934}
-  m_SizeDelta: {x: -60, y: -60}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1280863525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1280863522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c9feefa361060c40a5dbd9f5cd47fed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentItem: {fileID: 0}
-  offset: {x: -10, y: 10, z: 0}
-  playerTransform: {fileID: 0}
---- !u!222 &1280863526
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1280863522}
-  m_CullTransparentMesh: 0
---- !u!114 &1280863523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1280863522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1283297331
 GameObject:
   m_ObjectHideFlags: 0
@@ -4480,13 +4413,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0.000054192456, w: 0}
   m_textInfo:
     textComponent: {fileID: 1283297333}
-    characterCount: 4
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -4533,7 +4466,6 @@ RectTransform:
   - {fileID: 1889874697}
   - {fileID: 1935958752}
   - {fileID: 854515676}
-  - {fileID: 1280863524}
   m_Father: {fileID: 6748538231589621152}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4678,13 +4610,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1392653305}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -4837,13 +4769,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1410546907}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -4950,6 +4882,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -5101,6 +5035,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -5252,6 +5188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -5449,13 +5387,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1744737922}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -5562,6 +5500,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -5713,6 +5653,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -5910,13 +5852,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1842500853}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -6187,13 +6129,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1901308706}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -6392,6 +6334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8df1ff79d2db1b4c97e59cdd39f5dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   requiredID: 52
@@ -6532,13 +6476,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2067110724}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -6701,6 +6645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8df1ff79d2db1b4c97e59cdd39f5dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   requiredID: 49
@@ -6841,13 +6787,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2090659601}
-    characterCount: 3
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -6954,6 +6900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -7105,6 +7053,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea849f955e5bbda46b5baa244705dc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descriptionText: {fileID: 0}
+  nameText: {fileID: 0}
   empty: 1
   itemID: 0
   defaultImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
@@ -7250,7 +7200,7 @@ MonoBehaviour:
   inventoryKey: 105
   quickSwitchKey: 304
   singleItemKey: 0
-  CI: {fileID: 1280863525}
+  CI: {fileID: 0}
   inventoryMenu: {fileID: 1358110731}
   slots:
   - {fileID: 219405653}
