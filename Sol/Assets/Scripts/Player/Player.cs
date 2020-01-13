@@ -27,8 +27,20 @@ public class Player : MonoBehaviour
 
     int lastDirection = 1;
 
-    private void Awake()
-    {
+    
+    public static Player instance;
+
+    private void Awake(){
+
+        //////////////////singleton stuff
+        if (instance == null){
+            instance = this;
+        }
+        else {
+            Destroy(gameObject);
+        }
+        //////////////////
+
         pa = GetComponent<PlayerAttack>();
         controller = GetComponent<PlayerController>();
         if(GetComponent<ChargeAttacks>() != null) ca = GetComponent<ChargeAttacks>();
