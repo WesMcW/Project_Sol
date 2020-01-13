@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.Experimental.Rendering.LWRP;
 public class CandleFlicker : MonoBehaviour
 {
-    private Light2D light;
+    private UnityEngine.Experimental.Rendering.Universal.Light2D light;
     public float speed;
     public Vector2 boundaries;
     bool flip;
     private void Awake()
     {
-        light = GetComponent<Light2D>();
+        light = GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
     }
    
     // Update is called once per frame
