@@ -40,6 +40,9 @@ public class QuestCheck : StateMachineBehaviour
                             player.finishedQuests.Add(player.quest[i]);
                             player.gameObject.GetComponent<Journal>().removeButton(player.quest[i]);
                             player.quest.Remove(player.quest[i]);
+
+                            PlayerPrefs.SetInt(animator.gameObject.GetComponent<NPC_Dialogue>().name, animator.GetInteger("Progress") + 1);
+
                             animator.SetInteger("Progress", animator.GetInteger("Progress") + 1);
                             animator.SetTrigger("Qcomplete");
                             break;
