@@ -14,6 +14,8 @@ public class NPC_Dialogue : MonoBehaviour
     private void OnEnable()
     {
         anim.enabled = true;
+
+        //anim.SetInteger("Progress", PlayerPrefs.GetInt(name, 0));
        // Debug.Log();
     }
 
