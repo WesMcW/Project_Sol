@@ -15,7 +15,7 @@ public class LootContainer : Interactable
     void Start() {
         //0 is no interaction, 1 means we've meet before... havent we???
         if (saveState) {
-            int state = PlayerPrefs.GetInt(saveID, 0);
+            int state = PlayerPrefs.GetInt("Loot" + saveID, 0);
             if (state == 1){
                 Destroy(this.gameObject);
             }
@@ -30,7 +30,7 @@ public class LootContainer : Interactable
         }
 
         if (saveState) {
-            PlayerPrefs.SetInt(saveID, 1);
+            PlayerPrefs.SetInt("Loot" + saveID, 1);
         }
 
         InteractionManager.IM.StopInteraction();
