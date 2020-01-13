@@ -36,5 +36,5 @@ public class LootContainer : Interactable
         InteractionManager.IM.StopInteraction();
         Destroy(this.gameObject);
     }
-   
+
 }

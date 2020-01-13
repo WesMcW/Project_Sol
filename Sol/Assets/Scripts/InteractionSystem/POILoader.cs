@@ -42,4 +42,9 @@ public class POILoader : MonoBehaviour{
             }
         }
     }
+
+    //This *should* work
+    void OnApplicationQuit(){
+        PlayerPrefs.SetInt("POI" + saveID, defaultState);
+    }
 }
