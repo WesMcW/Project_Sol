@@ -19,6 +19,10 @@ public class ItemInfo : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && Inventory.inventory.CanAddItem(ItemID, amount) && canBePickedUp && !collision.isTrigger)
         {
             Inventory.inventory.AddItemToInventory(ItemID, amount);
+
+            //Checks if quest items have been collected
+            PlayerQuest.instance.newItemCollected(ItemID);
+
             Destroy(this.gameObject);
         }
     }

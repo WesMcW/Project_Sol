@@ -86,6 +86,8 @@ public class Journal : MonoBehaviour
         temp.GetComponent<jButton>().currAmtText = currAmount;
 
         q.button = temp;
+
+        temp.GetComponent<jButton>().myQuest = q;
     }
 
     //Addes button to completed 

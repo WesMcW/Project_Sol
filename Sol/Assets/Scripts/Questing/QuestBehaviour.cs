@@ -22,7 +22,13 @@ public class QuestBehaviour : StateMachineBehaviour
         {
             if (inv.HasItems(player.quest[i].goal.requiredID, player.quest[i].goal.requiredAmount))
             {
+                player.quest[i].goal.currentAmount = player.quest[i].goal.requiredAmount;
+
                 player.quest[i].Complete();
+            }
+            else
+            {
+                player.quest[i].goal.currentAmount = inv.itemCount(player.quest[i].goal.requiredID);
             }
         }
     }

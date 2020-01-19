@@ -251,5 +251,25 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+
+    /// <summary>
+    /// Returns the amount of items per id given
+    /// </summary>
+    /// <param name="itemID"></param>
+    /// <returns></returns>
+    public int itemCount(int itemID)
+    {
+        int totalAmountFound = 0;
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if(slots[i].itemID == itemID)
+            {
+                //Found like item Check amount
+                //Apply amount found to totalAmountFound
+                totalAmountFound += slots[i].GetAmount();
+            }
+        }
+        return totalAmountFound;
+    }
    
 }

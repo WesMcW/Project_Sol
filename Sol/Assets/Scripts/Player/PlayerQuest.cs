@@ -64,16 +64,14 @@ public class PlayerQuest : MonoBehaviour
         Debug.Log("Current Exp: " + CurrentExperience);
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    //Method that looks if the quest items have been collected
+    public void newItemCollected(int itemID)
     {
         for (int i = 0; i < activeQuests; i++)
         {
-            if (collision.CompareTag("Item"))
+            if (itemID == quest[i].goal.requiredID)
             {
-                int item = collision.GetComponent<ItemInfo>().ItemID;
-                //Debug.Log(item);
-
-                if (quest[i].isActive && item == quest[i].goal.requiredID)
+                if (quest[i].isActive)
                 {
                     quest[i].goal.ItemCollected();
                 }
@@ -84,4 +82,7 @@ public class PlayerQuest : MonoBehaviour
             }
         }
     }
+    
+
+
 }
