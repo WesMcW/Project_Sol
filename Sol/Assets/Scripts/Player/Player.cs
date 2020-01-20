@@ -23,10 +23,13 @@ public class Player : MonoBehaviour
 
     public bool doingSpecialAction = false;
     bool isMoving;
+    bool isRunning;
     bool dead;
 
     int lastDirection = 1;
 
+    float runTimer;
+    float runSpeedMulti = 1F;
     
     public static Player instance;
 
@@ -103,7 +106,7 @@ public class Player : MonoBehaviour
     {
         //MOVE CHARACTER
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        Vector2 moveVelocity = moveInput.normalized * moveSpeed;
+        Vector2 moveVelocity = moveInput.normalized * moveSpeed * runSpeedMulti;
         controller.Move(moveVelocity * modify);
 
         if (moveVelocity.magnitude > 0)
@@ -112,9 +115,20 @@ public class Player : MonoBehaviour
         }
         else
         {
-            isMoving = false;
+            isMoving = isRunning = false;
+            runSpeedMulti = 1F;
+            runTimer = 1.5F;
         }
 
+        if (isMoving && !isRunning)
+        {
+            runTimer -= Time.deltaTime;
+            if(runTimer < 0)
+            {
+                isRunning = true;
+                runSpeedMulti = 1.7F;
+            }
+        }
         
         FlipUpdate(moveInput);
 
