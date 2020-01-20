@@ -23,8 +23,7 @@ public class MeleeWeapon : MonoBehaviour{
 
     // Start is called before the first frame update
     void Start(){
-        sr = GetComponent<SpriteRenderer>();
-        if(SkillsManager.inst != null) skills = SkillsManager.inst.gameObject.GetComponent<SetSkills>();
+
     }
 
     public void ClearSet() {
@@ -32,6 +31,12 @@ public class MeleeWeapon : MonoBehaviour{
     }
 
     public void GetStats() {
+        if(sr == null)
+        {
+            sr = GetComponent<SpriteRenderer>();
+            if (SkillsManager.inst != null) skills = SkillsManager.inst.gameObject.GetComponent<SetSkills>();
+        }
+
         WeaponInfo info = ItemIDManager.instance.GetItem(Inventory.inventory.equipSlots[1].itemID).GetComponent<WeaponInfo>();
         sr.sprite = info.sprite;
 
