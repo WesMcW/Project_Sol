@@ -33,8 +33,16 @@ public class QuestCheck : StateMachineBehaviour
                                 inv.RemoveItems(player.quest[i].goal.requiredID, player.quest[i].goal.requiredAmount);
                                 player.quest[i].resetQuests();
                             }
-                            //Adds quest to completed list
+
+                            if (player.quest[i].notTurnedInHere)
+                            {
+                                player.quest[i].questGiver.SetInteger("Progress", player.quest[i].questGiver.GetInteger("Progress") + 1);
+                                PlayerPrefs.SetInt(player.quest[i].questGiver.gameObject.GetComponent<NPC_Dialogue>().name, player.quest[i].questGiver.GetInteger("Progress"));
+                            }
+
                             player.quest[i].resetQuests();
+
+                            //Adds quest to completed list
                             player.CurrentExperience += player.quest[i].experienceReward;
                             player.activeQuests--;
                             player.finishedQuests.Add(player.quest[i]);

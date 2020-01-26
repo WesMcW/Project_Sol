@@ -7,7 +7,10 @@ using UnityEngine.UI;
 
 public class Quest : ScriptableObject
 {
-    public bool isActive, helped, take, finished = false;
+    public bool isActive, helped, take, notTurnedInHere, finished = false;
+
+    //This is used in "QuestBehavior" for when the quest is not turned in to the NPC who assigned it.
+    public Animator questGiver;
 
     public string title;
     public string description;

@@ -17,6 +17,12 @@ public class QuestBehaviour : StateMachineBehaviour
         player.activeQuests++;
         player.quest.Add(quest);
 
+        //The animatior is saved if the quest is not turned in to the NPC who assigned it.
+        if (quest.notTurnedInHere)
+        {
+            quest.questGiver = animator;
+        }
+
         //Completes the quest if you have the items required for it
         for (int i = 0; i < player.activeQuests; i++)
         {

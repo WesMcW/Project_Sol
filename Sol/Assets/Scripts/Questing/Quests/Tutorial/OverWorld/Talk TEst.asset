@@ -15,7 +15,9 @@ MonoBehaviour:
   isActive: 0
   helped: 0
   take: 0
+  notTurnedInHere: 1
   finished: 0
+  questGiver: {fileID: 0}
   title: Talk
   description: Go chat with Billy 3
   experienceReward: 2147483647
