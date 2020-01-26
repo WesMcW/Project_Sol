@@ -15,7 +15,9 @@ MonoBehaviour:
   isActive: 0
   helped: 0
   take: 0
+  notTurnedInHere: 0
   finished: 0
+  questGiver: {fileID: 0}
   title: Pick Up Your Weapon
   description: Take up arms!
   experienceReward: 10
