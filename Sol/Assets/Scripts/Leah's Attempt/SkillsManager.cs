@@ -92,10 +92,11 @@ public class SkillsManager : MonoBehaviour
                 skillsBought++;
                 skillPoints -= array[index].cost;
                 checkPrices();
-                bool anyActive = false;
-                foreach (ActiveSkill a in array) if (a.active) anyActive = true;    // if no skills are active, activate this one
-                if (!anyActive) array[index].activateSkill();
-                return true;
+
+                bool firstActive = true;
+                foreach (ActiveSkill a in array) if (a.active) firstActive = false;    // if no skills are active, activate this one
+                if (firstActive) array[index].activateSkill();
+                return firstActive;
             }
             return false;
         }

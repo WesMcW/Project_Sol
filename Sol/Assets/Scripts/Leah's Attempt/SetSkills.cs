@@ -39,17 +39,17 @@ public class SetSkills : MonoBehaviour
                 }
             case 2:
                 {
-                    if (sm.passivesRow1[1].enabled) critChance = critChanceUp;     // cant do until damage is done
+                    if (sm.passivesRow1[1].enabled) critChance = critChanceUp;  
                     break;
                 }
             case 3:
                 {
-                    if (sm.passivesRow1[2].enabled) attackSpeed = attackSpeedUp;   // ask first
+                    if (sm.passivesRow1[2].enabled) attackSpeed = attackSpeedUp;
                     break;
                 }
             case 4:
                 {
-                    if (sm.chargeSkills[0].enabled)                 // gotta make these first
+                    if (sm.chargeSkills[0].enabled)    
                     {
                         for (int i = 0; i < 3; i++) player.GetComponent<ChargeAttacks>().activeBools[i] = false;
                         player.GetComponent<ChargeAttacks>().activeBools[0] = true;
@@ -60,7 +60,7 @@ public class SetSkills : MonoBehaviour
                 }
             case 5:
                 {
-                    if (sm.chargeSkills[1].enabled)                 // gotta make these first
+                    if (sm.chargeSkills[1].enabled)      
                     {
                         for (int i = 0; i < 3; i++) player.GetComponent<ChargeAttacks>().activeBools[i] = false;
                         player.GetComponent<ChargeAttacks>().activeBools[1] = true;
@@ -71,7 +71,7 @@ public class SetSkills : MonoBehaviour
                 }
             case 6:
                 {
-                    if (sm.chargeSkills[2].enabled)                 // gotta make these first
+                    if (sm.chargeSkills[2].enabled)       
                     {
                         for (int i = 0; i < 3; i++) player.GetComponent<ChargeAttacks>().activeBools[i] = false;
                         player.GetComponent<ChargeAttacks>().activeBools[2] = true;
@@ -82,7 +82,7 @@ public class SetSkills : MonoBehaviour
                 }
             case 7:
                 {
-                    if (sm.passivesRow2[0].enabled) critDmg = critDmgUp;     // cant do until damage is done
+                    if (sm.passivesRow2[0].enabled) critDmg = critDmgUp;   
                     break;
                 }
             case 8:
