@@ -120,6 +120,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(printText(text));
     }
 
+    /*
     /// <summary>
     /// Starts a dialogue with no conversation, just text that the NPC wants to say. (WIP)
     /// </summary>
@@ -129,13 +130,14 @@ public class DialogueManager : MonoBehaviour
     {
         isCutscene = true;
         DialogueObj.SetActive(true);
-        response1.rectTransform.parent.gameObject.SetActive(false);
+        response1.rectTransform.parent.gameObject.SetActive(true);
+        response1.text = "Continue";
         response2.rectTransform.parent.gameObject.SetActive(false);
         response3.rectTransform.parent.gameObject.SetActive(false);
         npcName.text = name;
         StartCoroutine(printText(text));
     }
-   
+   */
 
     //Prints out the text sequentially
     IEnumerator printText(string text)
@@ -200,6 +202,7 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    /*
     public void EndCutscene()
     {
         //Stop the text from printing and glitching out
@@ -208,4 +211,5 @@ public class DialogueManager : MonoBehaviour
         DialogueObj.SetActive(false);
         isCutscene = false;
     }
+    */
 }

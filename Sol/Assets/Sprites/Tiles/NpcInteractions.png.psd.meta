@@ -1,12 +1,153 @@
 fileFormatVersion: 2
 guid: b89fc31a3e076d84c8a3defb12f61ac0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6800725378584041748
+    second: NpcInteractions.png_0
+  - first:
+      213: -6578327389750184905
+    second: NpcInteractions.png_1
+  - first:
+      213: 1142095883985178991
+    second: NpcInteractions.png_2
+  - first:
+      213: 5404384367423276148
+    second: NpcInteractions.png_3
+  - first:
+      213: 873574990220108926
+    second: NpcInteractions.png_4
+  - first:
+      213: -9145344414350336381
+    second: NpcInteractions.png_5
+  - first:
+      213: 6806772510315647191
+    second: NpcInteractions.png_6
+  - first:
+      213: 3511411531613463572
+    second: NpcInteractions.png_7
+  - first:
+      213: -6028179467644072841
+    second: NpcInteractions.png_8
+  - first:
+      213: -8141037414747217364
+    second: NpcInteractions.png_9
+  - first:
+      213: 7705288928330064162
+    second: NpcInteractions.png_10
+  - first:
+      213: 5861302125459548323
+    second: NpcInteractions.png_11
+  - first:
+      213: 8674482152072645125
+    second: NpcInteractions.png_12
+  - first:
+      213: 7845602176752422047
+    second: NpcInteractions.png_13
+  - first:
+      213: 8619599422771885229
+    second: NpcInteractions.png_14
+  - first:
+      213: 8577920668714995048
+    second: NpcInteractions.png_15
+  - first:
+      213: 5323236587627378270
+    second: NpcInteractions.png_16
+  - first:
+      213: 7661147974658387951
+    second: NpcInteractions.png_17
+  - first:
+      213: -7175159605637711663
+    second: NpcInteractions.png_18
+  - first:
+      213: 3849140663728248551
+    second: NpcInteractions.png_19
+  - first:
+      213: 2571037281539270106
+    second: NpcInteractions.png_20
+  - first:
+      213: 2540267753557965969
+    second: NpcInteractions.png_21
+  - first:
+      213: -6740875840506710190
+    second: NpcInteractions.png_22
+  - first:
+      213: -9160191008197456567
+    second: NpcInteractions.png_23
+  - first:
+      213: -1092495437383608400
+    second: NpcInteractions.png_24
+  - first:
+      213: 2277022414746032570
+    second: NpcInteractions.png_25
+  - first:
+      213: 6242822386946124502
+    second: NpcInteractions.png_26
+  - first:
+      213: 2794534173295237061
+    second: NpcInteractions.png_27
+  - first:
+      213: -1297438826411071572
+    second: NpcInteractions.png_28
+  - first:
+      213: -1858934857741259884
+    second: NpcInteractions.png_29
+  - first:
+      213: -2185991723742309848
+    second: NpcInteractions.png_30
+  - first:
+      213: 4777182612088439142
+    second: NpcInteractions.png_31
+  - first:
+      213: 3474782418233293022
+    second: NpcInteractions.png_32
+  - first:
+      213: -865908670095349402
+    second: NpcInteractions.png_33
+  - first:
+      213: -6720657497695634074
+    second: NpcInteractions.png_34
+  - first:
+      213: 6098616826449944670
+    second: NpcInteractions.png_35
+  - first:
+      213: 6190543639961348159
+    second: NpcInteractions.png_36
+  - first:
+      213: 3241826171725106349
+    second: NpcInteractions.png_37
+  - first:
+      213: -9076162672656824140
+    second: NpcInteractions.png_38
+  - first:
+      213: 3826229894783614629
+    second: NpcInteractions.png_39
+  - first:
+      213: 6921274501543732380
+    second: NpcInteractions.png_40
+  - first:
+      213: 2709722448161247977
+    second: NpcInteractions.png_41
+  - first:
+      213: 539968856798943539
+    second: NpcInteractions.png_42
+  - first:
+      213: -1032738334009153231
+    second: NpcInteractions.png_43
+  - first:
+      213: -1512320276899399675
+    second: NpcInteractions.png_44
+  - first:
+      213: 4892128229444005853
+    second: NpcInteractions.png_45
+  - first:
+      213: -2785011951238126646
+    second: NpcInteractions.png_46
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,13 +175,13 @@ TextureImporter:
     filterMode: -1
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,9 +190,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -118,13 +259,1012 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: NpcInteractions.png_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4195c7533b7016e50800000000000000
+      internalID: 6800725378584041748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734b7bda71615b4a0800000000000000
+      internalID: -6578327389750184905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f615f58c72a89df00800000000000000
+      internalID: 1142095883985178991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47440f1d2fa300b40800000000000000
+      internalID: 5404384367423276148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e742cb043df8f1c00800000000000000
+      internalID: 873574990220108926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_5
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e9b0295b5351180800000000000000
+      internalID: -9145344414350336381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_6
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d01248c883867e50800000000000000
+      internalID: 6806772510315647191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_7
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414e70a0f2a0bb030800000000000000
+      internalID: 3511411531613463572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_8
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c85cc76ba975ca0800000000000000
+      internalID: -6028179467644072841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_9
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22e3d6ba99350f80800000000000000
+      internalID: -8141037414747217364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_10
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2212dd8b47faeea60800000000000000
+      internalID: 7705288928330064162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_11
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a822458a37875150800000000000000
+      internalID: 5861302125459548323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_12
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a81c4de83f16870800000000000000
+      internalID: 8674482152072645125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_13
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 291
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c0c5aac9d21ec60800000000000000
+      internalID: 7845602176752422047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 194
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4fa74a108fe9770800000000000000
+      internalID: 8619599422771885229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_15
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d0d328665ea0770800000000000000
+      internalID: 8577920668714995048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_16
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5674e4097fefd940800000000000000
+      internalID: 5323236587627378270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_17
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef67311e7dd15a60800000000000000
+      internalID: 7661147974658387951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_18
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d87b33ba56bc6c90800000000000000
+      internalID: -7175159605637711663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_19
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e698004a05ea6530800000000000000
+      internalID: 3849140663728248551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_20
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad52f6e19c82ea320800000000000000
+      internalID: 2571037281539270106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_21
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cb33d1018d04320800000000000000
+      internalID: 2540267753557965969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_22
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257b59343299372a0800000000000000
+      internalID: -6740875840506710190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_23
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dc9a19fc670e080800000000000000
+      internalID: -9160191008197456567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_24
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7d300203da6d0f0800000000000000
+      internalID: -1092495437383608400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_25
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab91a8072db999f10800000000000000
+      internalID: 2277022414746032570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_26
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6daa7c192e5f2a650800000000000000
+      internalID: 6242822386946124502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_27
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 195
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7d3f7460e28c620800000000000000
+      internalID: 2794534173295237061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_28
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7e7f1f2429efde0800000000000000
+      internalID: -1297438826411071572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_29
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49badbf889cb336e0800000000000000
+      internalID: -1858934857741259884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_30
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8225560fb1cc9a1e0800000000000000
+      internalID: -2185991723742309848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_31
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66144bc6646fb4240800000000000000
+      internalID: 4777182612088439142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_32
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8719ef238e83030800000000000000
+      internalID: 3474782418233293022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_33
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669290ff6acabf3f0800000000000000
+      internalID: -865908670095349402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_34
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d39c80d9d6bb2a0800000000000000
+      internalID: -6720657497695634074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_35
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50e4c911b3a2a450800000000000000
+      internalID: 6098616826449944670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_36
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38237244aa39e550800000000000000
+      internalID: 6190543639961348159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_37
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac4d3d2ab74dfc20800000000000000
+      internalID: 3241826171725106349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_38
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b841a4032efa0280800000000000000
+      internalID: -9076162672656824140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_39
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aebe8b21df791530800000000000000
+      internalID: 3826229894783614629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_40
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 98
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94ab791d7e4d0060800000000000000
+      internalID: 6921274501543732380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_41
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e29d8ab53eda9520800000000000000
+      internalID: 2709722448161247977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_42
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339564b70da5e7700800000000000000
+      internalID: 539968856798943539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_43
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139a477f4f9faa1f0800000000000000
+      internalID: -1032738334009153231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_44
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 0
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5087ac488b8230be0800000000000000
+      internalID: -1512320276899399675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_45
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 0
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfabaf74b454e340800000000000000
+      internalID: 4892128229444005853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcInteractions.png_46
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 0
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3eb3fc266a959d0800000000000000
+      internalID: -2785011951238126646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 932164429b8456b41ba13f614a41bc4e
     internalID: 0
     vertices: []
     indices: 
@@ -132,7 +1272,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
   spritePackingTag: 
-  pSDRemoveMatte: 0
+  pSDRemoveMatte: 1
   pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 

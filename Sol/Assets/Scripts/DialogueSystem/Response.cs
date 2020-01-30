@@ -5,10 +5,18 @@ using UnityEngine;
 public class Response : MonoBehaviour
 {
     public int pathID;
+    public bool isCutscene;
 
 
     public void OnClick()
     {
-        DialogueManager.DM.AdvancePath(pathID);
+        if (!isCutscene)
+        {
+            DialogueManager.DM.AdvancePath(pathID);
+        }else
+        {
+            CutsceneManager.instance.AdvancePath();
+        }
+       
     }
 }
