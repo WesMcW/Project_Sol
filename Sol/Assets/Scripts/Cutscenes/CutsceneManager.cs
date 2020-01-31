@@ -5,6 +5,7 @@ using TMPro;
 
 public class CutsceneManager : MonoBehaviour
 {
+    [Header("Speed of Text")]
     [SerializeField]
     float timeDelay = 0.25f;
     [SerializeField]
@@ -102,13 +103,18 @@ public class CutsceneManager : MonoBehaviour
 
     IEnumerator CameraMove(Vector3 targetLocation)
     {
-        while (mainCamera.transform.position != targetLocation)
+       // print(Vector3.Distance(mainCamera.transform.position, targetLocation));
+       // bool running = true;
+        while (Vector3.Distance(mainCamera.transform.position, targetLocation) > 10)
         {
+           // print(Vector3.Distance(mainCamera.transform.position, targetLocation));
             mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, targetLocation, zoomSpeed * Time.deltaTime);
             mainCamera.transform.position = new Vector3(mainCamera.transform.position.x, mainCamera.transform.position.y, -10);
+            
             yield return null;
         }
-       
+        yield return null;
+
     }
 
 
@@ -130,7 +136,7 @@ public class CutsceneManager : MonoBehaviour
     /// </summary>
     public void AdvancePath()
     {
-       
+        StopAllCoroutines();
         currentIndex++;
         if(currentIndex > dialogueLines.Length - 1)
         {
