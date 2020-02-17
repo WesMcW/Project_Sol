@@ -11,16 +11,10 @@ public class BoomerangMove : MonoBehaviour
     float damage, critChance, critMulti;
 
     float returnTime = 1;
+    float cameraSize = 6;
 
     bool canMove = false, goBack = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (canMove)
@@ -36,7 +30,7 @@ public class BoomerangMove : MonoBehaviour
         {
             if(goBack)
             {
-                returnTime = (Time.deltaTime + 1) * 1.5F;
+                returnTime = (Time.deltaTime + 1) * 1.8F;
 
                 myDirection = findPlayer();
                 parent.transform.position = Vector3.MoveTowards(transform.position, myDirection, Time.deltaTime * (speed * 15 * returnTime));
@@ -77,10 +71,12 @@ public class BoomerangMove : MonoBehaviour
             moveAngle = mouseAngle;
         }
 
-        Debug.Log("Angle: (" + moveAngle.x + ", " + moveAngle.y + ")");
-        moveAngle *= new Vector2(10F, 10F);
+        cameraSize = Camera.main.GetComponent<Camera>().orthographicSize * 1.5F;
+
+        //Debug.Log("Angle: (" + moveAngle.x + ", " + moveAngle.y + ")");
+        moveAngle *= new Vector2(cameraSize, cameraSize);
         moveAngle += new Vector2(parent.transform.position.x, parent.transform.position.y);
-        Debug.Log("After multi: (" + moveAngle.x + ", " + moveAngle.y + ")");
+        //Debug.Log("After multi: (" + moveAngle.x + ", " + moveAngle.y + ")");
 
         return moveAngle;
     }
