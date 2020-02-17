@@ -10,6 +10,8 @@ public class BoomerangMove : MonoBehaviour
     float speed;
     float damage, critChance, critMulti;
 
+    float returnTime = 1;
+
     bool canMove = false, goBack = false;
 
     // Start is called before the first frame update
@@ -23,8 +25,8 @@ public class BoomerangMove : MonoBehaviour
     {
         if (canMove)
         {
-            parent.transform.position = Vector3.MoveTowards(parent.transform.position, myDirection, Time.deltaTime * (speed * 7));
-            if (Mathf.Abs(Vector2.Distance(myDirection, parent.transform.position)) < 0.5F)
+            parent.transform.position = Vector3.MoveTowards(parent.transform.position, myDirection, Time.deltaTime * (speed * 12));
+            if (Mathf.Abs(Vector2.Distance(myDirection, parent.transform.position)) < 0.3F)
             {
                 canMove = false;
                 goBack = true;
@@ -34,8 +36,15 @@ public class BoomerangMove : MonoBehaviour
         {
             if(goBack)
             {
+                returnTime = (Time.deltaTime + 1) * 1.5F;
+
                 myDirection = findPlayer();
-                parent.transform.position = Vector3.MoveTowards(transform.position, myDirection, Time.deltaTime * (speed * 9));
+                parent.transform.position = Vector3.MoveTowards(transform.position, myDirection, Time.deltaTime * (speed * 15 * returnTime));
+                if (Mathf.Abs(Vector2.Distance(myDirection, parent.transform.position)) < 0.5F)
+                {
+                    player.GetComponent<ChargeAttacks>().isAttacking = false;
+                    Destroy(transform.parent.gameObject);
+                }
             }
         }
     }
@@ -68,7 +77,11 @@ public class BoomerangMove : MonoBehaviour
             moveAngle = mouseAngle;
         }
 
-        moveAngle *= new Vector2(6.5F, 6.5F);
+        Debug.Log("Angle: (" + moveAngle.x + ", " + moveAngle.y + ")");
+        moveAngle *= new Vector2(10F, 10F);
+        moveAngle += new Vector2(parent.transform.position.x, parent.transform.position.y);
+        Debug.Log("After multi: (" + moveAngle.x + ", " + moveAngle.y + ")");
+
         return moveAngle;
     }
 
@@ -94,10 +107,10 @@ public class BoomerangMove : MonoBehaviour
             // start enemy cooldown
         }
 
-        if (goBack && collision.CompareTag("Player"))
+        /*if (goBack && collision.CompareTag("Player"))
         {
             player.GetComponent<ChargeAttacks>().isAttacking = false;
             Destroy(gameObject);
-        }
+        }*/
     }
 }

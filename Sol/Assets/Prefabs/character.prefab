@@ -122,6 +122,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -215,6 +216,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -459,4 +461,6 @@ MonoBehaviour:
   timeToCharge: 1
   colorTesting: 0
   sonicPref: {fileID: 4761596373455210090, guid: a6bfe37c14f25e44591f7a7564f2ec30,
+    type: 3}
+  boomPref: {fileID: 6705085860283651130, guid: 77c692cbd4102f84a9b19903437cb580,
     type: 3}
