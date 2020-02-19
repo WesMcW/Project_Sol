@@ -12,7 +12,10 @@ public class ChargeAttacks : MonoBehaviour
     public bool charged = false, isCharging = false;
     public bool isAttacking = false;
     public float chargeTime = 0F, timeToCharge, colorTesting;
+
+    [Header("Prefabs")]
     public GameObject sonicPref;
+    public GameObject boomPref;
 
     // while charging: should not be able to do a normal attack, cannot change direction(?)/cannot move
     // while attacking: cannot do a normal attack, depending if attack has an animation could be able to move again
@@ -98,7 +101,10 @@ public class ChargeAttacks : MonoBehaviour
     {
         Debug.Log("WHOOSH boooomerang throwwww");
 
-        charged = isAttacking = false;
+        GameObject temp = Instantiate(boomPref, transform.position, Quaternion.identity);
+        temp.transform.GetChild(0).GetComponent<BoomerangMove>().setValues(gameObject, meleeWeapon.GetComponent<SpriteRenderer>().sprite, meleeWeapon.attackSpeed, meleeWeapon.pullStats());  // set sprite and attack speed
+
+        charged  = false;
     }
 
     void numThree()
