@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a331d1f45d18ab44ba31ea63d4cae087, type: 3}
+  m_Name: Moms Cooking
+  m_EditorClassIdentifier: 
+  isActive: 0
+  helped: 0
+  take: 0
+  notTurnedInHere: 0
+  finished: 0
+  questGiver: {fileID: 0}
+  title: Moms Cooking
+  description: Bring 2 carrots to your mom
+  experienceReward: 0
+  questID: 22
+  goal:
+    goalType: 1
+    requiredAmount: 2
+    currentAmount: 0
+    requiredID: 0
+  player: {fileID: 0}
+  button: {fileID: 0}
