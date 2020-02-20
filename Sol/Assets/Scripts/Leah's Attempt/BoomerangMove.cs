@@ -88,6 +88,8 @@ public class BoomerangMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("hit something");
+
         IEnemy enemy = collision.gameObject.GetComponent<IEnemy>();
         if (enemy != null)
         {
