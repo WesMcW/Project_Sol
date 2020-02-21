@@ -199,17 +199,7 @@ public class DialogueManager : MonoBehaviour
         talking = false;
 
         npcDiag.enabled = false;
+        alertBox.SetActive(true);
 
     }
-
-    /*
-    public void EndCutscene()
-    {
-        //Stop the text from printing and glitching out
-        StopAllCoroutines();
-        //Turn off Dialogue Object
-        DialogueObj.SetActive(false);
-        isCutscene = false;
-    }
-    */
 }

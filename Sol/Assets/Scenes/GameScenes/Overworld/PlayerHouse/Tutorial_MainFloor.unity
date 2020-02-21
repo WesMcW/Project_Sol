@@ -393,6 +393,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8608463932440945426, guid: 78445725ec0cd9540b94735468e030bf,
         type: 3}
+      propertyPath: acceptableIDs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608463932440945426, guid: 78445725ec0cd9540b94735468e030bf,
+        type: 3}
       propertyPath: name
       value: Mum
       objectReference: {fileID: 0}
@@ -400,6 +405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: acceptableIDs.Array.data[0]
       value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608463932440945426, guid: 78445725ec0cd9540b94735468e030bf,
+        type: 3}
+      propertyPath: acceptableIDs.Array.data[1]
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 8608463932440945436, guid: 78445725ec0cd9540b94735468e030bf,
         type: 3}
@@ -9729,7 +9739,7 @@ PrefabInstance:
     - target: {fileID: 8514833015028824328, guid: af1dff02406975d4ebbe38c7f83ce5fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8514833015028824328, guid: af1dff02406975d4ebbe38c7f83ce5fc,
         type: 3}
