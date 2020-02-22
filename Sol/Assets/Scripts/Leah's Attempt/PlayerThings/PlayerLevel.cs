@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerLevel : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class PlayerLevel : MonoBehaviour
         if(level > 1)
         {
             if (xpRef >= xpToLevel) leveled = true;
+
+            // add to xp bar
         }
 
         if (leveled)
