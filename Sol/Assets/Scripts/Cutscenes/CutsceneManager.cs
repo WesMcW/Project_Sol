@@ -60,7 +60,10 @@ public class CutsceneManager : MonoBehaviour
         response3.SetActive(false);
         response1.rectTransform.parent.gameObject.GetComponent<Response>().isCutscene = true;
         response1.text = "Continue";
+        Camera.main.GetComponent<CameraController>().enabled = false;
+        Player.instance.GetComponent<PlayerController>().enabled = false;
         StartCoroutine(printText(dialogueLines[currentIndex]));
+        StartCoroutine(CameraMove(currentNPCs[0].transform.position));
     }
 
     /// <summary>
@@ -84,6 +87,8 @@ public class CutsceneManager : MonoBehaviour
         response3.SetActive(false);
         response1.rectTransform.parent.gameObject.GetComponent<Response>().isCutscene = true;
         response1.text = "Continue";
+        Camera.main.GetComponent<CameraController>().enabled = false;
+        Player.instance.GetComponent<PlayerController>().enabled = false;
         StartCoroutine(CameraZoom(targetOrtho));
         StartCoroutine(CameraMove(currentNPCs[0].transform.position));
         StartCoroutine(printText(dialogueLines[currentIndex]));
@@ -164,6 +169,8 @@ public class CutsceneManager : MonoBehaviour
         StopAllCoroutines();
         response1.gameObject.SetActive(false);
         response1.rectTransform.parent.gameObject.GetComponent<Response>().isCutscene = false;
+        Camera.main.GetComponent<CameraController>().enabled = true;
+        Player.instance.GetComponent<PlayerController>().enabled = true;
         dialogueObj.SetActive(false);
         theCurrentCutscene.EndCutscene();
     }

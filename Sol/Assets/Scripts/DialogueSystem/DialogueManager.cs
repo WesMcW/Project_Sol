@@ -86,6 +86,7 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueObj.SetActive(true);
         alertBox.SetActive(false);
+        Player.instance.GetComponent<PlayerController>().enabled = false;
 
         //If the responses are not being disabled, make sure the response fields are actually blank and not full of blank spaces.
 
@@ -197,7 +198,7 @@ public class DialogueManager : MonoBehaviour
         DialogueObj.SetActive(false);
         //No longer talking
         talking = false;
-
+        Player.instance.GetComponent<PlayerController>().enabled = true;
         npcDiag.enabled = false;
         alertBox.SetActive(true);
 
