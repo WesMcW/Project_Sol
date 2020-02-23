@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerLevel : MonoBehaviour
 {
     SkillsManager sm;
     public static PlayerLevel inst;
+
+    public Image xpFillBar;
+    public TextMeshProUGUI levelTxt;
 
     public bool firstBoss = false, leveled = false;
     public int level = 1, xpRef = 0;    // main xp in PlayerQuest
@@ -28,6 +32,9 @@ public class PlayerLevel : MonoBehaviour
         {
             level = 2;
             sm.skillPoints++;
+
+            sm.showPopUp();
+            levelTxt.text = " Level " + level;
         }
 
         if(level > 1)
@@ -44,6 +51,9 @@ public class PlayerLevel : MonoBehaviour
             PlayerQuest.instance.CurrentExperience -= xpToLevel;
             xpToLevel = Mathf.RoundToInt(xpToLevel * xpScaler);
             xpScaler += 0.5F;
+
+            sm.showPopUp();
+            levelTxt.text = " Level " + level;
 
             leveled = false;
         }

@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class SkillsManager : MonoBehaviour
 {
-    public static SkillsManager inst; 
+    public static SkillsManager inst;
 
+    public GameObject pointPopUp;
     public int skillPoints = 0, skillsBought = 0;
     int mon, sCount;
     public Text nameTxt, descTxt, costTxt;
@@ -61,6 +62,13 @@ public class SkillsManager : MonoBehaviour
 
         sCount = skillsBought;
         mon = skillPoints;
+
+        if (skillPoints <= 0) pointPopUp.SetActive(false);
+    }
+
+    public void showPopUp()
+    {
+        pointPopUp.SetActive(true);
     }
 
     void showSkills()
