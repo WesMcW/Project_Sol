@@ -380,6 +380,14 @@ PrefabInstance:
       propertyPath: currAmount
       value: 
       objectReference: {fileID: 1511842199}
+    - target: {fileID: 688197377, guid: af1dff02406975d4ebbe38c7f83ce5fc, type: 3}
+      propertyPath: levelTxt
+      value: 
+      objectReference: {fileID: 363010645}
+    - target: {fileID: 688197377, guid: af1dff02406975d4ebbe38c7f83ce5fc, type: 3}
+      propertyPath: xpFillBar
+      value: 
+      objectReference: {fileID: 1207554699}
     - target: {fileID: 8514833015028824328, guid: af1dff02406975d4ebbe38c7f83ce5fc,
         type: 3}
       propertyPath: m_Name
@@ -456,6 +464,18 @@ GameObject:
 --- !u!114 &341073670 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 343852755772824494, guid: 2fcd0999a4262304390979a827a358e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1511842198}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &363010645 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1695850341, guid: 2fcd0999a4262304390979a827a358e9,
     type: 3}
   m_PrefabInstance: {fileID: 1511842198}
   m_PrefabAsset: {fileID: 0}
@@ -2100,6 +2120,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1207554699 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1836424157, guid: 2fcd0999a4262304390979a827a358e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1511842198}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1362373897 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4125960228179262092, guid: 35e6cb78fb77a154ebfc730d6eb5f7e0,
@@ -2213,6 +2245,18 @@ PrefabInstance:
     - target: {fileID: 1283953173, guid: 2fcd0999a4262304390979a827a358e9, type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695850341, guid: 2fcd0999a4262304390979a827a358e9, type: 3}
+      propertyPath: m_text
+      value: ' Level 1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695850341, guid: 2fcd0999a4262304390979a827a358e9, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695850341, guid: 2fcd0999a4262304390979a827a358e9, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5519548385553803540, guid: 2fcd0999a4262304390979a827a358e9,
         type: 3}
